@@ -539,7 +539,7 @@
       "id": "4c59f980-c500-4980-b802-7e049457358e",
       "title": "Cauliflower curry",
       "description": "",
-      "collapsed": false,
+      "collapsed": true,
       "ingredients": [
         {
           "id": "vegetables-34",
@@ -571,7 +571,7 @@
       "id": "9a17fb43-bf9f-488d-a1f1-6498698f5bc8",
       "title": "Chicken curry",
       "description": "",
-      "collapsed": false,
+      "collapsed": true,
       "ingredients": [
         {
           "id": "meats_and_seafood-0",

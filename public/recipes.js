@@ -443,7 +443,13 @@ const renderRecipes = () => {
   if (!elements.recipeList) return;
   const term = state.recipeSearch.trim().toLowerCase();
   const filtered = state.recipes.filter((recipe) =>
-    recipe.title.toLowerCase().includes(term)
+    recipe.title.toLowerCase().includes(term) ||
+    recipe.ingredients.some((ingredient) => {
+      const food = state.foodMap.get(ingredient.id);
+      return food
+        ? food.name.toLowerCase().includes(term)
+        : false;
+    })
   );
   if (!filtered.length) {
     elements.recipeList.innerHTML =
