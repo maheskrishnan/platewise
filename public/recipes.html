@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <app-sidebar page="recipes"></app-sidebar>
+
+    <main class="content">
+      <div class="content-inner">
+        <section class="meal-planner-card">
+          <div class="planner-header">
+            <div>
+              <h2>Recipe library</h2>
+              <p class="helper-text">Maintain personal recipes independent of weekly planning.</p>
+            </div>
+            <div class="planner-controls">
+              <button type="button" class="primary-link secondary" id="addLibraryRecipe">Add recipe</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="results-card">
+          <div class="results-bar">
+            <label class="search-label" for="recipeLibrarySearch">
+              <span>Search recipes</span>
+              <input type="search" id="recipeLibrarySearch" placeholder="Filter by recipe name..." autocomplete="off">
+            </label>
+          </div>
+        </section>
+
+        <section id="recipeLibraryList" class="recipe-grid" aria-live="polite"></section>
+      </div>
+    </main>
+  </div>
+
+  <script src="sidebar.js" defer></script>
+  <script src="recipes.js" defer></script>
+</body>
+
+</html>

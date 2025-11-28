@@ -5,7 +5,32 @@
         "id": "plan-1764281980855",
         "name": "Daily plan",
         "meals": {
-          "breakfast": [],
+          "breakfast": [
+            {
+              "id": "vegetables-20",
+              "quantity": 1,
+              "unit": "cup chopped",
+              "unitGrams": 160
+            },
+            {
+              "id": "vegetables-19",
+              "quantity": 1,
+              "unit": "cup chopped",
+              "unitGrams": 180
+            },
+            {
+              "id": "oils-0",
+              "quantity": 1,
+              "unit": "tablespoon",
+              "unitGrams": 14
+            },
+            {
+              "id": "grains-0",
+              "quantity": 1,
+              "unit": "cup raw",
+              "unitGrams": 185
+            }
+          ],
           "lunch": [],
           "snack": [],
           "dinner": []
@@ -261,6 +286,13 @@
                 "unitGrams": 454
               }
             ]
+          },
+          {
+            "id": "42bdc786-2b08-43ff-9679-bfa925705021",
+            "title": "Coffee",
+            "description": "",
+            "collapsed": false,
+            "ingredients": []
           }
         ]
       },
@@ -268,8 +300,304 @@
         "id": "2047a9af-5762-459f-bc8f-94f895340865",
         "name": "Winter weekly plan",
         "recipes": []
+      },
+      {
+        "id": "aabf58d0-ee57-4b5e-a0cc-f6c938890639",
+        "name": "Weekly plan 2 (relaxed 2)",
+        "recipes": [
+          {
+            "id": "f9b53a32-a652-4e59-ae1c-8a70772955aa",
+            "title": "Cooked rice",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "grains-0",
+                "quantity": 6,
+                "unit": "cup raw",
+                "unitGrams": 185
+              }
+            ]
+          },
+          {
+            "id": "fb84964c-bc37-4179-8ef4-7fe31b852183",
+            "title": "Vegetable Sambar",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "lentils-4",
+                "quantity": 1,
+                "unit": "cup dry",
+                "unitGrams": 200
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 3,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "vegetables-18",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-16",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              }
+            ]
+          },
+          {
+            "id": "a06e4adb-b394-4d4c-8114-22015f7a14c4",
+            "title": "Beetroot poriyal",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "vegetables-17",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "583769a1-3f4d-45d6-8f96-f04f6da37748",
+            "title": "Cabbage and peas poriyal",
+            "description": "https://www.youtube.com/shorts/yEuhQYcPIQM",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "vegetables-18",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-35",
+                "quantity": 1,
+                "unit": "cup",
+                "unitGrams": 145
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "baf3844e-cf07-4855-8976-2ee39481099c",
+            "title": "Cauliflower gravy",
+            "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, ginger garlic paste, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
+            "collapsed": false,
+            "ingredients": [
+              {
+                "id": "oils-0",
+                "quantity": 3,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "vegetables-34",
+                "quantity": 3,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              }
+            ]
+          },
+          {
+            "id": "3316edbc-5c1d-40c3-9293-a57cfd8e66c2",
+            "title": "Chicken curry",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-1",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 4,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "fa285ee2-2bb6-4275-aebe-49da565e3521",
+            "title": "Shrimp curry",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-3",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          }
+        ]
       }
     ],
-    "activePlanId": "weekly-default"
-  }
+    "activePlanId": "aabf58d0-ee57-4b5e-a0cc-f6c938890639"
+  },
+  "recipesLibrary": [
+    {
+      "id": "4c59f980-c500-4980-b802-7e049457358e",
+      "title": "Cauliflower curry",
+      "description": "",
+      "collapsed": false,
+      "ingredients": [
+        {
+          "id": "vegetables-34",
+          "quantity": 3,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        }
+      ]
+    },
+    {
+      "id": "9a17fb43-bf9f-488d-a1f1-6498698f5bc8",
+      "title": "Chicken curry",
+      "description": "",
+      "collapsed": false,
+      "ingredients": [
+        {
+          "id": "meats_and_seafood-0",
+          "quantity": 1,
+          "unit": "3 oz",
+          "unitGrams": 85
+        },
+        {
+          "id": "meats_and_seafood-1",
+          "quantity": 1,
+          "unit": "3 oz",
+          "unitGrams": 85
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        }
+      ]
+    }
+  ]
 }

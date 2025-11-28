@@ -15,6 +15,8 @@ const state = {
   selectedIds: [],
   mode: 'per100g',
   searchTerm: '',
+  searchResults: [],
+  searchHighlight: -1,
   vitaminKeys: [],
   mineralKeys: [],
   hiddenColumns: new Set(),
@@ -269,28 +271,34 @@ const renderSearchResults = () => {
   const container = elements.searchResults;
 
   const term = state.searchTerm.trim().toLowerCase();
-  const available = state.allFoods.filter(
-    (food) => !state.selectedIds.includes(food.id)
-  );
 
   if (!term) {
     container.innerHTML = '';
+    state.searchResults = [];
+    state.searchHighlight = -1;
     return;
   }
-  const matches = available
+  const matches = state.allFoods
     .filter((food) => food.name.toLowerCase().includes(term))
-    .slice(0, 5);
+    .slice(0, 5)
+    .map((food) => ({
+      food,
+      disabled: state.selectedIds.includes(food.id),
+    }));
+  state.searchResults = matches;
 
   if (!matches.length) {
     container.innerHTML =
       '<p class="helper-text">No foods match your search.</p>';
+    state.searchHighlight = -1;
     return;
   }
 
   container.innerHTML = '';
-  matches.forEach((food) => {
+  matches.forEach(({ food, disabled }, index) => {
     const row = document.createElement('div');
-    row.className = 'search-result';
+    row.className = `search-result ${disabled ? 'disabled' : ''}`;
+    row.dataset.searchIndex = index;
     row.innerHTML = `
       <div class="info">
         <span class="name">${food.name}</span>
@@ -300,13 +308,70 @@ const renderSearchResults = () => {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'compare-btn';
-    button.textContent = 'Add';
+    button.textContent = disabled ? 'Added' : 'Add';
+    if (disabled) {
+      button.disabled = true;
+    }
     button.addEventListener('click', () => {
+      if (disabled) return;
       toggleSelection(food.id);
+      focusSearchInput();
     });
     row.appendChild(button);
     container.appendChild(row);
   });
+  updateSearchHighlight();
+};
+
+const updateSearchHighlight = () => {
+  if (!elements.searchResults) return;
+  const rows = elements.searchResults.querySelectorAll('.search-result');
+  rows.forEach((row, index) => {
+    row.classList.toggle('active', index === state.searchHighlight);
+  });
+};
+
+const focusSearchInput = () => {
+  if (!elements.searchInput) return;
+  requestAnimationFrame(() => {
+    elements.searchInput.focus();
+    elements.searchInput.select();
+  });
+};
+
+const handleSearchKeyDown = (event) => {
+  const results = state.searchResults;
+  if (!results.length) return;
+  let index = state.searchHighlight ?? -1;
+  if (event.key === 'ArrowDown') {
+    event.preventDefault();
+    index = Math.min(index + 1, results.length - 1);
+    state.searchHighlight = index;
+    updateSearchHighlight();
+    return;
+  }
+  if (event.key === 'ArrowUp') {
+    event.preventDefault();
+    index = Math.max(index - 1, -1);
+    state.searchHighlight = index;
+    updateSearchHighlight();
+    return;
+  }
+  if (event.key === 'Enter' && index >= 0) {
+    event.preventDefault();
+    const result = results[index];
+    if (result && !result.disabled) {
+      toggleSelection(result.food.id);
+      focusSearchInput();
+      state.searchHighlight = -1;
+      renderSearchResults();
+    }
+    return;
+  }
+  if (event.key === 'Escape') {
+    state.searchHighlight = -1;
+    updateSearchHighlight();
+  }
 };
 
 const bindSortHandlers = () => {
@@ -461,6 +526,7 @@ const toggleSelection = (foodId) => {
   persistSelections();
   renderSelectionTags();
   renderCompareTable();
+  state.searchHighlight = -1;
   renderSearchResults();
 };
 
@@ -603,9 +669,11 @@ const bootstrap = async () => {
         const value = event.target.value;
         debounce = setTimeout(() => {
           state.searchTerm = value;
+          state.searchHighlight = -1;
           renderSearchResults();
         }, 150);
       });
+      elements.searchInput.addEventListener('keydown', handleSearchKeyDown);
     }
     initModeEvents();
     initColumnModal();

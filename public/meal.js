@@ -60,6 +60,14 @@ const state = {
     acc[meal.key] = createTotalsSnapshot();
     return acc;
   }, {}),
+  searchResults: MEAL_CONFIG.reduce((acc, meal) => {
+    acc[meal.key] = [];
+    return acc;
+  }, {}),
+  searchHighlights: MEAL_CONFIG.reduce((acc, meal) => {
+    acc[meal.key] = -1;
+    return acc;
+  }, {}),
 };
 
 const elements = {
@@ -577,35 +585,45 @@ const renderSearchResults = (mealKey) => {
   const term = state.searchTerms[mealKey].trim().toLowerCase();
   if (!term) {
     refs.searchResults.innerHTML = '';
+    state.searchHighlights[mealKey] = -1;
+    state.searchResults[mealKey] = [];
     return;
   }
   const existingIds = new Set(getMealItems(mealKey).map((item) => item.id));
   const matches = state.foods
     .filter((food) => food.name.toLowerCase().includes(term))
-    .filter((food) => !existingIds.has(food.id))
-    .slice(0, 5);
+    .slice(0, 5)
+    .map((food) => ({
+      food,
+      disabled: existingIds.has(food.id),
+    }));
+  state.searchResults[mealKey] = matches;
   if (!matches.length) {
     refs.searchResults.innerHTML =
       '<p class="helper-text">No foods match your search.</p>';
+    state.searchHighlights[mealKey] = -1;
     return;
   }
   refs.searchResults.innerHTML = matches
     .map(
-      (food) => `
-        <div class="search-result">
+      ({ food, disabled }, index) => `
+        <div class="search-result ${disabled ? 'disabled' : ''}" data-search-index="${index}">
           <div class="info">
             <span class="name">${food.name}</span>
             <span class="category">${formatNumber(
               food.calories
             )} kcal • ${formatNumber(food.protein_g)} g protein</span>
           </div>
-          <button type="button" class="compare-btn" data-add-food="${mealKey}" data-food-id="${food.id}">
-            Add
+          <button type="button" class="compare-btn" data-add-food="${mealKey}" data-food-id="${food.id}" ${
+        disabled ? 'disabled' : ''
+      }>
+            ${disabled ? 'Added' : 'Add'}
           </button>
         </div>
       `
     )
     .join('');
+  updateMealSearchHighlight(mealKey);
 };
 
 const getSuggestedUnits = (food) => {
@@ -690,6 +708,9 @@ const addFoodToMeal = (mealKey, foodId) => {
   persistPlans();
   renderMealSection(mealKey);
   renderDailyTotals();
+  state.searchHighlights[mealKey] = -1;
+  state.searchResults[mealKey] = [];
+  focusMealSearch(mealKey);
 };
 
 const removeFoodFromMeal = (mealKey, foodId) => {
@@ -730,12 +751,34 @@ const handleUnitChange = (mealKey, foodId, unit, gramsPerUnit) => {
 const clearMealSearch = (mealKey) => {
   const refs = state.sectionRefs[mealKey];
   state.searchTerms[mealKey] = '';
+  state.searchHighlights[mealKey] = -1;
+  state.searchResults[mealKey] = [];
   if (refs?.searchInput) {
     refs.searchInput.value = '';
   }
   if (refs?.searchResults) {
     refs.searchResults.innerHTML = '';
   }
+};
+
+const focusMealSearch = (mealKey) => {
+  const refs = state.sectionRefs[mealKey];
+  if (refs?.searchInput) {
+    requestAnimationFrame(() => {
+      refs.searchInput.focus();
+      refs.searchInput.select();
+    });
+  }
+};
+
+const updateMealSearchHighlight = (mealKey) => {
+  const refs = state.sectionRefs[mealKey];
+  if (!refs?.searchResults) return;
+  const rows = refs.searchResults.querySelectorAll('.search-result');
+  const activeIndex = state.searchHighlights[mealKey] ?? -1;
+  rows.forEach((row, index) => {
+    row.classList.toggle('active', index === activeIndex);
+  });
 };
 
 const switchActivePlan = (planId) => {
@@ -837,6 +880,42 @@ const updateCompareNavBadge = () => {
   }
 };
 
+const handleMealSearchKeyDown = (event) => {
+  const input = event.target;
+  const mealKey = input.dataset.mealSearch;
+  const results = state.searchResults[mealKey] || [];
+  if (!results.length) return;
+  let index = state.searchHighlights[mealKey] ?? -1;
+  if (event.key === 'ArrowDown') {
+    event.preventDefault();
+    index = Math.min(index + 1, results.length - 1);
+    state.searchHighlights[mealKey] = index;
+    updateMealSearchHighlight(mealKey);
+    return;
+  }
+  if (event.key === 'ArrowUp') {
+    event.preventDefault();
+    index = Math.max(index - 1, -1);
+    state.searchHighlights[mealKey] = index;
+    updateMealSearchHighlight(mealKey);
+    return;
+  }
+  if (event.key === 'Enter' && index >= 0) {
+    event.preventDefault();
+    const result = results[index];
+    if (result && !result.disabled) {
+      addFoodToMeal(mealKey, result.food.id);
+      clearMealSearch(mealKey);
+      focusMealSearch(mealKey);
+    }
+    return;
+  }
+  if (event.key === 'Escape') {
+    state.searchHighlights[mealKey] = -1;
+    updateMealSearchHighlight(mealKey);
+  }
+};
+
 const initPlanControls = () => {
   if (elements.planSelect) {
     elements.planSelect.addEventListener('change', (event) => {
@@ -856,6 +935,7 @@ const initSectionEvents = () => {
     if (input.matches('[data-meal-search]')) {
       const mealKey = input.dataset.mealSearch;
       state.searchTerms[mealKey] = input.value;
+       state.searchHighlights[mealKey] = -1;
       renderSearchResults(mealKey);
     }
   });
@@ -886,6 +966,7 @@ const initSectionEvents = () => {
       const foodId = addButton.getAttribute('data-food-id');
       addFoodToMeal(mealKey, foodId);
       clearMealSearch(mealKey);
+      focusMealSearch(mealKey);
       return;
     }
     const removeButton = event.target.closest('[data-remove-food]');
@@ -893,6 +974,13 @@ const initSectionEvents = () => {
       const mealKey = removeButton.getAttribute('data-remove-food');
       const foodId = removeButton.getAttribute('data-food-id');
       removeFoodFromMeal(mealKey, foodId);
+    }
+  });
+
+  elements.mealSections.addEventListener('keydown', (event) => {
+    const input = event.target;
+    if (input.matches('[data-meal-search]')) {
+      handleMealSearchKeyDown(event);
     }
   });
 };

@@ -13,11 +13,17 @@ const NAV_ITEMS = [
     badge: true,
   },
   {
-    key: 'meal',
-    href: 'meal.html',
-    label: 'Meal planner',
-    helper: 'Design daily meals by section.',
+    key: 'recipes',
+    href: 'recipes.html',
+    label: 'Recipe library',
+    helper: 'Maintain reusable dishes and notes.',
   },
+    {
+      key: 'meal',
+      href: 'meal.html',
+      label: 'Meal planner',
+      helper: 'Design daily meals by section.',
+    },
   {
     key: 'weekly',
     href: 'weekly.html',
@@ -27,7 +33,7 @@ const NAV_ITEMS = [
 ];
 
 const TAGLINE =
-  'Heal with every meal through mindful eating, sustainable nourishing.';
+  'Heal with every meal through mindful eating, deliciously sustainable and deeply nourishing.';
 
 class AppSidebar extends HTMLElement {
   connectedCallback() {

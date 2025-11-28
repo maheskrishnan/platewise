@@ -108,6 +108,8 @@ const state = {
   foodMap: new Map(),
   plan: createDefaultPlanState(),
   searchTerms: {},
+  searchResults: {},
+  searchHighlights: {},
 };
 
 const elements = {
@@ -122,6 +124,7 @@ const elements = {
   shoppingToggleLabel: document.querySelector('[data-shopping-toggle-label]'),
   planSelect: document.getElementById('weeklyPlanSelect'),
   addPlanBtn: document.getElementById('addWeeklyPlan'),
+  clonePlanBtn: document.getElementById('cloneWeeklyPlan'),
   renamePlanBtn: document.getElementById('renameWeeklyPlan'),
   deletePlanBtn: document.getElementById('deleteWeeklyPlan'),
 };
@@ -150,6 +153,12 @@ const ensureSearchTerms = () => {
     if (typeof state.searchTerms[recipe.id] !== 'string') {
       state.searchTerms[recipe.id] = '';
     }
+    if (!Array.isArray(state.searchResults[recipe.id])) {
+      state.searchResults[recipe.id] = [];
+    }
+    if (typeof state.searchHighlights[recipe.id] !== 'number') {
+      state.searchHighlights[recipe.id] = -1;
+    }
   });
 };
 
@@ -162,6 +171,8 @@ const pruneSearchTerms = () => {
   Object.keys(state.searchTerms).forEach((key) => {
     if (!validIds.has(key)) {
       delete state.searchTerms[key];
+      delete state.searchResults[key];
+      delete state.searchHighlights[key];
     }
   });
 };
@@ -232,6 +243,27 @@ const renameWeeklyPlan = () => {
   if (!trimmed) return;
   plan.name = trimmed;
   renderPlanOptions();
+  persistPlans();
+};
+
+const cloneWeeklyPlan = () => {
+  const plan = getActivePlan();
+  if (!plan) return;
+  const newPlan = {
+    id: makeWeeklyPlanId(),
+    name: `${plan.name || 'Weekly plan'} (copy)`,
+    recipes: plan.recipes.map((recipe) => ({
+      ...recipe,
+      id: makeWeeklyPlanId(),
+      ingredients: recipe.ingredients.map((entry) => ({ ...entry })),
+    })),
+  };
+  state.plan.plans.push(newPlan);
+  state.plan.activePlanId = newPlan.id;
+  ensureSearchTerms();
+  renderPlanOptions();
+  renderRecipes();
+  renderSummaries();
   persistPlans();
 };
 
@@ -790,7 +822,12 @@ const renderRecipeCard = (recipe, index) => {
         <button type="button" class="icon-btn" aria-label="${recipe.collapsed ? 'Expand recipe' : 'Collapse recipe'}" data-toggle-recipe="${recipe.id}">
           ${recipe.collapsed ? '▸' : '▾'}
         </button>
-        <input type="text" class="recipe-title" data-recipe-title="${recipe.id}" value="${escapeHtml(recipe.title)}" placeholder="Recipe title" ${recipe.collapsed ? 'readonly' : ''}>
+        <div class="recipe-title-wrapper" data-recipe-title-wrapper="${recipe.id}">
+          <button type="button" class="recipe-title-display" data-edit-title="${recipe.id}">
+            ${escapeHtml(recipe.title)}
+          </button>
+          <input type="text" class="recipe-title-input" data-recipe-title-input="${recipe.id}" value="${escapeHtml(recipe.title)}" />
+        </div>
         ${
           recipe.collapsed
             ? `<div class="recipe-collapsed-summary">${getRecipeCollapsedSummary(
@@ -850,6 +887,28 @@ const renderRecipes = () => {
   renderShoppingList();
 };
 
+const updateSearchHighlight = (recipeId) => {
+  const container = document.querySelector(
+    `[data-recipe-results="${recipeId}"]`
+  );
+  if (!container) return;
+  const rows = container.querySelectorAll('.search-result');
+  const activeIndex = state.searchHighlights[recipeId] ?? -1;
+  rows.forEach((row, index) => {
+    row.classList.toggle('active', index === activeIndex);
+  });
+};
+
+const focusRecipeSearch = (recipeId) => {
+  const input = document.querySelector(`[data-recipe-search="${recipeId}"]`);
+  if (input) {
+    requestAnimationFrame(() => {
+      input.focus();
+      input.select();
+    });
+  }
+};
+
 const renderRecipeSearchResults = (recipeId) => {
   const container = document.querySelector(
     `[data-recipe-results="${recipeId}"]`
@@ -858,43 +917,52 @@ const renderRecipeSearchResults = (recipeId) => {
   const term = (state.searchTerms[recipeId] || '').trim().toLowerCase();
   if (!term) {
     container.innerHTML = '';
+    state.searchResults[recipeId] = [];
+    state.searchHighlights[recipeId] = -1;
     return;
   }
   const recipe = getRecipeById(recipeId);
   if (!recipe) return;
   const existingIds = new Set(recipe.ingredients.map((item) => item.id));
   const matches = state.foods
-    .filter(
-      (food) =>
-        !existingIds.has(food.id) &&
-        food.name.toLowerCase().includes(term)
-    )
-    .slice(0, 5);
+    .filter((food) => food.name.toLowerCase().includes(term))
+    .slice(0, 5)
+    .map((food) => ({
+      food,
+      disabled: existingIds.has(food.id),
+    }));
+  state.searchResults[recipeId] = matches;
   if (!matches.length) {
     container.innerHTML = '<p class="helper-text">No foods found.</p>';
+    state.searchHighlights[recipeId] = -1;
     return;
   }
   container.innerHTML = matches
     .map(
-      (food) => `
-      <div class="search-result">
+      ({ food, disabled }, index) => `
+      <div class="search-result ${disabled ? 'disabled' : ''}" data-search-index="${index}">
         <div class="info">
           <span class="name">${food.name}</span>
           <span class="category">${formatNumber(food.calories)} kcal • ${formatNumber(
         food.protein_g
       )} g protein</span>
         </div>
-        <button type="button" class="compare-btn" data-add-ingredient="${recipeId}" data-food-id="${food.id}">Add</button>
+        <button type="button" class="compare-btn" data-add-ingredient="${recipeId}" data-food-id="${food.id}" ${
+        disabled ? 'disabled' : ''
+      }>${disabled ? 'Added' : 'Add'}</button>
       </div>
     `
     )
     .join('');
+  updateSearchHighlight(recipeId);
 };
 
 const addRecipe = () => {
   const recipe = createRecipe();
   getActiveRecipes().push(recipe);
   state.searchTerms[recipe.id] = '';
+  state.searchHighlights[recipe.id] = -1;
+  state.searchResults[recipe.id] = [];
   persistPlans();
   renderRecipes();
   renderSummaries();
@@ -906,10 +974,14 @@ const removeRecipe = (recipeId) => {
   if (index === -1) return;
   recipes.splice(index, 1);
   delete state.searchTerms[recipeId];
+  delete state.searchResults[recipeId];
+  delete state.searchHighlights[recipeId];
   if (!recipes.length) {
     const fallback = createRecipe();
     recipes.push(fallback);
     state.searchTerms[fallback.id] = '';
+    state.searchResults[fallback.id] = [];
+    state.searchHighlights[fallback.id] = -1;
   }
   pruneSearchTerms();
   persistPlans();
@@ -930,9 +1002,12 @@ const addIngredientToRecipe = (recipeId, foodId) => {
     unitGrams: serving.unitGrams,
   });
   state.searchTerms[recipeId] = '';
+  state.searchHighlights[recipeId] = -1;
+  state.searchResults[recipeId] = [];
   persistPlans();
   renderRecipes();
   renderSummaries();
+  focusRecipeSearch(recipeId);
 };
 
 const removeIngredientFromRecipe = (recipeId, foodId) => {
@@ -976,6 +1051,41 @@ const toggleRecipeCollapse = (recipeId) => {
   recipe.collapsed = !recipe.collapsed;
   persistPlans();
   renderRecipes();
+};
+
+const handleRecipeSearchKeyDown = (event) => {
+  const input = event.target;
+  const recipeId = input.dataset.recipeSearch;
+  const results = state.searchResults[recipeId] || [];
+  if (!results.length) return;
+  let index = state.searchHighlights[recipeId] ?? -1;
+  if (event.key === 'ArrowDown') {
+    event.preventDefault();
+    index = Math.min(index + 1, results.length - 1);
+    state.searchHighlights[recipeId] = index;
+    updateSearchHighlight(recipeId);
+    return;
+  }
+  if (event.key === 'ArrowUp') {
+    event.preventDefault();
+    index = Math.max(index - 1, -1);
+    state.searchHighlights[recipeId] = index;
+    updateSearchHighlight(recipeId);
+    return;
+  }
+  if (event.key === 'Enter' && index >= 0) {
+    event.preventDefault();
+    const result = results[index];
+    if (result && !result.disabled) {
+      addIngredientToRecipe(recipeId, result.food.id);
+      state.searchHighlights[recipeId] = -1;
+    }
+    return;
+  }
+  if (event.key === 'Escape') {
+    state.searchHighlights[recipeId] = -1;
+    updateSearchHighlight(recipeId);
+  }
 };
 
 const updateRecipeTitle = (recipeId, title) => {
@@ -1071,6 +1181,7 @@ const attachEvents = () => {
     selectPlan(event.target.value);
   });
   elements.addPlanBtn?.addEventListener('click', addWeeklyPlan);
+  elements.clonePlanBtn?.addEventListener('click', cloneWeeklyPlan);
   elements.renamePlanBtn?.addEventListener('click', renameWeeklyPlan);
   elements.deletePlanBtn?.addEventListener('click', deleteWeeklyPlan);
   elements.printShoppingButton?.addEventListener(
@@ -1080,21 +1191,7 @@ const attachEvents = () => {
 
   elements.addRecipeButton?.addEventListener('click', addRecipe);
 
-  elements.recipeList?.addEventListener('input', (event) => {
-    const target = event.target;
-    if (target.matches('[data-recipe-title]')) {
-      updateRecipeTitle(target.dataset.recipeTitle, target.value.trim());
-    } else if (target.matches('[data-recipe-description]')) {
-      updateRecipeDescription(target.dataset.recipeDescription, target.value);
-    } else if (target.matches('[data-recipe-search]')) {
-      const recipeId = target.dataset.recipeSearch;
-      state.searchTerms[recipeId] = target.value;
-      renderSearchResults(recipeId);
-    }
-  });
-
-  elements.recipeList?.addEventListener('change', (event) => {
-    const target = event.target;
+  const handleInputChange = (target) => {
     if (target.matches('.meal-qty-input')) {
       const recipeId = target.dataset.quantityInput;
       const foodId = target.dataset.foodId;
@@ -1110,18 +1207,68 @@ const attachEvents = () => {
           ? Number(target.selectedOptions[0].dataset.grams)
           : undefined;
       handleUnitChange(recipeId, foodId, target.value, grams);
+      return;
+    }
+    if (target.matches('[data-recipe-title-input]')) {
+      const { recipeTitleInput } = target.dataset;
+      updateRecipeTitle(recipeTitleInput, target.value.trim());
+      return;
+    }
+    if (target.matches('[data-recipe-description]')) {
+      updateRecipeDescription(target.dataset.recipeDescription, target.value);
+      return;
+    }
+    if (target.matches('[data-recipe-search]')) {
+      const recipeId = target.dataset.recipeSearch;
+      state.searchTerms[recipeId] = target.value;
+      state.searchHighlights[recipeId] = -1;
+      renderSearchResults(recipeId);
+      return;
+    }
+  };
+
+  ['input', 'change'].forEach((type) => {
+    elements.recipeList?.addEventListener(type, (event) => {
+      handleInputChange(event.target);
+    });
+  });
+
+  elements.recipeList?.addEventListener('keydown', (event) => {
+    const target = event.target;
+    if (target.matches('[data-recipe-title-input]') && event.key === 'Enter') {
+      event.preventDefault();
+      const { recipeTitleInput } = target.dataset;
+      updateRecipeTitle(recipeTitleInput, target.value.trim());
+      toggleTitleEditing(recipeTitleInput, false);
+    } else if (target.matches('[data-recipe-search]')) {
+      handleRecipeSearchKeyDown(event);
     }
   });
 
+  elements.recipeList?.addEventListener(
+    'mousedown',
+    (event) => {
+      const addBtn = event.target.closest('[data-add-ingredient]');
+      if (addBtn) {
+        event.preventDefault();
+        addIngredientToRecipe(
+          addBtn.dataset.addIngredient,
+          addBtn.dataset.foodId
+        );
+      }
+    },
+    true
+  );
+
   elements.recipeList?.addEventListener('click', (event) => {
-    const addBtn = event.target.closest('[data-add-ingredient]');
-    if (addBtn) {
-      addIngredientToRecipe(addBtn.dataset.addIngredient, addBtn.dataset.foodId);
-      return;
-    }
     const toggleBtn = event.target.closest('[data-toggle-recipe]');
     if (toggleBtn) {
       toggleRecipeCollapse(toggleBtn.dataset.toggleRecipe);
+      return;
+    }
+    const titleBtn = event.target.closest('[data-edit-title]');
+    if (titleBtn) {
+      toggleTitleEditing(titleBtn.dataset.editTitle, true);
       return;
     }
     const notesBtn = event.target.closest('[data-edit-notes]');
@@ -1278,3 +1425,38 @@ bootstrap();
       elements.shoppingToggleLabel.textContent = collapsed ? '▸' : '▾';
     }
   });
+const toggleTitleEditing = (recipeId, force) => {
+  const wrapper = document.querySelector(
+    `[data-recipe-title-wrapper="${recipeId}"]`
+  );
+  if (!wrapper) return;
+  const card = wrapper.closest('.recipe-card');
+  if (card?.classList.contains('collapsed')) return;
+  const displayButton = wrapper.querySelector('[data-edit-title]');
+  const input = wrapper.querySelector('[data-recipe-title-input]');
+  if (force) {
+    document
+      .querySelectorAll('.recipe-title-wrapper.editing')
+      .forEach((el) => el.classList.remove('editing'));
+    wrapper.classList.add('editing');
+    if (input) {
+      input.focus();
+      input.select();
+      const handleBlur = () => {
+        const value = input.value.trim();
+        if (value) {
+          updateRecipeTitle(recipeId, value);
+        }
+        toggleTitleEditing(recipeId, false);
+        input.removeEventListener('blur', handleBlur);
+      };
+      input.addEventListener('blur', handleBlur);
+    }
+  } else {
+    if (input && displayButton) {
+      const nextValue = input.value.trim() || 'New recipe';
+      displayButton.textContent = nextValue;
+    }
+    wrapper.classList.remove('editing');
+  }
+};

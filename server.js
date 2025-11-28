@@ -51,6 +51,7 @@ const readStore = () => {
           {
             mealPlans: null,
             weeklyPlans: null,
+            recipesLibrary: [],
           },
           null,
           2
@@ -60,7 +61,7 @@ const readStore = () => {
     const raw = fs.readFileSync(STORE_PATH, 'utf-8');
     return JSON.parse(raw);
   } catch {
-    return { mealPlans: null, weeklyPlans: null };
+    return { mealPlans: null, weeklyPlans: null, recipesLibrary: [] };
   }
 };
 
@@ -124,6 +125,15 @@ const ensureWeeklyPlans = () => {
     !store.weeklyPlans.plans.length
   ) {
     store.weeklyPlans = createDefaultWeeklyPlans();
+    writeStore(store);
+  }
+  return store;
+};
+
+const ensureRecipesLibrary = () => {
+  const store = readStore();
+  if (!Array.isArray(store.recipesLibrary)) {
+    store.recipesLibrary = [];
     writeStore(store);
   }
   return store;
@@ -217,6 +227,32 @@ app.post('/api/weekly-plans', (req, res) => {
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Failed to save weekly plans' });
+  }
+});
+
+app.get('/api/recipes', (_req, res) => {
+  try {
+    const store = ensureRecipesLibrary();
+    res.json(store.recipesLibrary);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Failed to load recipes' });
+  }
+});
+
+app.post('/api/recipes', (req, res) => {
+  try {
+    const { recipes } = req.body || {};
+    if (!Array.isArray(recipes)) {
+      return res.status(400).json({ message: 'Recipes must be an array' });
+    }
+    const store = readStore();
+    store.recipesLibrary = recipes;
+    writeStore(store);
+    res.json({ success: true });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Failed to save recipes' });
   }
 });
 
