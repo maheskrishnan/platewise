@@ -10,30 +10,7 @@
 
 <body>
   <div class="app-shell">
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <p class="eyebrow">Powered by foods.json</p>
-        <h1>Food Explorer</h1>
-        <p class="helper-text">
-          Build repeatable meal plans that use the foods from your library.
-        </p>
-      </div>
-      <nav class="sidebar-menu" aria-label="Primary navigation">
-        <a href="index.html" class="menu-link">
-          <span>Food library</span>
-        </a>
-        <a href="compare.html" class="menu-link">
-          <span>Compare foods</span>
-          <span class="nav-badge hidden" id="compareNavBadge">0</span>
-        </a>
-        <a href="meal.html" class="menu-link active">
-          <span>Meal planner</span>
-        </a>
-        <a href="weekly.html" class="menu-link">
-          <span>Weekly planner</span>
-        </a>
-      </nav>
-    </aside>
+    <app-sidebar page="meal"></app-sidebar>
 
     <main class="content">
       <div class="content-inner">
@@ -42,7 +19,7 @@
           <div>
             <p class="eyebrow">Daily templates</p>
             <h2>Meal planner</h2>
-            <p class="helper-text">Create multiple day plans and reuse them whenever you like.</p>
+            <p class="helper-text">Build repeatable meal plans that use the foods from your library.</p>
           </div>
           <div class="planner-controls">
             <label class="plan-select-label">
@@ -71,6 +48,7 @@
     </main>
   </div>
 
+  <script src="sidebar.js" defer></script>
   <script src="meal.js" defer></script>
 </body>
 

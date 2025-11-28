@@ -1,0 +1,2 @@
+* sugar is missing in the second card in the meal planner and weekly meal planner
+* enable editing recipe name only when double click (it should be label and when double clicked it should become textbox) in weekly meal planner

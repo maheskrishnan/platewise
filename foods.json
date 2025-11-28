@@ -15,12 +15,19 @@
       "vitamins": {
         "vitamin_a_ug": 378,
         "vitamin_c_mg": 51,
+        "vitamin_e_mg": 1.2,
+        "vitamin_k_ug": 9,
+        "vitamin_b6_mg": 0.12,
         "folate_ug": 40
       },
       "minerals": {
         "calcium_mg": 185,
         "iron_mg": 4,
-        "potassium_mg": 337
+        "magnesium_mg": 45,
+        "phosphorus_mg": 110,
+        "potassium_mg": 337,
+        "sodium_mg": 42,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -33,7 +40,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -52,10 +59,19 @@
       "sugar_g": 1.8,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 15
+        "vitamin_a_ug": 20,
+        "vitamin_c_mg": 15,
+        "vitamin_b6_mg": 0.05,
+        "folate_ug": 15
       },
       "minerals": {
-        "potassium_mg": 200
+        "calcium_mg": 26,
+        "iron_mg": 0.4,
+        "magnesium_mg": 16,
+        "phosphorus_mg": 15,
+        "potassium_mg": 200,
+        "sodium_mg": 2,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -68,7 +84,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -88,11 +104,19 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 95,
-        "vitamin_c_mg": 84
+        "vitamin_c_mg": 84,
+        "vitamin_e_mg": 0.1,
+        "vitamin_k_ug": 5,
+        "folate_ug": 72
       },
       "minerals": {
+        "calcium_mg": 19,
+        "iron_mg": 1,
+        "magnesium_mg": 17,
+        "phosphorus_mg": 36,
         "potassium_mg": 296,
-        "iron_mg": 1
+        "sodium_mg": 5,
+        "zinc_mg": 0.8
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -105,7 +129,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -124,13 +148,21 @@
       "sugar_g": 1.5,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 36,
         "vitamin_c_mg": 23,
+        "vitamin_e_mg": 0.4,
         "vitamin_k_ug": 31,
+        "vitamin_b6_mg": 0.2,
         "folate_ug": 60
       },
       "minerals": {
         "calcium_mg": 82,
-        "magnesium_mg": 57
+        "iron_mg": 0.6,
+        "magnesium_mg": 57,
+        "phosphorus_mg": 61,
+        "potassium_mg": 299,
+        "sodium_mg": 7,
+        "zinc_mg": 0.6
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -143,7 +175,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -162,11 +194,21 @@
       "sugar_g": 3.5,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 3,
         "vitamin_c_mg": 2,
-        "vitamin_k_ug": 3.5
+        "vitamin_e_mg": 0.3,
+        "vitamin_k_ug": 3.5,
+        "vitamin_b6_mg": 0.08,
+        "folate_ug": 22
       },
       "minerals": {
-        "potassium_mg": 229
+        "calcium_mg": 9,
+        "iron_mg": 0.2,
+        "magnesium_mg": 14,
+        "phosphorus_mg": 24,
+        "potassium_mg": 229,
+        "sodium_mg": 2,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -179,7 +221,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -198,12 +240,19 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 40,
         "vitamin_c_mg": 35,
+        "vitamin_k_ug": 12,
         "folate_ug": 60
       },
       "minerals": {
         "calcium_mg": 130,
-        "iron_mg": 1.1
+        "iron_mg": 1.1,
+        "magnesium_mg": 35,
+        "phosphorus_mg": 57,
+        "potassium_mg": 320,
+        "sodium_mg": 4,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -216,7 +265,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -235,12 +284,19 @@
       "sugar_g": 1.8,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 35,
         "vitamin_c_mg": 35,
+        "vitamin_k_ug": 14,
         "folate_ug": 70
       },
       "minerals": {
         "calcium_mg": 50,
-        "iron_mg": 1.5
+        "iron_mg": 1.5,
+        "magnesium_mg": 40,
+        "phosphorus_mg": 62,
+        "potassium_mg": 340,
+        "sodium_mg": 5,
+        "zinc_mg": 0.6
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -253,7 +309,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -272,10 +328,20 @@
       "sugar_g": 0.5,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 17
+        "vitamin_a_ug": 7,
+        "vitamin_c_mg": 17,
+        "vitamin_e_mg": 0.4,
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 23
       },
       "minerals": {
-        "potassium_mg": 816
+        "calcium_mg": 17,
+        "iron_mg": 0.5,
+        "magnesium_mg": 21,
+        "phosphorus_mg": 55,
+        "potassium_mg": 816,
+        "sodium_mg": 9,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -288,7 +354,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -307,10 +373,20 @@
       "sugar_g": 0.4,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_e_mg": 2.4
+        "vitamin_a_ug": 5,
+        "vitamin_c_mg": 4.5,
+        "vitamin_e_mg": 2.4,
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 22
       },
       "minerals": {
+        "calcium_mg": 18,
+        "iron_mg": 0.6,
+        "magnesium_mg": 33,
+        "phosphorus_mg": 84,
         "potassium_mg": 591,
+        "sodium_mg": 11,
+        "zinc_mg": 0.2,
         "manganese_mg": 0.4
       },
       "cholesterol_mg": 0,
@@ -324,7 +400,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -343,10 +419,19 @@
       "sugar_g": 12.2,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 8.7
+        "vitamin_a_ug": 56,
+        "vitamin_c_mg": 8.7,
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 20
       },
       "minerals": {
-        "potassium_mg": 358
+        "calcium_mg": 5,
+        "iron_mg": 0.3,
+        "magnesium_mg": 27,
+        "phosphorus_mg": 22,
+        "potassium_mg": 358,
+        "sodium_mg": 1,
+        "zinc_mg": 0.1
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -359,7 +444,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -379,10 +464,20 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 426,
-        "vitamin_c_mg": 9
+        "vitamin_c_mg": 9,
+        "vitamin_e_mg": 1.1,
+        "vitamin_k_ug": 1.1,
+        "vitamin_b6_mg": 0.06,
+        "folate_ug": 16
       },
       "minerals": {
-        "potassium_mg": 340
+        "calcium_mg": 21,
+        "iron_mg": 0.8,
+        "magnesium_mg": 12,
+        "phosphorus_mg": 44,
+        "potassium_mg": 340,
+        "sodium_mg": 1,
+        "zinc_mg": 0.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -395,7 +490,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -414,10 +509,18 @@
       "sugar_g": 2,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 13
+        "vitamin_c_mg": 13,
+        "vitamin_b6_mg": 0.04,
+        "folate_ug": 6
       },
       "minerals": {
-        "potassium_mg": 150
+        "calcium_mg": 30,
+        "iron_mg": 0.4,
+        "magnesium_mg": 10,
+        "phosphorus_mg": 19,
+        "potassium_mg": 150,
+        "sodium_mg": 111,
+        "zinc_mg": 0.7
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -430,7 +533,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -449,10 +552,18 @@
       "sugar_g": 2,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 12
+        "vitamin_a_ug": 8,
+        "vitamin_c_mg": 12,
+        "folate_ug": 7
       },
       "minerals": {
-        "potassium_mg": 139
+        "calcium_mg": 18,
+        "iron_mg": 0.4,
+        "magnesium_mg": 14,
+        "phosphorus_mg": 32,
+        "potassium_mg": 139,
+        "sodium_mg": 2,
+        "zinc_mg": 0.7
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -465,7 +576,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -484,10 +595,18 @@
       "sugar_g": 2,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 10
+        "vitamin_c_mg": 10,
+        "vitamin_b6_mg": 0.04,
+        "folate_ug": 6
       },
       "minerals": {
-        "potassium_mg": 150
+        "calcium_mg": 26,
+        "iron_mg": 0.2,
+        "magnesium_mg": 11,
+        "phosphorus_mg": 13,
+        "potassium_mg": 150,
+        "sodium_mg": 2,
+        "zinc_mg": 0.7
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -500,7 +619,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -519,10 +638,18 @@
       "sugar_g": 1.4,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 15
+        "vitamin_a_ug": 27,
+        "vitamin_c_mg": 15,
+        "folate_ug": 10
       },
       "minerals": {
-        "iron_mg": 1.4
+        "calcium_mg": 40,
+        "iron_mg": 1.4,
+        "magnesium_mg": 16,
+        "phosphorus_mg": 36,
+        "potassium_mg": 115,
+        "sodium_mg": 1,
+        "zinc_mg": 0.4
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -535,7 +662,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -554,11 +681,20 @@
       "sugar_g": 3.3,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 38,
         "vitamin_c_mg": 12,
+        "vitamin_k_ug": 14,
+        "vitamin_b6_mg": 0.1,
         "folate_ug": 33
       },
       "minerals": {
-        "potassium_mg": 211
+        "calcium_mg": 37,
+        "iron_mg": 1,
+        "magnesium_mg": 25,
+        "phosphorus_mg": 38,
+        "potassium_mg": 211,
+        "sodium_mg": 6,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -571,7 +707,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -591,10 +727,20 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 835,
-        "vitamin_k_ug": 13
+        "vitamin_c_mg": 5.9,
+        "vitamin_e_mg": 0.7,
+        "vitamin_k_ug": 13,
+        "vitamin_b6_mg": 0.1,
+        "folate_ug": 19
       },
       "minerals": {
-        "potassium_mg": 320
+        "calcium_mg": 33,
+        "iron_mg": 0.3,
+        "magnesium_mg": 12,
+        "phosphorus_mg": 35,
+        "potassium_mg": 320,
+        "sodium_mg": 69,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -607,7 +753,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -626,10 +772,19 @@
       "sugar_g": 7,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 2,
+        "vitamin_c_mg": 4.9,
+        "vitamin_b6_mg": 0.07,
         "folate_ug": 109
       },
       "minerals": {
+        "calcium_mg": 16,
+        "iron_mg": 0.8,
+        "magnesium_mg": 23,
+        "phosphorus_mg": 40,
         "potassium_mg": 325,
+        "sodium_mg": 78,
+        "zinc_mg": 0.4,
         "manganese_mg": 0.3
       },
       "cholesterol_mg": 0,
@@ -643,7 +798,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -662,11 +817,21 @@
       "sugar_g": 3.2,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 5,
         "vitamin_c_mg": 36,
-        "vitamin_k_ug": 76
+        "vitamin_e_mg": 0.2,
+        "vitamin_k_ug": 76,
+        "vitamin_b6_mg": 0.1,
+        "folate_ug": 43
       },
       "minerals": {
-        "calcium_mg": 40
+        "calcium_mg": 40,
+        "iron_mg": 0.5,
+        "magnesium_mg": 12,
+        "phosphorus_mg": 26,
+        "potassium_mg": 170,
+        "sodium_mg": 18,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -679,7 +844,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -699,10 +864,19 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 42,
-        "vitamin_c_mg": 14
+        "vitamin_c_mg": 14,
+        "vitamin_e_mg": 0.5,
+        "vitamin_k_ug": 7.9,
+        "folate_ug": 15
       },
       "minerals": {
-        "potassium_mg": 237
+        "calcium_mg": 10,
+        "iron_mg": 0.3,
+        "magnesium_mg": 11,
+        "phosphorus_mg": 24,
+        "potassium_mg": 237,
+        "sodium_mg": 5,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -715,7 +889,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -735,10 +909,17 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_c_mg": 7.4,
+        "vitamin_b6_mg": 0.1,
         "folate_ug": 19
       },
       "minerals": {
-        "potassium_mg": 146
+        "calcium_mg": 23,
+        "iron_mg": 0.2,
+        "magnesium_mg": 10,
+        "phosphorus_mg": 29,
+        "potassium_mg": 146,
+        "sodium_mg": 4,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -751,7 +932,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -771,10 +952,20 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 48,
-        "vitamin_c_mg": 143
+        "vitamin_c_mg": 143,
+        "vitamin_e_mg": 0.7,
+        "vitamin_k_ug": 14,
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 23
       },
       "minerals": {
-        "potassium_mg": 322
+        "calcium_mg": 14,
+        "iron_mg": 1,
+        "magnesium_mg": 23,
+        "phosphorus_mg": 43,
+        "potassium_mg": 322,
+        "sodium_mg": 7,
+        "zinc_mg": 0.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -787,7 +978,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -807,11 +998,19 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 740,
-        "vitamin_c_mg": 4
+        "vitamin_c_mg": 4,
+        "vitamin_e_mg": 2.5,
+        "vitamin_k_ug": 93,
+        "folate_ug": 23
       },
       "minerals": {
         "calcium_mg": 830,
-        "iron_mg": 17
+        "iron_mg": 17,
+        "magnesium_mg": 44,
+        "phosphorus_mg": 57,
+        "potassium_mg": 559,
+        "sodium_mg": 30,
+        "zinc_mg": 1.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -824,7 +1023,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -845,11 +1044,18 @@
       "vitamins": {
         "vitamin_a_ug": 337,
         "vitamin_c_mg": 27,
-        "vitamin_k_ug": 310
+        "vitamin_e_mg": 2.5,
+        "vitamin_k_ug": 310,
+        "folate_ug": 62
       },
       "minerals": {
         "calcium_mg": 67,
-        "iron_mg": 1.8
+        "iron_mg": 1.8,
+        "magnesium_mg": 26,
+        "phosphorus_mg": 48,
+        "potassium_mg": 521,
+        "sodium_mg": 46,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -862,7 +1068,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -883,13 +1089,19 @@
       "vitamins": {
         "vitamin_a_ug": 469,
         "vitamin_c_mg": 28,
+        "vitamin_e_mg": 2,
         "vitamin_k_ug": 483,
+        "vitamin_b6_mg": 0.2,
         "folate_ug": 194
       },
       "minerals": {
         "calcium_mg": 99,
         "iron_mg": 2.7,
-        "magnesium_mg": 79
+        "magnesium_mg": 79,
+        "phosphorus_mg": 49,
+        "potassium_mg": 558,
+        "sodium_mg": 79,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -906,7 +1118,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -926,11 +1138,19 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 292,
-        "vitamin_c_mg": 43
+        "vitamin_c_mg": 43,
+        "vitamin_e_mg": 0.2,
+        "vitamin_k_ug": 1140,
+        "folate_ug": 85
       },
       "minerals": {
         "calcium_mg": 215,
-        "iron_mg": 2.3
+        "iron_mg": 2.3,
+        "magnesium_mg": 55,
+        "phosphorus_mg": 50,
+        "potassium_mg": 611,
+        "sodium_mg": 20,
+        "zinc_mg": 0.9
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -947,7 +1167,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -967,11 +1187,19 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 378,
-        "vitamin_c_mg": 51
+        "vitamin_c_mg": 51,
+        "vitamin_e_mg": 1.2,
+        "vitamin_k_ug": 9,
+        "folate_ug": 40
       },
       "minerals": {
         "calcium_mg": 185,
-        "iron_mg": 4
+        "iron_mg": 4,
+        "magnesium_mg": 45,
+        "phosphorus_mg": 110,
+        "potassium_mg": 337,
+        "sodium_mg": 42,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -988,7 +1216,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1007,10 +1235,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 10
+        "vitamin_c_mg": 10,
+        "vitamin_b6_mg": 0.25,
+        "folate_ug": 14
       },
       "minerals": {
-        "potassium_mg": 550
+        "calcium_mg": 20,
+        "iron_mg": 0.3,
+        "magnesium_mg": 37,
+        "phosphorus_mg": 28,
+        "potassium_mg": 550,
+        "sodium_mg": 3,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1023,7 +1259,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1042,11 +1278,19 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 10
+        "vitamin_a_ug": 64,
+        "vitamin_c_mg": 10,
+        "vitamin_e_mg": 1.7,
+        "folate_ug": 34
       },
       "minerals": {
         "calcium_mg": 56,
-        "iron_mg": 56
+        "iron_mg": 56,
+        "magnesium_mg": 48,
+        "phosphorus_mg": 73,
+        "potassium_mg": 553,
+        "sodium_mg": 1,
+        "zinc_mg": 0.6
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1059,7 +1303,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1079,10 +1323,20 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 54,
-        "vitamin_c_mg": 36
+        "vitamin_c_mg": 36,
+        "vitamin_e_mg": 0.9,
+        "vitamin_k_ug": 4.2,
+        "vitamin_b6_mg": 0.1,
+        "folate_ug": 43
       },
       "minerals": {
-        "potassium_mg": 168
+        "calcium_mg": 11,
+        "iron_mg": 0.2,
+        "magnesium_mg": 10,
+        "phosphorus_mg": 14,
+        "potassium_mg": 168,
+        "sodium_mg": 1,
+        "zinc_mg": 0.1
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1095,7 +1349,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1114,11 +1368,21 @@
       "sugar_g": 38.8,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 3.5
+        "vitamin_a_ug": 3,
+        "vitamin_c_mg": 3.5,
+        "vitamin_e_mg": 0.1,
+        "vitamin_k_ug": 2.8,
+        "vitamin_b6_mg": 0.07,
+        "folate_ug": 14
       },
       "minerals": {
+        "calcium_mg": 74,
+        "iron_mg": 2.8,
+        "magnesium_mg": 92,
+        "phosphorus_mg": 113,
         "potassium_mg": 628,
-        "magnesium_mg": 92
+        "sodium_mg": 28,
+        "zinc_mg": 0.1
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1131,7 +1395,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1149,9 +1413,19 @@
       "fiber_g": 9,
       "sugar_g": 6.2,
       "added_sugar_g": 0,
-      "vitamins": {},
+      "vitamins": {
+        "vitamin_c_mg": 3.3,
+        "vitamin_e_mg": 0.2,
+        "folate_ug": 26
+      },
       "minerals": {
+        "calcium_mg": 14,
+        "iron_mg": 2.4,
+        "magnesium_mg": 32,
+        "phosphorus_mg": 113,
         "potassium_mg": 356,
+        "sodium_mg": 20,
+        "zinc_mg": 1.1,
         "manganese_mg": 1.5
       },
       "cholesterol_mg": 0,
@@ -1165,7 +1439,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1184,10 +1458,18 @@
       "sugar_g": 0.8,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_c_mg": 19
+        "vitamin_c_mg": 19,
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 15
       },
       "minerals": {
-        "potassium_mg": 421
+        "calcium_mg": 12,
+        "iron_mg": 0.8,
+        "magnesium_mg": 23,
+        "phosphorus_mg": 57,
+        "potassium_mg": 421,
+        "sodium_mg": 6,
+        "zinc_mg": 0.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1200,7 +1482,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1220,10 +1502,19 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 709,
-        "vitamin_c_mg": 2.4
+        "vitamin_c_mg": 2.4,
+        "vitamin_e_mg": 0.3,
+        "vitamin_b6_mg": 0.2,
+        "folate_ug": 11
       },
       "minerals": {
-        "potassium_mg": 337
+        "calcium_mg": 30,
+        "iron_mg": 0.6,
+        "magnesium_mg": 25,
+        "phosphorus_mg": 47,
+        "potassium_mg": 337,
+        "sodium_mg": 55,
+        "zinc_mg": 0.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1236,7 +1527,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1255,11 +1546,21 @@
       "sugar_g": 1.9,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 1,
         "vitamin_c_mg": 48,
-        "vitamin_k_ug": 15
+        "vitamin_e_mg": 0.1,
+        "vitamin_k_ug": 15,
+        "vitamin_b6_mg": 0.2,
+        "folate_ug": 57
       },
       "minerals": {
-        "potassium_mg": 299
+        "calcium_mg": 22,
+        "iron_mg": 0.4,
+        "magnesium_mg": 15,
+        "phosphorus_mg": 44,
+        "potassium_mg": 299,
+        "sodium_mg": 30,
+        "zinc_mg": 0.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1272,7 +1573,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1291,11 +1592,20 @@
       "sugar_g": 5.7,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 38,
         "vitamin_c_mg": 40,
-        "vitamin_k_ug": 25
+        "vitamin_k_ug": 25,
+        "vitamin_b6_mg": 0.2,
+        "folate_ug": 65
       },
       "minerals": {
+        "calcium_mg": 25,
         "iron_mg": 1.5,
+        "magnesium_mg": 33,
+        "phosphorus_mg": 108,
+        "potassium_mg": 244,
+        "sodium_mg": 5,
+        "zinc_mg": 1.2,
         "manganese_mg": 0.4
       },
       "cholesterol_mg": 0,
@@ -1309,7 +1619,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1329,10 +1639,20 @@
       "added_sugar_g": 0,
       "vitamins": {
         "vitamin_a_ug": 157,
-        "vitamin_c_mg": 80
+        "vitamin_c_mg": 80,
+        "vitamin_e_mg": 0.4,
+        "vitamin_k_ug": 4.9,
+        "vitamin_b6_mg": 0.2,
+        "folate_ug": 46
       },
       "minerals": {
-        "potassium_mg": 211
+        "calcium_mg": 7,
+        "iron_mg": 0.4,
+        "magnesium_mg": 12,
+        "phosphorus_mg": 26,
+        "potassium_mg": 211,
+        "sodium_mg": 4,
+        "zinc_mg": 0.2
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1345,7 +1665,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1366,12 +1686,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 160
+        "vitamin_b6_mg": 0.2,
+        "folate_ug": 160,
+        "niacin_mg": 1.5
       },
       "minerals": {
+        "calcium_mg": 73,
         "iron_mg": 4.5,
+        "magnesium_mg": 130,
+        "phosphorus_mg": 304,
         "potassium_mg": 950,
-        "magnesium_mg": 130
+        "sodium_mg": 14,
+        "zinc_mg": 2.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1403,11 +1729,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 159
+        "vitamin_b6_mg": 0.4,
+        "folate_ug": 159,
+        "niacin_mg": 2.3
       },
       "minerals": {
+        "calcium_mg": 132,
         "iron_mg": 6.7,
-        "potassium_mg": 1246
+        "magnesium_mg": 189,
+        "phosphorus_mg": 367,
+        "potassium_mg": 1246,
+        "sodium_mg": 15,
+        "zinc_mg": 2.7
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1439,11 +1772,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 216
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 216,
+        "niacin_mg": 1.4
       },
       "minerals": {
         "calcium_mg": 138,
-        "iron_mg": 7.6
+        "iron_mg": 7.6,
+        "magnesium_mg": 267,
+        "phosphorus_mg": 385,
+        "potassium_mg": 983,
+        "sodium_mg": 13,
+        "zinc_mg": 3.4
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1475,11 +1815,19 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 172
+        "vitamin_a_ug": 3,
+        "vitamin_b6_mg": 0.5,
+        "folate_ug": 172,
+        "niacin_mg": 1.5
       },
       "minerals": {
+        "calcium_mg": 57,
         "iron_mg": 5.3,
-        "magnesium_mg": 115
+        "magnesium_mg": 115,
+        "phosphorus_mg": 252,
+        "potassium_mg": 875,
+        "sodium_mg": 24,
+        "zinc_mg": 2.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1511,11 +1859,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 180
+        "vitamin_b6_mg": 0.5,
+        "folate_ug": 180,
+        "niacin_mg": 2.6
       },
       "minerals": {
+        "calcium_mg": 56,
         "iron_mg": 7.5,
-        "potassium_mg": 960
+        "magnesium_mg": 122,
+        "phosphorus_mg": 281,
+        "potassium_mg": 960,
+        "sodium_mg": 6,
+        "zinc_mg": 3.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1546,10 +1901,19 @@
       "fiber_g": 5,
       "sugar_g": 0,
       "added_sugar_g": 0,
-      "vitamins": {},
+      "vitamins": {
+        "vitamin_b6_mg": 0.4,
+        "folate_ug": 45,
+        "niacin_mg": 1.5
+      },
       "minerals": {
+        "calcium_mg": 287,
         "iron_mg": 7,
-        "calcium_mg": 287
+        "magnesium_mg": 153,
+        "phosphorus_mg": 311,
+        "potassium_mg": 1033,
+        "sodium_mg": 11,
+        "zinc_mg": 2.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1581,11 +1945,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 160
+        "vitamin_b6_mg": 0.4,
+        "folate_ug": 160,
+        "niacin_mg": 2.3
       },
       "minerals": {
+        "calcium_mg": 132,
         "iron_mg": 6.7,
-        "potassium_mg": 1246
+        "magnesium_mg": 189,
+        "phosphorus_mg": 367,
+        "potassium_mg": 1246,
+        "sodium_mg": 15,
+        "zinc_mg": 2.7
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1617,11 +1988,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 216
+        "vitamin_b6_mg": 0.3,
+        "folate_ug": 216,
+        "niacin_mg": 1.4
       },
       "minerals": {
         "calcium_mg": 138,
-        "iron_mg": 7.6
+        "iron_mg": 7.6,
+        "magnesium_mg": 267,
+        "phosphorus_mg": 385,
+        "potassium_mg": 983,
+        "sodium_mg": 13,
+        "zinc_mg": 3.4
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1652,10 +2030,19 @@
       "fiber_g": 12,
       "sugar_g": 0,
       "added_sugar_g": 0,
-      "vitamins": {},
+      "vitamins": {
+        "vitamin_b6_mg": 0.5,
+        "folate_ug": 172,
+        "niacin_mg": 1.5
+      },
       "minerals": {
+        "calcium_mg": 90,
         "iron_mg": 5,
-        "calcium_mg": 90
+        "magnesium_mg": 115,
+        "phosphorus_mg": 252,
+        "potassium_mg": 875,
+        "sodium_mg": 24,
+        "zinc_mg": 2.5
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1687,11 +2074,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "folate_ug": 130
+        "vitamin_b6_mg": 0.4,
+        "folate_ug": 130,
+        "niacin_mg": 2.1
       },
       "minerals": {
+        "calcium_mg": 143,
         "iron_mg": 6.7,
-        "potassium_mg": 1400
+        "magnesium_mg": 138,
+        "phosphorus_mg": 406,
+        "potassium_mg": 1400,
+        "sodium_mg": 12,
+        "zinc_mg": 2.8
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1724,9 +2118,18 @@
       "fiber_g": 1.3,
       "sugar_g": 0.1,
       "added_sugar_g": 0,
-      "vitamins": {},
+      "vitamins": {
+        "folate_ug": 8,
+        "niacin_mg": 1.6
+      },
       "minerals": {
+        "calcium_mg": 28,
         "iron_mg": 0.8,
+        "magnesium_mg": 25,
+        "phosphorus_mg": 115,
+        "potassium_mg": 115,
+        "sodium_mg": 5,
+        "zinc_mg": 1.1,
         "manganese_mg": 1.1
       },
       "cholesterol_mg": 0,
@@ -1740,7 +2143,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1760,11 +2163,19 @@
       "sugar_g": 0.9,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_b6_mg": 0.15
+        "vitamin_b6_mg": 0.15,
+        "folate_ug": 20,
+        "niacin_mg": 5.1
       },
       "minerals": {
-        "magnesium_mg": 39,
-        "manganese_mg": 1.1
+        "calcium_mg": 23,
+        "iron_mg": 1.5,
+        "magnesium_mg": 143,
+        "phosphorus_mg": 333,
+        "potassium_mg": 223,
+        "sodium_mg": 7,
+        "zinc_mg": 2,
+        "manganese_mg": 3.7
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1777,7 +2188,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1798,13 +2209,20 @@
       "sugar_g": 0.99,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_b6_mg": 0.12
+        "vitamin_e_mg": 0.7,
+        "vitamin_b6_mg": 0.12,
+        "folate_ug": 56,
+        "niacin_mg": 1
       },
       "minerals": {
+        "calcium_mg": 54,
         "iron_mg": 4.7,
         "magnesium_mg": 177,
         "phosphorus_mg": 523,
-        "zinc_mg": 4
+        "potassium_mg": 429,
+        "sodium_mg": 2,
+        "zinc_mg": 4,
+        "manganese_mg": 4.9
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1821,7 +2239,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1840,14 +2258,20 @@
       "sugar_g": 0.4,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_e_mg": 1.1,
         "niacin_mg": 5.7,
-        "vitamin_b6_mg": 0.34
+        "vitamin_b6_mg": 0.34,
+        "folate_ug": 44
       },
       "minerals": {
+        "calcium_mg": 34,
         "iron_mg": 3.6,
         "magnesium_mg": 137,
         "phosphorus_mg": 357,
-        "zinc_mg": 2.6
+        "potassium_mg": 363,
+        "sodium_mg": 2,
+        "zinc_mg": 2.6,
+        "manganese_mg": 3.8
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -1864,7 +2288,7 @@
           "grams": 100
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -1890,7 +2314,9 @@
         "vitamin_e_mg": 14,
         "vitamin_k_ug": 60
       },
-      "minerals": {},
+      "minerals": {
+        "sodium_mg": 2
+      },
       "cholesterol_mg": 0,
       "suggested_units": [
         {
@@ -1921,7 +2347,9 @@
       "vitamins": {
         "vitamin_e_mg": 20
       },
-      "minerals": {},
+      "minerals": {
+        "sodium_mg": 0
+      },
       "cholesterol_mg": 0,
       "suggested_units": [
         {
@@ -1951,7 +2379,9 @@
       "vitamins": {
         "vitamin_e_mg": 15
       },
-      "minerals": {},
+      "minerals": {
+        "sodium_mg": 0
+      },
       "cholesterol_mg": 0,
       "suggested_units": [
         {
@@ -1982,7 +2412,9 @@
         "vitamin_a_ug": 840,
         "vitamin_e_mg": 2.8
       },
-      "minerals": {},
+      "minerals": {
+        "sodium_mg": 2
+      },
       "cholesterol_mg": 256,
       "suggested_units": [
         {
@@ -2013,12 +2445,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_b12_ug": 0.3,
         "niacin_mg": 14,
         "vitamin_b6_mg": 0.7
       },
       "minerals": {
+        "iron_mg": 0.5,
+        "magnesium_mg": 29,
         "phosphorus_mg": 220,
-        "potassium_mg": 300
+        "potassium_mg": 300,
+        "sodium_mg": 63,
+        "zinc_mg": 0.9,
+        "selenium_ug": 27
       },
       "cholesterol_mg": 85,
       "suggested_units": [
@@ -2031,7 +2469,7 @@
           "grams": 85
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -2052,12 +2490,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_b12_ug": 0.4,
         "niacin_mg": 6,
         "vitamin_b6_mg": 0.4
       },
       "minerals": {
+        "iron_mg": 0.9,
+        "magnesium_mg": 23,
         "phosphorus_mg": 200,
-        "zinc_mg": 2
+        "potassium_mg": 240,
+        "sodium_mg": 88,
+        "zinc_mg": 2,
+        "selenium_ug": 20
       },
       "cholesterol_mg": 95,
       "suggested_units": [
@@ -2070,7 +2514,7 @@
           "grams": 85
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -2091,12 +2535,20 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 12,
         "vitamin_d_ug": 16,
-        "vitamin_b12_ug": 4.9
+        "vitamin_b12_ug": 4.9,
+        "niacin_mg": 8.7
       },
       "minerals": {
-        "selenium_ug": 47,
-        "potassium_mg": 450
+        "calcium_mg": 9,
+        "iron_mg": 0.3,
+        "magnesium_mg": 27,
+        "phosphorus_mg": 200,
+        "potassium_mg": 450,
+        "sodium_mg": 44,
+        "zinc_mg": 0.4,
+        "selenium_ug": 47
       },
       "cholesterol_mg": 55,
       "suggested_units": [
@@ -2109,7 +2561,7 @@
           "grams": 85
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -2129,12 +2581,21 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_b12_ug": 1.7
+        "vitamin_a_ug": 60,
+        "vitamin_e_mg": 1.1,
+        "vitamin_b12_ug": 1.7,
+        "niacin_mg": 2.6
       },
       "minerals": {
+        "calcium_mg": 70,
+        "iron_mg": 0.5,
+        "magnesium_mg": 37,
+        "phosphorus_mg": 237,
+        "potassium_mg": 264,
+        "sodium_mg": 119,
+        "zinc_mg": 1.6,
         "selenium_ug": 48,
-        "iodine_ug": 40,
-        "zinc_mg": 1.6
+        "iodine_ug": 40
       },
       "cholesterol_mg": 189,
       "suggested_units": [
@@ -2147,7 +2608,7 @@
           "grams": 85
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -2168,11 +2629,17 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_b12_ug": 2.6,
         "niacin_mg": 6.2,
-        "vitamin_b12_ug": 2.6
+        "vitamin_b6_mg": 0.4
       },
       "minerals": {
+        "calcium_mg": 10,
         "iron_mg": 1.9,
+        "magnesium_mg": 24,
+        "phosphorus_mg": 188,
+        "potassium_mg": 310,
+        "sodium_mg": 72,
         "zinc_mg": 4.2,
         "selenium_ug": 26
       },
@@ -2187,7 +2654,7 @@
           "grams": 85
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ],
@@ -2209,14 +2676,21 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_a_ug": 14,
         "vitamin_d_ug": 3.1,
         "vitamin_b12_ug": 1.6,
-        "niacin_mg": 3.9
+        "niacin_mg": 3.9,
+        "vitamin_b6_mg": 0.2
       },
       "minerals": {
-        "selenium_ug": 41.8,
+        "calcium_mg": 14,
+        "iron_mg": 0.7,
+        "magnesium_mg": 34,
         "phosphorus_mg": 170,
-        "potassium_mg": 302
+        "potassium_mg": 302,
+        "sodium_mg": 52,
+        "zinc_mg": 0.4,
+        "selenium_ug": 41.8
       },
       "cholesterol_mg": 50,
       "suggested_units": [
@@ -2229,7 +2703,7 @@
           "grams": 85
         },
         {
-          "unit": "1 lb",
+          "unit": "pound",
           "grams": 454
         }
       ]
@@ -2255,7 +2729,10 @@
       },
       "minerals": {
         "calcium_mg": 122,
-        "potassium_mg": 150
+        "phosphorus_mg": 101,
+        "potassium_mg": 150,
+        "sodium_mg": 42,
+        "zinc_mg": 0.4
       },
       "cholesterol_mg": 2,
       "suggested_units": [
@@ -2293,7 +2770,10 @@
       },
       "minerals": {
         "calcium_mg": 120,
-        "potassium_mg": 150
+        "phosphorus_mg": 97,
+        "potassium_mg": 150,
+        "sodium_mg": 44,
+        "zinc_mg": 0.4
       },
       "cholesterol_mg": 5,
       "suggested_units": [
@@ -2331,7 +2811,10 @@
       },
       "minerals": {
         "calcium_mg": 117,
-        "potassium_mg": 146
+        "phosphorus_mg": 94,
+        "potassium_mg": 146,
+        "sodium_mg": 44,
+        "zinc_mg": 0.4
       },
       "cholesterol_mg": 8,
       "suggested_units": [
@@ -2369,7 +2852,10 @@
       },
       "minerals": {
         "calcium_mg": 113,
-        "potassium_mg": 143
+        "phosphorus_mg": 84,
+        "potassium_mg": 143,
+        "sodium_mg": 43,
+        "zinc_mg": 0.4
       },
       "cholesterol_mg": 10,
       "suggested_units": [
@@ -2405,7 +2891,10 @@
       },
       "minerals": {
         "calcium_mg": 110,
-        "potassium_mg": 141
+        "phosphorus_mg": 135,
+        "potassium_mg": 141,
+        "sodium_mg": 36,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 5,
       "suggested_units": [
@@ -2441,7 +2930,10 @@
       },
       "minerals": {
         "calcium_mg": 115,
-        "potassium_mg": 155
+        "phosphorus_mg": 137,
+        "potassium_mg": 155,
+        "sodium_mg": 40,
+        "zinc_mg": 0.6
       },
       "cholesterol_mg": 8,
       "suggested_units": [
@@ -2478,7 +2970,10 @@
       },
       "minerals": {
         "calcium_mg": 128,
-        "potassium_mg": 187
+        "phosphorus_mg": 122,
+        "potassium_mg": 187,
+        "sodium_mg": 47,
+        "zinc_mg": 0.7
       },
       "cholesterol_mg": 10,
       "suggested_units": [
@@ -2515,7 +3010,10 @@
       },
       "minerals": {
         "calcium_mg": 100,
-        "potassium_mg": 141
+        "phosphorus_mg": 135,
+        "potassium_mg": 141,
+        "sodium_mg": 36,
+        "zinc_mg": 0.5
       },
       "cholesterol_mg": 13,
       "suggested_units": [
@@ -2553,12 +3051,19 @@
       "vitamins": {
         "vitamin_a_ug": 160,
         "vitamin_d_ug": 2,
-        "vitamin_b12_ug": 0.9
+        "vitamin_e_mg": 1,
+        "vitamin_b12_ug": 0.9,
+        "folate_ug": 47
       },
       "minerals": {
+        "calcium_mg": 56,
         "iron_mg": 1.8,
-        "selenium_ug": 30.8,
-        "phosphorus_mg": 198
+        "magnesium_mg": 12,
+        "phosphorus_mg": 198,
+        "potassium_mg": 138,
+        "sodium_mg": 142,
+        "zinc_mg": 1.3,
+        "selenium_ug": 30.8
       },
       "cholesterol_mg": 373,
       "suggested_units": [
@@ -2631,12 +3136,18 @@
       "sugar_g": 4.4,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_e_mg": 25.6
+        "vitamin_e_mg": 25.6,
+        "folate_ug": 44,
+        "niacin_mg": 3.6
       },
       "minerals": {
         "calcium_mg": 269,
         "iron_mg": 3.7,
-        "magnesium_mg": 270
+        "magnesium_mg": 270,
+        "phosphorus_mg": 481,
+        "potassium_mg": 705,
+        "sodium_mg": 1,
+        "zinc_mg": 3.1
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -2674,11 +3185,18 @@
       "sugar_g": 5.9,
       "added_sugar_g": 0,
       "vitamins": {
-        "vitamin_k_ug": 34.1
+        "vitamin_e_mg": 0.9,
+        "vitamin_k_ug": 34.1,
+        "folate_ug": 25,
+        "niacin_mg": 1.1
       },
       "minerals": {
+        "calcium_mg": 37,
         "iron_mg": 6.7,
         "magnesium_mg": 292,
+        "phosphorus_mg": 593,
+        "potassium_mg": 660,
+        "sodium_mg": 12,
         "zinc_mg": 5.8
       },
       "cholesterol_mg": 0,
@@ -2717,12 +3235,18 @@
       "sugar_g": 4.7,
       "added_sugar_g": 0,
       "vitamins": {
+        "vitamin_e_mg": 8.3,
         "niacin_mg": 12.1,
         "folate_ug": 240
       },
       "minerals": {
+        "calcium_mg": 92,
+        "iron_mg": 4.6,
         "magnesium_mg": 168,
-        "phosphorus_mg": 376
+        "phosphorus_mg": 376,
+        "potassium_mg": 705,
+        "sodium_mg": 18,
+        "zinc_mg": 3.3
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -2760,12 +3284,18 @@
       "sugar_g": 0,
       "added_sugar_g": 0,
       "vitamins": {
-        "niacin_mg": 8.8
+        "vitamin_e_mg": 0.5,
+        "niacin_mg": 8.8,
+        "folate_ug": 49
       },
       "minerals": {
         "calcium_mg": 631,
         "iron_mg": 7.7,
-        "magnesium_mg": 335
+        "magnesium_mg": 335,
+        "phosphorus_mg": 860,
+        "potassium_mg": 407,
+        "sodium_mg": 16,
+        "zinc_mg": 4.6
       },
       "cholesterol_mg": 0,
       "suggested_units": [
@@ -2800,11 +3330,17 @@
       "added_sugar_g": 57.5,
       "vitamins": {
         "vitamin_c_mg": 0.2,
+        "vitamin_e_mg": 1.2,
         "vitamin_k_ug": 5.1
       },
       "minerals": {
+        "calcium_mg": 12,
+        "iron_mg": 0.4,
+        "magnesium_mg": 5,
+        "phosphorus_mg": 11,
         "potassium_mg": 49,
-        "calcium_mg": 12
+        "sodium_mg": 2,
+        "zinc_mg": 0.1
       },
       "cholesterol_mg": 0,
       "suggested_units": [

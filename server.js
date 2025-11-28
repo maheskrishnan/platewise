@@ -50,7 +50,7 @@ const readStore = () => {
         JSON.stringify(
           {
             mealPlans: null,
-            weeklyRecipes: [],
+            weeklyPlans: null,
           },
           null,
           2
@@ -60,7 +60,7 @@ const readStore = () => {
     const raw = fs.readFileSync(STORE_PATH, 'utf-8');
     return JSON.parse(raw);
   } catch {
-    return { mealPlans: null, weeklyRecipes: [] };
+    return { mealPlans: null, weeklyPlans: null };
   }
 };
 
@@ -97,6 +97,33 @@ const ensureMealPlans = () => {
     !store.mealPlans.plans.length
   ) {
     store.mealPlans = createDefaultMealPlans();
+    writeStore(store);
+  }
+  return store;
+};
+
+const createDefaultWeeklyPlans = () => {
+  const id = `weekly-${Date.now()}`;
+  return {
+    plans: [
+      {
+        id,
+        name: 'Weekly plan',
+        recipes: [],
+      },
+    ],
+    activePlanId: id,
+  };
+};
+
+const ensureWeeklyPlans = () => {
+  const store = readStore();
+  if (
+    !store.weeklyPlans ||
+    !Array.isArray(store.weeklyPlans.plans) ||
+    !store.weeklyPlans.plans.length
+  ) {
+    store.weeklyPlans = createDefaultWeeklyPlans();
     writeStore(store);
   }
   return store;
@@ -166,27 +193,30 @@ app.post('/api/meal-plans', (req, res) => {
 
 app.get('/api/weekly-plans', (_req, res) => {
   try {
-    const store = readStore();
-    res.json(Array.isArray(store.weeklyRecipes) ? store.weeklyRecipes : []);
+    const store = ensureWeeklyPlans();
+    res.json(store.weeklyPlans);
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Failed to load weekly recipes' });
+    res.status(500).json({ message: 'Failed to load weekly plans' });
   }
 });
 
 app.post('/api/weekly-plans', (req, res) => {
   try {
-    const { recipes } = req.body || {};
-    if (!Array.isArray(recipes)) {
-      return res.status(400).json({ message: 'Recipes must be an array' });
+    const { plans, activePlanId } = req.body || {};
+    if (!Array.isArray(plans)) {
+      return res.status(400).json({ message: 'Plans must be an array' });
     }
     const store = readStore();
-    store.weeklyRecipes = recipes;
+    store.weeklyPlans = {
+      plans,
+      activePlanId: activePlanId || null,
+    };
     writeStore(store);
     res.json({ success: true });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ message: 'Failed to save weekly recipes' });
+    res.status(500).json({ message: 'Failed to save weekly plans' });
   }
 });
 

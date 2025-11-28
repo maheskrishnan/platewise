@@ -10,30 +10,7 @@
 
 <body>
   <div class="app-shell">
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <p class="eyebrow">Powered by foods.json</p>
-        <h1>Food Explorer</h1>
-        <p class="helper-text">
-          Review your saved foods and dive into the nutrient breakdown.
-        </p>
-      </div>
-      <nav class="sidebar-menu" aria-label="Primary navigation">
-        <a href="index.html" class="menu-link">
-          <span>Food library</span>
-        </a>
-        <a href="compare.html" class="menu-link active">
-          <span>Compare foods</span>
-          <span class="nav-badge hidden" id="compareNavBadge">0</span>
-        </a>
-        <a href="meal.html" class="menu-link">
-          <span>Meal planner</span>
-        </a>
-        <a href="weekly.html" class="menu-link">
-          <span>Weekly planner</span>
-        </a>
-      </nav>
-    </aside>
+    <app-sidebar page="compare"></app-sidebar>
 
     <main class="content">
       <div class="content-inner">
@@ -68,6 +45,7 @@
     </main>
   </div>
 
+  <script src="sidebar.js" defer></script>
   <script src="compare.js" defer></script>
 
   <div id="columnModal" class="column-modal hidden" aria-hidden="true">
