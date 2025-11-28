@@ -1,0 +1,230 @@
+{
+  "mealPlans": {
+    "plans": [
+      {
+        "id": "plan-1764281980855",
+        "name": "Daily plan",
+        "meals": {
+          "breakfast": [],
+          "lunch": [],
+          "snack": [],
+          "dinner": []
+        }
+      }
+    ],
+    "activePlanId": "plan-1764281980855"
+  },
+  "weeklyRecipes": [
+    {
+      "id": "b6c5e5fa-7aa0-4eb0-81a3-9f4d62331723",
+      "title": "Cooked rice",
+      "ingredients": [
+        {
+          "id": "grains-0",
+          "quantity": 5,
+          "unit": "cup raw",
+          "unitGrams": 185
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "b0a109ef-2967-44fa-ac41-fd2b5d4a122c",
+      "title": "Vegetable Sambar",
+      "ingredients": [
+        {
+          "id": "lentils-4",
+          "quantity": 2,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 3,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "vegetables-18",
+          "quantity": 2,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-16",
+          "quantity": 2,
+          "unit": "1 lb",
+          "unitGrams": 454
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "fdc60f94-42ae-4cf8-b885-df3c1d9b167e",
+      "title": "Beetroot poriyal",
+      "ingredients": [
+        {
+          "id": "vegetables-17",
+          "quantity": 2,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "004721d6-cdb4-49a9-8af7-2c5d503be742",
+      "title": "Cabbage, Cauliflower and peas poriyal",
+      "ingredients": [
+        {
+          "id": "vegetables-18",
+          "quantity": 1,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-34",
+          "quantity": 1,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-35",
+          "quantity": 1,
+          "unit": "cup",
+          "unitGrams": 145
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "c53163ae-c320-4ed8-9b37-23b51d986423",
+      "title": "Chicken curry",
+      "ingredients": [
+        {
+          "id": "meats_and_seafood-0",
+          "quantity": 1,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "meats_and_seafood-1",
+          "quantity": 2,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 3,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "d4d0a020-4f52-4f1a-aec1-1dda63c124bc",
+      "title": "Shrimp, Tilapia curry",
+      "ingredients": [
+        {
+          "id": "meats_and_seafood-3",
+          "quantity": 2,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "meats_and_seafood-5",
+          "quantity": 1,
+          "unit": "1 lb",
+          "unitGrams": 454
+        }
+      ],
+      "collapsed": true
+    },
+    {
+      "id": "bdcaf27e-671e-4a24-a30d-d79be25d6511",
+      "title": "Cauliflower gravy",
+      "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n",
+      "ingredients": [],
+      "collapsed": false
+    }
+  ]
+}

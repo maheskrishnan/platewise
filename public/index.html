@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Explorer & Comparator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <p class="eyebrow">Powered by foods.json</p>
+        <h1>Food Explorer</h1>
+        <p class="helper-text">
+          Browse staples, oils, veggies, dals, meats, and quickly pin items for deep comparison.
+        </p>
+      </div>
+      <nav class="sidebar-menu" aria-label="Primary navigation">
+        <a href="index.html" class="menu-link active">
+          <span>Food library</span>
+        </a>
+        <a href="compare.html" class="menu-link">
+          <span>Compare foods</span>
+          <span class="nav-badge hidden" id="compareNavBadge">0</span>
+        </a>
+        <a href="meal.html" class="menu-link">
+          <span>Meal planner</span>
+        </a>
+        <a href="weekly.html" class="menu-link">
+          <span>Weekly planner</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+      <section id="food-library" class="results-card">
+        <div class="results-header">
+          <div>
+            <h2>Food library</h2>
+            <p class="helper-text">Use the menu to narrow down what you need.</p>
+          </div>
+        </div>
+        <div class="results-bar">
+          <label class="search-label" for="searchInput">
+            <span>Quick search</span>
+            <input id="searchInput" type="search" placeholder="Rice, dal, oil…" autocomplete="off">
+          </label>
+          <span id="resultsCount" class="badge badge-inline">0 items</span>
+        </div>
+        <div class="filters" aria-label="Food categories">
+          <div class="filter-header">
+            <h2>Categories</h2>
+            <button id="clearFilters" class="ghost-btn" type="button">Clear</button>
+          </div>
+          <div id="categoryFilters" class="category-buttons" aria-live="polite"></div>
+        </div>
+        <div id="foodList" class="food-list" aria-live="polite"></div>
+        <p class="empty-state hidden" id="emptyState">No foods match your filters yet.</p>
+      </section>
+      <div class="selection-summary-bar">
+        <div>
+          <p class="eyebrow">Comparison queue</p>
+          <p id="selectionSummary" class="helper-text">No foods selected yet.</p>
+        </div>
+        <button id="openCompareButton" class="primary-link" type="button">Go to compare view</button>
+      </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+
+</html>

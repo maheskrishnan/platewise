@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Meal Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <p class="eyebrow">Powered by foods.json</p>
+        <h1>Food Explorer</h1>
+        <p class="helper-text">
+          Create a week’s worth of recipes and see totals at a glance.
+        </p>
+      </div>
+      <nav class="sidebar-menu" aria-label="Primary navigation">
+        <a href="index.html" class="menu-link">
+          <span>Food library</span>
+        </a>
+        <a href="compare.html" class="menu-link">
+          <span>Compare foods</span>
+          <span class="nav-badge hidden" id="compareNavBadge">0</span>
+        </a>
+        <a href="meal.html" class="menu-link">
+          <span>Meal planner</span>
+        </a>
+        <a href="weekly.html" class="menu-link active">
+          <span>Weekly planner</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <div class="content-inner">
+        <section class="meal-planner-card">
+          <div class="planner-header">
+            <div>
+              <h2>Weekly meal planner</h2>
+              <p class="helper-text">
+                Build recipe cards for the week, then track totals for the entire plan and average day.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="planner-summary-card">
+          <div class="summary-header">
+            <p class="eyebrow">Daily average (÷ 7)</p>
+            <button type="button" class="primary-link secondary" id="addRecipeButton">Add recipe</button>
+          </div>
+          <div id="dailyAverages" class="daily-total-grid"></div>
+        </section>
+
+        <section id="recipeList" class="recipe-grid" aria-live="polite"></section>
+      </div>
+    </main>
+  </div>
+
+  <script src="weekly.js" defer></script>
+</body>
+
+</html>

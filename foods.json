@@ -1,0 +1,2827 @@
+{
+  "vegetables": [
+    {
+      "name": "Drumstick (Moringa pods)",
+      "calories": 64,
+      "protein_g": 9.4,
+      "fat_g": 1.4,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.7,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 8.3,
+      "fiber_g": 2,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 378,
+        "vitamin_c_mg": 51,
+        "folate_ug": 40
+      },
+      "minerals": {
+        "calcium_mg": 185,
+        "iron_mg": 4,
+        "potassium_mg": 337
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Snake Gourd (Pudalangai)",
+      "calories": 18,
+      "protein_g": 1.2,
+      "fat_g": 0.2,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 3.5,
+      "fiber_g": 1.5,
+      "sugar_g": 1.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 15
+      },
+      "minerals": {
+        "potassium_mg": 200
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Bitter Gourd (Pavakkai)",
+      "calories": 17,
+      "protein_g": 1,
+      "fat_g": 0.2,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.03,
+      "polyunsaturated_g": 0.08,
+      "carbs_g": 3.7,
+      "fiber_g": 2.6,
+      "sugar_g": 1.95,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 95,
+        "vitamin_c_mg": 84
+      },
+      "minerals": {
+        "potassium_mg": 296,
+        "iron_mg": 1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Lady's Finger / Okra (Vendakkai)",
+      "calories": 33,
+      "protein_g": 1.9,
+      "fat_g": 0.2,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.03,
+      "polyunsaturated_g": 0.05,
+      "carbs_g": 7.5,
+      "fiber_g": 3.2,
+      "sugar_g": 1.5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 23,
+        "vitamin_k_ug": 31,
+        "folate_ug": 60
+      },
+      "minerals": {
+        "calcium_mg": 82,
+        "magnesium_mg": 57
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Brinjal / Eggplant (Kathirikkai)",
+      "calories": 25,
+      "protein_g": 1,
+      "fat_g": 0.2,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.08,
+      "carbs_g": 6,
+      "fiber_g": 3,
+      "sugar_g": 3.5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 2,
+        "vitamin_k_ug": 3.5
+      },
+      "minerals": {
+        "potassium_mg": 229
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 82
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Cluster Beans (Kothavarangai)",
+      "calories": 40,
+      "protein_g": 3.2,
+      "fat_g": 0.4,
+      "saturated_g": 0.05,
+      "monounsaturated_g": 0.05,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 10,
+      "fiber_g": 3.5,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 35,
+        "folate_ug": 60
+      },
+      "minerals": {
+        "calcium_mg": 130,
+        "iron_mg": 1.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Broad Beans (Avarai)",
+      "calories": 48,
+      "protein_g": 4,
+      "fat_g": 0.4,
+      "saturated_g": 0.06,
+      "monounsaturated_g": 0.05,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 8.5,
+      "fiber_g": 4,
+      "sugar_g": 1.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 35,
+        "folate_ug": 70
+      },
+      "minerals": {
+        "calcium_mg": 50,
+        "iron_mg": 1.5
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Yam (Senai Kizhangu)",
+      "calories": 118,
+      "protein_g": 1.5,
+      "fat_g": 0.2,
+      "saturated_g": 0.04,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 28,
+      "fiber_g": 4.1,
+      "sugar_g": 0.5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 17
+      },
+      "minerals": {
+        "potassium_mg": 816
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 136
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Colocasia / Taro Root (Seppankizhangu)",
+      "calories": 112,
+      "protein_g": 1.5,
+      "fat_g": 0.2,
+      "saturated_g": 0.04,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.08,
+      "carbs_g": 26,
+      "fiber_g": 4.1,
+      "sugar_g": 0.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_e_mg": 2.4
+      },
+      "minerals": {
+        "potassium_mg": 591,
+        "manganese_mg": 0.4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 132
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Raw Banana (Vazhakkai)",
+      "calories": 89,
+      "protein_g": 1.1,
+      "fat_g": 0.3,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.03,
+      "polyunsaturated_g": 0.07,
+      "carbs_g": 23,
+      "fiber_g": 2.6,
+      "sugar_g": 12.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 8.7
+      },
+      "minerals": {
+        "potassium_mg": 358
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 150
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Pumpkin (Poosanikai)",
+      "calories": 26,
+      "protein_g": 1,
+      "fat_g": 0.1,
+      "saturated_g": 0.05,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.01,
+      "carbs_g": 6.5,
+      "fiber_g": 0.5,
+      "sugar_g": 2.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 426,
+        "vitamin_c_mg": 9
+      },
+      "minerals": {
+        "potassium_mg": 340
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 116
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Ash Gourd (Vellai Poosanikai)",
+      "calories": 15,
+      "protein_g": 0.4,
+      "fat_g": 0.1,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.04,
+      "carbs_g": 3,
+      "fiber_g": 1,
+      "sugar_g": 2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 13
+      },
+      "minerals": {
+        "potassium_mg": 150
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Ridge Gourd (Peerkangai)",
+      "calories": 20,
+      "protein_g": 0.7,
+      "fat_g": 0.1,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.04,
+      "carbs_g": 4,
+      "fiber_g": 1.2,
+      "sugar_g": 2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 12
+      },
+      "minerals": {
+        "potassium_mg": 139
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Bottle Gourd (Suraikkai)",
+      "calories": 16,
+      "protein_g": 0.6,
+      "fat_g": 0.1,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.04,
+      "carbs_g": 3.5,
+      "fiber_g": 0.5,
+      "sugar_g": 2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 10
+      },
+      "minerals": {
+        "potassium_mg": 150
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Ivy Gourd (Kovakkai)",
+      "calories": 18,
+      "protein_g": 1.2,
+      "fat_g": 0.1,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.05,
+      "carbs_g": 3.5,
+      "fiber_g": 1.6,
+      "sugar_g": 1.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 15
+      },
+      "minerals": {
+        "iron_mg": 1.4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "French Beans",
+      "calories": 31,
+      "protein_g": 1.8,
+      "fat_g": 0.2,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 7.1,
+      "fiber_g": 2.7,
+      "sugar_g": 3.3,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 12,
+        "folate_ug": 33
+      },
+      "minerals": {
+        "potassium_mg": 211
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Carrot",
+      "calories": 41,
+      "protein_g": 0.9,
+      "fat_g": 0.2,
+      "saturated_g": 0.04,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 9.6,
+      "fiber_g": 2.8,
+      "sugar_g": 4.7,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 835,
+        "vitamin_k_ug": 13
+      },
+      "minerals": {
+        "potassium_mg": 320
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 128
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Beetroot",
+      "calories": 43,
+      "protein_g": 1.6,
+      "fat_g": 0.2,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.04,
+      "polyunsaturated_g": 0.06,
+      "carbs_g": 10,
+      "fiber_g": 2.8,
+      "sugar_g": 7,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 109
+      },
+      "minerals": {
+        "potassium_mg": 325,
+        "manganese_mg": 0.3
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 136
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Cabbage",
+      "calories": 25,
+      "protein_g": 1.3,
+      "fat_g": 0.1,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.02,
+      "carbs_g": 6,
+      "fiber_g": 2.5,
+      "sugar_g": 3.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 36,
+        "vitamin_k_ug": 76
+      },
+      "minerals": {
+        "calcium_mg": 40
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 89
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Tomato",
+      "calories": 18,
+      "protein_g": 0.9,
+      "fat_g": 0.2,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.03,
+      "polyunsaturated_g": 0.08,
+      "carbs_g": 3.9,
+      "fiber_g": 1.2,
+      "sugar_g": 2.6,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 42,
+        "vitamin_c_mg": 14
+      },
+      "minerals": {
+        "potassium_mg": 237
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 180
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Onion",
+      "calories": 40,
+      "protein_g": 1.1,
+      "fat_g": 0.1,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.02,
+      "carbs_g": 9.3,
+      "fiber_g": 1.7,
+      "sugar_g": 4.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 7.4,
+        "folate_ug": 19
+      },
+      "minerals": {
+        "potassium_mg": 146
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 160
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Green Chilli",
+      "calories": 40,
+      "protein_g": 1.9,
+      "fat_g": 0.2,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 8.8,
+      "fiber_g": 1.5,
+      "sugar_g": 5.1,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 48,
+        "vitamin_c_mg": 143
+      },
+      "minerals": {
+        "potassium_mg": 322
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 75
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Curry Leaves (fresh)",
+      "calories": 108,
+      "protein_g": 6.1,
+      "fat_g": 1,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.4,
+      "polyunsaturated_g": 0.3,
+      "carbs_g": 15,
+      "fiber_g": 6.4,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 740,
+        "vitamin_c_mg": 4
+      },
+      "minerals": {
+        "calcium_mg": 830,
+        "iron_mg": 17
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 6
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Coriander Leaves",
+      "calories": 23,
+      "protein_g": 2.1,
+      "fat_g": 0.5,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.3,
+      "polyunsaturated_g": 0.04,
+      "carbs_g": 3.7,
+      "fiber_g": 2.8,
+      "sugar_g": 0.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 337,
+        "vitamin_c_mg": 27,
+        "vitamin_k_ug": 310
+      },
+      "minerals": {
+        "calcium_mg": 67,
+        "iron_mg": 1.8
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup raw",
+          "grams": 16
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Spinach / Keerai",
+      "calories": 23,
+      "protein_g": 2.9,
+      "fat_g": 0.4,
+      "saturated_g": 0.06,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 3.6,
+      "fiber_g": 2.2,
+      "sugar_g": 0.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 469,
+        "vitamin_c_mg": 28,
+        "vitamin_k_ug": 483,
+        "folate_ug": 194
+      },
+      "minerals": {
+        "calcium_mg": 99,
+        "iron_mg": 2.7,
+        "magnesium_mg": 79
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup raw (loose)",
+          "grams": 30
+        },
+        {
+          "unit": "cup raw (packed)",
+          "grams": 50
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Amaranth Leaves (Arai Keerai)",
+      "calories": 23,
+      "protein_g": 2.5,
+      "fat_g": 0.3,
+      "saturated_g": 0.05,
+      "monounsaturated_g": 0.07,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 4,
+      "fiber_g": 2.1,
+      "sugar_g": 0.5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 292,
+        "vitamin_c_mg": 43
+      },
+      "minerals": {
+        "calcium_mg": 215,
+        "iron_mg": 2.3
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup raw (loose)",
+          "grams": 28
+        },
+        {
+          "unit": "cup raw (packed)",
+          "grams": 47
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Drumstick Leaves (Murungai Keerai)",
+      "calories": 64,
+      "protein_g": 9.4,
+      "fat_g": 1.4,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.7,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 8.3,
+      "fiber_g": 2,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 378,
+        "vitamin_c_mg": 51
+      },
+      "minerals": {
+        "calcium_mg": 185,
+        "iron_mg": 4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup raw (loose)",
+          "grams": 21
+        },
+        {
+          "unit": "cup raw (packed)",
+          "grams": 35
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Banana Stem (Vazhaithandu)",
+      "calories": 20,
+      "protein_g": 1.2,
+      "fat_g": 0.2,
+      "saturated_g": 0.05,
+      "monounsaturated_g": 0.02,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 4,
+      "fiber_g": 2.5,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 10
+      },
+      "minerals": {
+        "potassium_mg": 550
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 120
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Banana Flower (Vazhaipoo)",
+      "calories": 51,
+      "protein_g": 1.6,
+      "fat_g": 0.6,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0.3,
+      "carbs_g": 9.9,
+      "fiber_g": 5.7,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 10
+      },
+      "minerals": {
+        "calcium_mg": 56,
+        "iron_mg": 56
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 100
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Raw Mango (for cooking)",
+      "calories": 60,
+      "protein_g": 0.8,
+      "fat_g": 0.4,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0.07,
+      "carbs_g": 15,
+      "fiber_g": 1.6,
+      "sugar_g": 13.7,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 54,
+        "vitamin_c_mg": 36
+      },
+      "minerals": {
+        "potassium_mg": 168
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup sliced",
+          "grams": 165
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Tamarind pulp (raw)",
+      "calories": 239,
+      "protein_g": 2.8,
+      "fat_g": 0.6,
+      "saturated_g": 0.3,
+      "monounsaturated_g": 0.2,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 63,
+      "fiber_g": 5.1,
+      "sugar_g": 38.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 3.5
+      },
+      "minerals": {
+        "potassium_mg": 628,
+        "magnesium_mg": 92
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "tablespoon",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Fresh Grated Coconut",
+      "calories": 354,
+      "protein_g": 3.3,
+      "fat_g": 33,
+      "saturated_g": 29.7,
+      "monounsaturated_g": 1.4,
+      "polyunsaturated_g": 0.4,
+      "carbs_g": 15,
+      "fiber_g": 9,
+      "sugar_g": 6.2,
+      "added_sugar_g": 0,
+      "vitamins": {},
+      "minerals": {
+        "potassium_mg": 356,
+        "manganese_mg": 1.5
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup shredded",
+          "grams": 80
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Potato",
+      "calories": 77,
+      "protein_g": 2,
+      "fat_g": 0.1,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.04,
+      "carbs_g": 17,
+      "fiber_g": 2.2,
+      "sugar_g": 0.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 19
+      },
+      "minerals": {
+        "potassium_mg": 421
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 150
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Sweet Potato",
+      "calories": 86,
+      "protein_g": 1.6,
+      "fat_g": 0.1,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.05,
+      "carbs_g": 20,
+      "fiber_g": 3,
+      "sugar_g": 4.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 709,
+        "vitamin_c_mg": 2.4
+      },
+      "minerals": {
+        "potassium_mg": 337
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 133
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Cauliflower",
+      "calories": 25,
+      "protein_g": 1.9,
+      "fat_g": 0.3,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.03,
+      "polyunsaturated_g": 0.03,
+      "carbs_g": 5,
+      "fiber_g": 2,
+      "sugar_g": 1.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 48,
+        "vitamin_k_ug": 15
+      },
+      "minerals": {
+        "potassium_mg": 299
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 107
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Green Peas (fresh)",
+      "calories": 81,
+      "protein_g": 5.4,
+      "fat_g": 0.4,
+      "saturated_g": 0.07,
+      "monounsaturated_g": 0.04,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 14,
+      "fiber_g": 5.7,
+      "sugar_g": 5.7,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 40,
+        "vitamin_k_ug": 25
+      },
+      "minerals": {
+        "iron_mg": 1.5,
+        "manganese_mg": 0.4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 145
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Capsicum (Bell Pepper)",
+      "calories": 26,
+      "protein_g": 1,
+      "fat_g": 0.2,
+      "saturated_g": 0.06,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 6,
+      "fiber_g": 2.1,
+      "sugar_g": 4.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 157,
+        "vitamin_c_mg": 80
+      },
+      "minerals": {
+        "potassium_mg": 211
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chopped",
+          "grams": 149
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "lentils": [
+    {
+      "name": "Toor Dal (Thuvaram Paruppu)",
+      "calories": 335,
+      "protein_g": 22,
+      "fat_g": 1.7,
+      "saturated_g": 0.3,
+      "monounsaturated_g": 0.4,
+      "polyunsaturated_g": 0.9,
+      "carbs_g": 60,
+      "fiber_g": 15,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 160
+      },
+      "minerals": {
+        "iron_mg": 4.5,
+        "potassium_mg": 950,
+        "magnesium_mg": 130
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Moong Dal (split)",
+      "calories": 347,
+      "protein_g": 24,
+      "fat_g": 1.2,
+      "saturated_g": 0.3,
+      "monounsaturated_g": 0.2,
+      "polyunsaturated_g": 0.6,
+      "carbs_g": 63,
+      "fiber_g": 16,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 159
+      },
+      "minerals": {
+        "iron_mg": 6.7,
+        "potassium_mg": 1246
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Urad Dal (split)",
+      "calories": 341,
+      "protein_g": 25,
+      "fat_g": 1.6,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.3,
+      "polyunsaturated_g": 1,
+      "carbs_g": 59,
+      "fiber_g": 18,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 216
+      },
+      "minerals": {
+        "calcium_mg": 138,
+        "iron_mg": 7.6
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Chana Dal",
+      "calories": 364,
+      "protein_g": 20,
+      "fat_g": 6,
+      "saturated_g": 0.7,
+      "monounsaturated_g": 1.8,
+      "polyunsaturated_g": 3,
+      "carbs_g": 61,
+      "fiber_g": 17,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 172
+      },
+      "minerals": {
+        "iron_mg": 5.3,
+        "magnesium_mg": 115
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Masoor Dal (red lentil)",
+      "calories": 343,
+      "protein_g": 25,
+      "fat_g": 1.1,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.2,
+      "polyunsaturated_g": 0.5,
+      "carbs_g": 60,
+      "fiber_g": 11,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 180
+      },
+      "minerals": {
+        "iron_mg": 7.5,
+        "potassium_mg": 960
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Horse Gram (Kollu)",
+      "calories": 321,
+      "protein_g": 22,
+      "fat_g": 0.5,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 57,
+      "fiber_g": 5,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {},
+      "minerals": {
+        "iron_mg": 7,
+        "calcium_mg": 287
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Whole Green Gram (Pachai Payaru)",
+      "calories": 347,
+      "protein_g": 24,
+      "fat_g": 1.2,
+      "saturated_g": 0.3,
+      "monounsaturated_g": 0.2,
+      "polyunsaturated_g": 0.6,
+      "carbs_g": 63,
+      "fiber_g": 16,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 160
+      },
+      "minerals": {
+        "iron_mg": 6.7,
+        "potassium_mg": 1246
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Whole Black Urad",
+      "calories": 341,
+      "protein_g": 25,
+      "fat_g": 1.6,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.3,
+      "polyunsaturated_g": 1,
+      "carbs_g": 59,
+      "fiber_g": 18,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 216
+      },
+      "minerals": {
+        "calcium_mg": 138,
+        "iron_mg": 7.6
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Fried Gram (Pottukadalai)",
+      "calories": 369,
+      "protein_g": 21,
+      "fat_g": 6,
+      "saturated_g": 1,
+      "monounsaturated_g": 2.5,
+      "polyunsaturated_g": 2.2,
+      "carbs_g": 58,
+      "fiber_g": 12,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {},
+      "minerals": {
+        "iron_mg": 5,
+        "calcium_mg": 90
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Rajma (Kidney Beans)",
+      "calories": 333,
+      "protein_g": 23,
+      "fat_g": 1,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0.5,
+      "carbs_g": 60,
+      "fiber_g": 15,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "folate_ug": 130
+      },
+      "minerals": {
+        "iron_mg": 6.7,
+        "potassium_mg": 1400
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 200
+        },
+        {
+          "unit": "tbsp dry",
+          "grams": 12
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "grains": [
+    {
+      "name": "White Rice (polished)",
+      "calories": 365,
+      "protein_g": 7.1,
+      "fat_g": 0.7,
+      "saturated_g": 0.2,
+      "monounsaturated_g": 0.2,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 80,
+      "fiber_g": 1.3,
+      "sugar_g": 0.1,
+      "added_sugar_g": 0,
+      "vitamins": {},
+      "minerals": {
+        "iron_mg": 0.8,
+        "manganese_mg": 1.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup raw",
+          "grams": 185
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Brown Rice",
+      "calories": 370,
+      "protein_g": 7.9,
+      "fat_g": 2.9,
+      "saturated_g": 0.6,
+      "monounsaturated_g": 1.1,
+      "polyunsaturated_g": 1,
+      "omega_6_g": 0.35,
+      "carbs_g": 77,
+      "fiber_g": 3.5,
+      "sugar_g": 0.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_b6_mg": 0.15
+      },
+      "minerals": {
+        "magnesium_mg": 39,
+        "manganese_mg": 1.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup raw",
+          "grams": 185
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Oatmeal (rolled oats, dry)",
+      "calories": 389,
+      "protein_g": 16.9,
+      "fat_g": 6.9,
+      "saturated_g": 1.2,
+      "monounsaturated_g": 2.2,
+      "polyunsaturated_g": 2.5,
+      "omega_6_g": 2.4,
+      "omega_3_g": 0.1,
+      "carbs_g": 66.3,
+      "fiber_g": 10.6,
+      "sugar_g": 0.99,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_b6_mg": 0.12
+      },
+      "minerals": {
+        "iron_mg": 4.7,
+        "magnesium_mg": 177,
+        "phosphorus_mg": 523,
+        "zinc_mg": 4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup dry",
+          "grams": 80
+        },
+        {
+          "unit": "tbsp",
+          "grams": 10
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Wheat Flour (whole wheat)",
+      "calories": 340,
+      "protein_g": 13.2,
+      "fat_g": 2.5,
+      "saturated_g": 0.4,
+      "monounsaturated_g": 0.3,
+      "polyunsaturated_g": 1.2,
+      "carbs_g": 72,
+      "fiber_g": 10.7,
+      "sugar_g": 0.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "niacin_mg": 5.7,
+        "vitamin_b6_mg": 0.34
+      },
+      "minerals": {
+        "iron_mg": 3.6,
+        "magnesium_mg": 137,
+        "phosphorus_mg": 357,
+        "zinc_mg": 2.6
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 120
+        },
+        {
+          "unit": "tbsp",
+          "grams": 8
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "oils": [
+    {
+      "name": "Olive Oil",
+      "calories": 884,
+      "protein_g": 0,
+      "fat_g": 100,
+      "saturated_g": 14,
+      "monounsaturated_g": 73,
+      "polyunsaturated_g": 11,
+      "omega_6_g": 9.8,
+      "omega_3_g": 0.8,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_e_mg": 14,
+        "vitamin_k_ug": 60
+      },
+      "minerals": {},
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "tablespoon",
+          "grams": 14
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Avocado Oil",
+      "calories": 884,
+      "protein_g": 0,
+      "fat_g": 100,
+      "saturated_g": 12,
+      "monounsaturated_g": 71,
+      "polyunsaturated_g": 13,
+      "omega_6_g": 12.5,
+      "omega_3_g": 1,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_e_mg": 20
+      },
+      "minerals": {},
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "tablespoon",
+          "grams": 14
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Groundnut Oil (Peanut Oil)",
+      "calories": 884,
+      "protein_g": 0,
+      "fat_g": 100,
+      "saturated_g": 17,
+      "monounsaturated_g": 46,
+      "polyunsaturated_g": 32,
+      "omega_6_g": 32,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_e_mg": 15
+      },
+      "minerals": {},
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "tablespoon",
+          "grams": 14
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Ghee (Clarified Butter)",
+      "calories": 900,
+      "protein_g": 0,
+      "fat_g": 100,
+      "saturated_g": 62,
+      "monounsaturated_g": 29,
+      "polyunsaturated_g": 4,
+      "omega_6_g": 3.7,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 840,
+        "vitamin_e_mg": 2.8
+      },
+      "minerals": {},
+      "cholesterol_mg": 256,
+      "suggested_units": [
+        {
+          "unit": "tablespoon",
+          "grams": 13
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "meats_and_seafood": [
+    {
+      "name": "Chicken Breast (raw, skinless, boneless)",
+      "calories": 120,
+      "protein_g": 23,
+      "fat_g": 2.6,
+      "saturated_g": 0.7,
+      "monounsaturated_g": 0.9,
+      "polyunsaturated_g": 0.5,
+      "omega_6_g": 0.4,
+      "omega_3_g": 0.05,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "niacin_mg": 14,
+        "vitamin_b6_mg": 0.7
+      },
+      "minerals": {
+        "phosphorus_mg": 220,
+        "potassium_mg": 300
+      },
+      "cholesterol_mg": 85,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Chicken Thigh (raw, skinless, boneless)",
+      "calories": 144,
+      "protein_g": 20,
+      "fat_g": 7,
+      "saturated_g": 1.9,
+      "monounsaturated_g": 3,
+      "polyunsaturated_g": 1.5,
+      "omega_6_g": 1.3,
+      "omega_3_g": 0.1,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "niacin_mg": 6,
+        "vitamin_b6_mg": 0.4
+      },
+      "minerals": {
+        "phosphorus_mg": 200,
+        "zinc_mg": 2
+      },
+      "cholesterol_mg": 95,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Salmon (raw, skinless)",
+      "calories": 142,
+      "protein_g": 22,
+      "fat_g": 6,
+      "saturated_g": 1,
+      "monounsaturated_g": 2.1,
+      "polyunsaturated_g": 2.5,
+      "omega_3_g": 2.2,
+      "omega_6_g": 0.3,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_d_ug": 16,
+        "vitamin_b12_ug": 4.9
+      },
+      "minerals": {
+        "selenium_ug": 47,
+        "potassium_mg": 450
+      },
+      "cholesterol_mg": 55,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Shrimp/Prawn (raw, peeled)",
+      "calories": 99,
+      "protein_g": 24,
+      "fat_g": 0.3,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.05,
+      "polyunsaturated_g": 0.1,
+      "omega_3_g": 0.08,
+      "carbs_g": 0.2,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_b12_ug": 1.7
+      },
+      "minerals": {
+        "selenium_ug": 48,
+        "iodine_ug": 40,
+        "zinc_mg": 1.6
+      },
+      "cholesterol_mg": 189,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Lean Lamb (raw, trimmed)",
+      "calories": 143,
+      "protein_g": 20.3,
+      "fat_g": 6.6,
+      "saturated_g": 2.7,
+      "monounsaturated_g": 2.8,
+      "polyunsaturated_g": 0.5,
+      "omega_6_g": 0.4,
+      "omega_3_g": 0.1,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "niacin_mg": 6.2,
+        "vitamin_b12_ug": 2.6
+      },
+      "minerals": {
+        "iron_mg": 1.9,
+        "zinc_mg": 4.2,
+        "selenium_ug": 26
+      },
+      "cholesterol_mg": 70,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Tilapia (raw)",
+      "weight_grams": 100,
+      "calories": 96,
+      "protein_g": 20.1,
+      "fat_g": 1.7,
+      "saturated_g": 0.6,
+      "monounsaturated_g": 0.5,
+      "polyunsaturated_g": 0.4,
+      "omega_3_g": 0.16,
+      "omega_6_g": 0.2,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_d_ug": 3.1,
+        "vitamin_b12_ug": 1.6,
+        "niacin_mg": 3.9
+      },
+      "minerals": {
+        "selenium_ug": 41.8,
+        "phosphorus_mg": 170,
+        "potassium_mg": 302
+      },
+      "cholesterol_mg": 50,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "1 lb",
+          "grams": 454
+        }
+      ]
+    }
+  ],
+  "dairy": [
+    {
+      "name": "Skim Milk (0% fat)",
+      "calories": 34,
+      "protein_g": 3.4,
+      "fat_g": 0.1,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0,
+      "polyunsaturated_g": 0,
+      "carbs_g": 5,
+      "fiber_g": 0,
+      "sugar_g": 5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 1,
+        "vitamin_d_ug": 1.2,
+        "vitamin_b12_ug": 0.46
+      },
+      "minerals": {
+        "calcium_mg": 122,
+        "potassium_mg": 150
+      },
+      "cholesterol_mg": 2,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 240
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "1% Milk",
+      "calories": 42,
+      "protein_g": 3.4,
+      "fat_g": 1,
+      "saturated_g": 0.6,
+      "monounsaturated_g": 0.3,
+      "polyunsaturated_g": 0,
+      "carbs_g": 5,
+      "fiber_g": 0,
+      "sugar_g": 5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 14,
+        "vitamin_d_ug": 1.2,
+        "vitamin_b12_ug": 0.45
+      },
+      "minerals": {
+        "calcium_mg": 120,
+        "potassium_mg": 150
+      },
+      "cholesterol_mg": 5,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 240
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "2% Milk",
+      "calories": 50,
+      "protein_g": 3.3,
+      "fat_g": 2,
+      "saturated_g": 1.2,
+      "monounsaturated_g": 0.5,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 4.8,
+      "fiber_g": 0,
+      "sugar_g": 4.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 23,
+        "vitamin_d_ug": 1.2,
+        "vitamin_b12_ug": 0.45
+      },
+      "minerals": {
+        "calcium_mg": 117,
+        "potassium_mg": 146
+      },
+      "cholesterol_mg": 8,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 240
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Whole Milk",
+      "calories": 61,
+      "protein_g": 3.2,
+      "fat_g": 3.25,
+      "saturated_g": 1.9,
+      "monounsaturated_g": 0.8,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 4.8,
+      "fiber_g": 0,
+      "sugar_g": 5.1,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 46,
+        "vitamin_d_ug": 1.3,
+        "vitamin_b12_ug": 0.45
+      },
+      "minerals": {
+        "calcium_mg": 113,
+        "potassium_mg": 143
+      },
+      "cholesterol_mg": 10,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 240
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Greek Yogurt - Skim",
+      "calories": 59,
+      "protein_g": 10.2,
+      "fat_g": 0.4,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0,
+      "carbs_g": 3.6,
+      "fiber_g": 0,
+      "sugar_g": 3.6,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_b12_ug": 0.8
+      },
+      "minerals": {
+        "calcium_mg": 110,
+        "potassium_mg": 141
+      },
+      "cholesterol_mg": 5,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 227
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Greek Yogurt - 1%",
+      "calories": 73,
+      "protein_g": 9.9,
+      "fat_g": 1.9,
+      "saturated_g": 1.2,
+      "monounsaturated_g": 0.5,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 3.9,
+      "fiber_g": 0,
+      "sugar_g": 3.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_b12_ug": 0.75
+      },
+      "minerals": {
+        "calcium_mg": 115,
+        "potassium_mg": 155
+      },
+      "cholesterol_mg": 8,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 227
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Greek Yogurt - 2%",
+      "calories": 81,
+      "protein_g": 8.9,
+      "fat_g": 2.7,
+      "saturated_g": 1.7,
+      "monounsaturated_g": 0.7,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 5.7,
+      "fiber_g": 0,
+      "sugar_g": 5.5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 25,
+        "vitamin_b12_ug": 0.52
+      },
+      "minerals": {
+        "calcium_mg": 128,
+        "potassium_mg": 187
+      },
+      "cholesterol_mg": 10,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 227
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Greek Yogurt - Whole",
+      "calories": 97,
+      "protein_g": 9,
+      "fat_g": 5,
+      "saturated_g": 3.2,
+      "monounsaturated_g": 1.3,
+      "polyunsaturated_g": 0.2,
+      "carbs_g": 3.6,
+      "fiber_g": 0,
+      "sugar_g": 3.6,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 44,
+        "vitamin_b12_ug": 0.75
+      },
+      "minerals": {
+        "calcium_mg": 100,
+        "potassium_mg": 141
+      },
+      "cholesterol_mg": 13,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 227
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "eggs": [
+    {
+      "name": "Egg, whole",
+      "calories": 143,
+      "protein_g": 12.6,
+      "fat_g": 9.5,
+      "saturated_g": 3.1,
+      "monounsaturated_g": 3.7,
+      "polyunsaturated_g": 1.9,
+      "omega_6_g": 1.6,
+      "omega_3_g": 0.1,
+      "carbs_g": 0.7,
+      "fiber_g": 0,
+      "sugar_g": 0.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 160,
+        "vitamin_d_ug": 2,
+        "vitamin_b12_ug": 0.9
+      },
+      "minerals": {
+        "iron_mg": 1.8,
+        "selenium_ug": 30.8,
+        "phosphorus_mg": 198
+      },
+      "cholesterol_mg": 373,
+      "suggested_units": [
+        {
+          "unit": "large egg",
+          "grams": 50
+        },
+        {
+          "unit": "medium egg",
+          "grams": 44
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Egg white",
+      "calories": 52,
+      "protein_g": 10.9,
+      "fat_g": 0.2,
+      "saturated_g": 0,
+      "monounsaturated_g": 0,
+      "polyunsaturated_g": 0,
+      "carbs_g": 0.7,
+      "fiber_g": 0,
+      "sugar_g": 0.7,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_b12_ug": 0.1
+      },
+      "minerals": {
+        "selenium_ug": 20,
+        "potassium_mg": 163,
+        "sodium_mg": 166
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "large egg white",
+          "grams": 33
+        },
+        {
+          "unit": "medium egg white",
+          "grams": 29
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "nuts_and_seeds": [
+    {
+      "name": "Almonds",
+      "calories": 579,
+      "protein_g": 21.2,
+      "fat_g": 49.9,
+      "saturated_g": 3.8,
+      "monounsaturated_g": 31.6,
+      "polyunsaturated_g": 12.3,
+      "omega_6_g": 12.1,
+      "omega_3_g": 0.01,
+      "carbs_g": 21.6,
+      "fiber_g": 12.5,
+      "sugar_g": 4.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_e_mg": 25.6
+      },
+      "minerals": {
+        "calcium_mg": 269,
+        "iron_mg": 3.7,
+        "magnesium_mg": 270
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "tbsp",
+          "grams": 9
+        },
+        {
+          "unit": "handful",
+          "grams": 30
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Cashews",
+      "calories": 553,
+      "protein_g": 18.2,
+      "fat_g": 43.9,
+      "saturated_g": 7.8,
+      "monounsaturated_g": 23.8,
+      "polyunsaturated_g": 7.8,
+      "omega_6_g": 7.7,
+      "omega_3_g": 0.06,
+      "carbs_g": 30.2,
+      "fiber_g": 3.3,
+      "sugar_g": 5.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_k_ug": 34.1
+      },
+      "minerals": {
+        "iron_mg": 6.7,
+        "magnesium_mg": 292,
+        "zinc_mg": 5.8
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "tbsp",
+          "grams": 9
+        },
+        {
+          "unit": "handful",
+          "grams": 30
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Peanuts",
+      "calories": 567,
+      "protein_g": 25.8,
+      "fat_g": 49.2,
+      "saturated_g": 6.8,
+      "monounsaturated_g": 24.4,
+      "polyunsaturated_g": 15.6,
+      "omega_6_g": 15.6,
+      "omega_3_g": 0,
+      "carbs_g": 16.1,
+      "fiber_g": 8.5,
+      "sugar_g": 4.7,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "niacin_mg": 12.1,
+        "folate_ug": 240
+      },
+      "minerals": {
+        "magnesium_mg": 168,
+        "phosphorus_mg": 376
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "tbsp",
+          "grams": 9
+        },
+        {
+          "unit": "handful",
+          "grams": 30
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    },
+    {
+      "name": "Chia Seeds",
+      "calories": 486,
+      "protein_g": 16.5,
+      "fat_g": 30.7,
+      "saturated_g": 3.3,
+      "monounsaturated_g": 2.3,
+      "polyunsaturated_g": 23.7,
+      "omega_3_g": 17.8,
+      "omega_6_g": 5.8,
+      "carbs_g": 42.1,
+      "fiber_g": 34.4,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "niacin_mg": 8.8
+      },
+      "minerals": {
+        "calcium_mg": 631,
+        "iron_mg": 7.7,
+        "magnesium_mg": 335
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "tbsp",
+          "grams": 12
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    }
+  ],
+  "dried_fruits": [
+    {
+      "name": "Dried Cranberries",
+      "calories": 308,
+      "protein_g": 0.1,
+      "fat_g": 1.4,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.2,
+      "polyunsaturated_g": 0.6,
+      "carbs_g": 82.4,
+      "fiber_g": 5.3,
+      "sugar_g": 65,
+      "added_sugar_g": 57.5,
+      "vitamins": {
+        "vitamin_c_mg": 0.2,
+        "vitamin_k_ug": 5.1
+      },
+      "minerals": {
+        "potassium_mg": 49,
+        "calcium_mg": 12
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "1/4 cup",
+          "grams": 40
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100
+    }
+  ]
+}
