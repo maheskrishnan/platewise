@@ -43,16 +43,19 @@
         </section>
 
         <section id="recipeList" class="recipe-grid" aria-live="polite"></section>
-        <section class="shopping-card">
+        <section class="shopping-card" data-shopping-card>
           <div class="shopping-card__header">
+            <button type="button" class="icon-btn" aria-label="Toggle shopping list" data-toggle-shopping>
+              <span aria-hidden="true" data-shopping-toggle-label>▾</span>
+            </button>
             <div class="shopping-card__header-main">
               <h3>Weekly shopping list</h3>
-              <p class="helper-text">Totals include every recipe currently in the plan.</p>
             </div>
             <button type="button" class="icon-btn" id="printShoppingList" aria-label="Print shopping list" title="Print shopping list">
               <span aria-hidden="true">🖨</span>
             </button>
           </div>
+          <p class="helper-text shopping-card__helper">Totals include every recipe currently in the plan.</p>
           <div id="weeklyShoppingList"></div>
         </section>
       </div>

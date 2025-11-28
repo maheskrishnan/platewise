@@ -22,6 +22,7 @@ const SUMMARY_FIELDS = [
   },
   { key: 'cholesterol_mg', label: 'Cholesterol', suffix: 'mg', dv: 300 },
   { key: 'sodium_mg', label: 'Sodium', suffix: 'mg', dv: 2300 },
+  { key: 'sugar_g', label: 'Sugar', suffix: 'g' },
 ];
 
 const BASE_UNIT_OPTIONS = [
@@ -50,6 +51,7 @@ const createTotalsSnapshot = () => ({
   saturated_g: 0,
   monounsaturated_g: 0,
   polyunsaturated_g: 0,
+  sugar_g: 0,
 });
 
 const makeWeeklyPlanId = () =>
@@ -115,6 +117,9 @@ const elements = {
   compareNavBadge: document.getElementById('compareNavBadge'),
   shoppingList: document.getElementById('weeklyShoppingList'),
   printShoppingButton: document.getElementById('printShoppingList'),
+  shoppingToggle: document.querySelector('[data-toggle-shopping]'),
+  shoppingCard: document.querySelector('[data-shopping-card]'),
+  shoppingToggleLabel: document.querySelector('[data-shopping-toggle-label]'),
   planSelect: document.getElementById('weeklyPlanSelect'),
   addPlanBtn: document.getElementById('addWeeklyPlan'),
   renamePlanBtn: document.getElementById('renameWeeklyPlan'),
@@ -402,6 +407,7 @@ const getRecipeTotals = (recipe) => {
     saturated_g: 0,
     monounsaturated_g: 0,
     polyunsaturated_g: 0,
+    sugar_g: 0,
   };
   recipe.ingredients.forEach((entry) => {
     const food = state.foodMap.get(entry.id);
@@ -418,6 +424,7 @@ const getRecipeTotals = (recipe) => {
     totals.saturated_g += (food.saturated_g || 0) * factor;
     totals.monounsaturated_g += (food.monounsaturated_g || 0) * factor;
     totals.polyunsaturated_g += (food.polyunsaturated_g || 0) * factor;
+    totals.sugar_g += (food.sugar_g || 0) * factor;
   });
   totals.netCarb = totals.carbs_g - totals.fiber_g;
   return totals;
@@ -1264,3 +1271,10 @@ const bootstrap = async () => {
 };
 
 bootstrap();
+  elements.shoppingToggle?.addEventListener('click', () => {
+    if (!elements.shoppingCard) return;
+    const collapsed = elements.shoppingCard.classList.toggle('collapsed');
+    if (elements.shoppingToggleLabel) {
+      elements.shoppingToggleLabel.textContent = collapsed ? '▸' : '▾';
+    }
+  });
