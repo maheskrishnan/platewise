@@ -843,18 +843,13 @@ body {
   gap: 0.75rem;
 }
 
-.recipe-description {
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
-  padding: 0.45rem 0.6rem;
-  font-family: inherit;
-  font-size: 0.9rem;
-  resize: vertical;
-  min-height: 60px;
-}
-
 .recipe-card.collapsed .recipe-card__body {
   display: none;
+}
+
+.notes-row {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .recipe-collapsed-summary {
@@ -865,8 +860,7 @@ body {
   white-space: nowrap;
 }
 
-.recipe-card.collapsed .recipe-collapsed-summary,
-.recipe-card .recipe-description {
+.recipe-card.collapsed .recipe-collapsed-summary {
   display: block;
 }
 
@@ -902,7 +896,7 @@ body {
 
 .recipe-card__actions {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.75rem;
 }
 
 .meal-section__totals {
@@ -1137,4 +1131,107 @@ body {
   height: 60px;
   margin: 0.75rem 0;
   width: 100%;
+}
+.notes-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  padding: 1rem;
+}
+
+.notes-modal__panel {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  width: min(720px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.notes-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.notes-modal__header h3 {
+  margin: 0.25em 0;
+}
+
+.notes-modal__panel textarea {
+  border: 1px solid #cbd5f5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0.6rem 0.75rem;
+  resize: vertical;
+  min-height: 208px;
+}
+
+.notes-modal__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+.shopping-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.shopping-card__header h3 {
+  margin: 0;
+}
+
+.shopping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.shopping-column h4 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.shopping-column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.shopping-column li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+  font-size: 0.88rem;
+}
+
+.shopping-column li strong {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.shopping-column li.empty {
+  justify-content: center;
+  color: #94a3b8;
+  font-style: italic;
 }

@@ -103,18 +103,50 @@
       "collapsed": true
     },
     {
+      "id": "bdcaf27e-671e-4a24-a30d-d79be25d6511",
+      "title": "Cauliflower gravy",
+      "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, ginger garlic paste, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
+      "ingredients": [
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "vegetables-34",
+          "quantity": 3,
+          "unit": "1 lb",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        }
+      ],
+      "collapsed": true
+    },
+    {
       "id": "004721d6-cdb4-49a9-8af7-2c5d503be742",
       "title": "Cabbage, Cauliflower and peas poriyal",
       "ingredients": [
         {
           "id": "vegetables-18",
-          "quantity": 1,
+          "quantity": 3,
           "unit": "1 lb",
           "unitGrams": 454
         },
         {
           "id": "vegetables-34",
-          "quantity": 1,
+          "quantity": 2,
           "unit": "1 lb",
           "unitGrams": 454
         },
@@ -143,7 +175,8 @@
           "unitGrams": 14
         }
       ],
-      "collapsed": true
+      "collapsed": true,
+      "description": "https://www.youtube.com/shorts/yEuhQYcPIQM"
     },
     {
       "id": "c53163ae-c320-4ed8-9b37-23b51d986423",
@@ -151,7 +184,7 @@
       "ingredients": [
         {
           "id": "meats_and_seafood-0",
-          "quantity": 1,
+          "quantity": 2,
           "unit": "1 lb",
           "unitGrams": 454
         },
@@ -218,13 +251,6 @@
         }
       ],
       "collapsed": true
-    },
-    {
-      "id": "bdcaf27e-671e-4a24-a30d-d79be25d6511",
-      "title": "Cauliflower gravy",
-      "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n",
-      "ingredients": [],
-      "collapsed": false
     }
   ]
 }

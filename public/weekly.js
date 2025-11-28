@@ -50,6 +50,7 @@ const elements = {
   dailyAverages: document.getElementById('dailyAverages'),
   addRecipeButton: document.getElementById('addRecipeButton'),
   compareNavBadge: document.getElementById('compareNavBadge'),
+  shoppingList: document.getElementById('weeklyShoppingList'),
 };
 
 const fetchJson = async (path) => {
@@ -315,6 +316,112 @@ const renderSummaries = () => {
   renderSummaryGrid(elements.dailyAverages, dailyTotals);
 };
 
+const groupShoppingItems = (items) => {
+  const meats = [];
+  const veggies = [];
+  const other = [];
+  items.forEach((item) => {
+    const category = (item.category || '').toLowerCase();
+    if (category.includes('meat') || category.includes('seafood')) {
+      meats.push(item);
+    } else if (category.includes('vegetable')) {
+      veggies.push(item);
+    } else {
+      other.push(item);
+    }
+  });
+  const sortItems = (list) => list.sort((a, b) => a.name.localeCompare(b.name));
+  return {
+    meats: sortItems(meats),
+    veggies: sortItems(veggies),
+    other: sortItems(other),
+  };
+};
+
+const renderShoppingList = () => {
+  if (!elements.shoppingList) return;
+  const totalsMap = new Map();
+  state.recipes.forEach((recipe) => {
+    recipe.ingredients.forEach((entry) => {
+      const food = state.foodMap.get(entry.id);
+      if (!food) return;
+      const grams = getEntryGrams(entry);
+      const current = totalsMap.get(entry.id) || {
+        name: food.name,
+        category: food.categoryLabel,
+        entries: [],
+      };
+      current.entries.push({
+        quantity: entry.quantity,
+        unit: entry.unit,
+        unitGrams: entry.unitGrams,
+        grams,
+      });
+      totalsMap.set(entry.id, current);
+    });
+  });
+  if (!totalsMap.size) {
+    elements.shoppingList.innerHTML =
+      '<p class="helper-text">No ingredients yet. Add recipes to build your list.</p>';
+    return;
+  }
+  const grouped = groupShoppingItems(
+    Array.from(totalsMap.values()).map((item) => {
+      let unit = item.entries[0]?.unit || 'g';
+      let totalQuantity = 0;
+      let gramsTotal = 0;
+      let consistent = true;
+      item.entries.forEach((entry) => {
+        gramsTotal += entry.grams;
+        if (entry.unit === unit) {
+          totalQuantity += entry.quantity;
+        } else {
+          consistent = false;
+        }
+      });
+      if (!consistent) {
+        unit = 'g';
+        totalQuantity = gramsTotal;
+      }
+      return {
+        name: item.name,
+        category: item.category,
+        totalQuantity,
+        preferredUnit: unit,
+      };
+    })
+  );
+  const renderColumn = (title, items) => `
+    <div class="shopping-column">
+      <h4>${title}</h4>
+      <ul>
+        ${
+          items.length
+            ? items
+                .map(
+                  (item) =>
+                    `<li>
+                      <span>${item.name}</span>
+                      <strong>${formatNumber(item.totalQuantity)} ${
+                      item.preferredUnit || 'g'
+                    }</strong>
+                    </li>`
+                )
+                .join('')
+            : '<li class="empty">—</li>'
+        }
+      </ul>
+    </div>
+  `;
+  elements.shoppingList.innerHTML = `
+    <div class="shopping-grid">
+      ${renderColumn('Meats & Seafood', grouped.meats)}
+      ${renderColumn('Vegetables', grouped.veggies)}
+      ${renderColumn('Other', grouped.other)}
+    </div>
+  `;
+};
+
 const escapeHtml = (text) =>
   (text || '').replace(/[&<>"']/g, (char) => {
     const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
@@ -399,10 +506,12 @@ const renderRecipeCard = (recipe, index) => {
               )}</div>`
             : ''
         }
-        <button type="button" class="ghost-btn danger" data-remove-recipe="${recipe.id}">Delete</button>
+        <div class="recipe-card__actions">
+          <button type="button" class="ghost-btn secondary" data-edit-notes="${recipe.id}">Notes</button>
+          <button type="button" class="ghost-btn danger" data-remove-recipe="${recipe.id}">Delete</button>
+        </div>
       </div>
       <div class="recipe-card__body">
-      <textarea class="recipe-description" data-recipe-description="${recipe.id}" rows="2" placeholder="Notes or description...">${escapeHtml(recipe.description || '')}</textarea>
       <label class="recipe-search-row" for="recipeSearch-${recipe.id}">
         <span class="search-label__title">Add ingredients</span>
         <input type="search" id="recipeSearch-${recipe.id}" placeholder="Search foods..." autocomplete="off" data-recipe-search="${recipe.id}" value="${escapeHtml(
@@ -446,6 +555,7 @@ const renderRecipes = () => {
     .map((recipe, index) => renderRecipeCard(recipe, index))
     .join('');
   state.recipes.forEach((recipe) => renderRecipeSearchResults(recipe.id));
+  renderShoppingList();
 };
 
 const renderRecipeSearchResults = (recipeId) => {
@@ -586,12 +696,55 @@ const updateRecipeDescription = (recipeId, description) => {
   persistRecipes();
 };
 
+const openNotesModal = (recipeId) => {
+  const recipe = getRecipeById(recipeId);
+  if (!recipe) return;
+  const modal = document.createElement('div');
+  modal.className = 'notes-modal';
+  modal.innerHTML = `
+    <div class="notes-modal__panel">
+      <div class="notes-modal__header">
+        <div>
+          <h3>${escapeHtml(recipe.title)}</h3>
+        </div>
+        <button type="button" class="close-btn" data-close-notes>&times;</button>
+      </div>
+      <textarea data-notes-input rows="4">${escapeHtml(recipe.description || '')}</textarea>
+      <div class="notes-modal__actions">
+        <button type="button" class="ghost-btn" data-close-notes>Cancel</button>
+        <button type="button" class="primary-link" data-save-notes="${recipeId}">Save</button>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  const closeModal = () => {
+    modal.remove();
+  };
+
+  modal.addEventListener('click', (event) => {
+    if (
+      event.target.matches('[data-close-notes]') ||
+      event.target === modal
+    ) {
+      closeModal();
+    }
+    if (event.target.matches('[data-save-notes]')) {
+      const textarea = modal.querySelector('[data-notes-input]');
+      updateRecipeDescription(recipeId, textarea.value);
+      closeModal();
+      renderRecipes();
+    }
+  });
+};
+
 const getRecipeCollapsedSummary = (totals) => {
   const metrics = [
     `${formatNumber(totals.calories)} kcal`,
     `${formatNumber(totals.protein_g)} g protein`,
     `${formatNumber(totals.carbs_g)} g carbs`,
     `${formatNumber(totals.fat_g)} g fat`,
+    `${formatNumber(totals.fiber_g)} g fiber`,
   ];
   return metrics.join(' • ');
 };
@@ -662,6 +815,11 @@ const attachEvents = () => {
     const toggleBtn = event.target.closest('[data-toggle-recipe]');
     if (toggleBtn) {
       toggleRecipeCollapse(toggleBtn.dataset.toggleRecipe);
+      return;
+    }
+    const notesBtn = event.target.closest('[data-edit-notes]');
+    if (notesBtn) {
+      openNotesModal(notesBtn.dataset.editNotes);
       return;
     }
     const removeBtn = event.target.closest('[data-remove-ingredient]');
