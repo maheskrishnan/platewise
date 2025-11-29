@@ -164,8 +164,17 @@ const getFieldValue = (food, key) => {
   return formatNumber(raw * factor);
 };
 
+const pruneMissingSelections = () => {
+  const validIds = state.selectedIds.filter((id) => getFoodById(id));
+  if (validIds.length !== state.selectedIds.length) {
+    state.selectedIds = validIds;
+    persistSelections();
+  }
+};
+
 const renderSelectionTags = () => {
   const container = elements.selectionTags;
+  pruneMissingSelections();
   container.innerHTML = '';
 
   if (!state.selectedIds.length) {
@@ -392,8 +401,9 @@ const bindSortHandlers = () => {
 };
 
 const renderCompareTable = () => {
-  const container = elements.compareTable;
-  container.innerHTML = '';
+ const container = elements.compareTable;
+ container.innerHTML = '';
+ pruneMissingSelections();
 
   if (!state.selectedIds.length) {
     container.innerHTML =
@@ -514,6 +524,7 @@ const renderCompareTable = () => {
     </div>
   `;
   bindSortHandlers();
+
 };
 
 const toggleSelection = (foodId) => {

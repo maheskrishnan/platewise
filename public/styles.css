@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  overscroll-behavior: none;
+}
+
 body {
   margin: 0;
 }
@@ -39,6 +44,8 @@ body {
   padding: 1rem 1.25rem;
   min-height: 100vh;
   background: #111827;
+  display: flex;
+  flex-direction: column;
 }
 
 .content-inner {
@@ -1149,6 +1156,13 @@ body {
   gap: 1rem;
   flex-wrap: wrap;
 }
+
+.summary-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
 .recipe-search-row {
   display: flex;
   align-items: center;
@@ -1263,6 +1277,61 @@ body {
 
 .shopping-card.collapsed .shopping-card__helper {
   display: none;
+}
+
+.import-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 25;
+  padding: 1.5rem;
+}
+
+.import-modal.hidden {
+  display: none;
+}
+
+.import-modal__panel {
+  background: #fff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  width: min(640px, 100%);
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.import-modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.import-modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+}
+
+.import-modal__body button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #cbd5f5;
+  border-radius: 12px;
+  padding: 0.5rem 0.75rem;
+  background: #f8fafc;
+  cursor: pointer;
+}
+
+.import-modal__body button:hover {
+  background: #e0e7ff;
 }
 
 .shopping-card__header {

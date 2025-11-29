@@ -111,7 +111,15 @@ const formatNumber = (value) => {
 };
 
 const sanitizeQuantity = (value) => {
-  const parsed = Number(value);
+  if (value === null || value === undefined || value === '') {
+    return DEFAULT_QUANTITY;
+  }
+  const trimmed = String(value).trim();
+  if (trimmed === '.' || trimmed === '-'
+  ) {
+    return DEFAULT_QUANTITY;
+  }
+  const parsed = Number(trimmed);
   if (!Number.isFinite(parsed) || parsed <= 0) {
     return DEFAULT_QUANTITY;
   }
@@ -717,23 +725,8 @@ const attachEvents = () => {
     renderRecipes();
   });
 
-const handleInputChange = (target) => {
-    if (target.matches('.meal-qty-input')) {
-      const recipeId = target.dataset.quantityInput;
-      const foodId = target.dataset.foodId;
-      handleQuantityChange(recipeId, foodId, target.value);
-      return;
-    }
-    if (target.matches('[data-unit-select]')) {
-      const recipeId = target.dataset.unitSelect;
-      const foodId = target.dataset.foodId;
-      const grams =
-        target.selectedOptions[0] && target.selectedOptions[0].dataset.grams
-          ? Number(target.selectedOptions[0].dataset.grams)
-          : undefined;
-      handleUnitChange(recipeId, foodId, target.value, grams);
-      return;
-    }
+  elements.recipeList?.addEventListener('input', (event) => {
+    const target = event.target;
     if (target.matches('[data-recipe-title-input]')) {
       const { recipeTitleInput } = target.dataset;
       updateRecipeTitle(recipeTitleInput, target.value.trim());
@@ -750,12 +743,25 @@ const handleInputChange = (target) => {
       renderRecipeSearchResults(recipeId);
       return;
     }
-  };
+  });
 
-  ['input', 'change'].forEach((type) => {
-    elements.recipeList?.addEventListener(type, (event) => {
-      handleInputChange(event.target);
-    });
+  elements.recipeList?.addEventListener('change', (event) => {
+    const target = event.target;
+    if (target.matches('.meal-qty-input')) {
+      const recipeId = target.dataset.quantityInput;
+      const foodId = target.dataset.foodId;
+      handleQuantityChange(recipeId, foodId, target.value);
+      return;
+    }
+    if (target.matches('[data-unit-select]')) {
+      const recipeId = target.dataset.unitSelect;
+      const foodId = target.dataset.foodId;
+      const grams =
+        target.selectedOptions[0] && target.selectedOptions[0].dataset.grams
+          ? Number(target.selectedOptions[0].dataset.grams)
+          : undefined;
+      handleUnitChange(recipeId, foodId, target.value, grams);
+    }
   });
 
   elements.recipeList?.addEventListener('keydown', (event) => {

@@ -38,7 +38,10 @@
         <section class="planner-summary-card">
           <div class="summary-header">
             <p class="eyebrow">Daily average (÷ 7)</p>
-            <button type="button" class="primary-link secondary" id="addRecipeButton">Add recipe</button>
+            <div class="summary-actions">
+              <button type="button" class="ghost-btn" id="importRecipeButton">Import recipe</button>
+              <button type="button" class="primary-link secondary" id="addRecipeButton">Add recipe</button>
+            </div>
           </div>
           <div id="dailyAverages" class="daily-total-grid"></div>
         </section>
@@ -61,6 +64,17 @@
         </section>
       </div>
     </main>
+  </div>
+
+  <div class="import-modal hidden" id="importRecipeModal" aria-hidden="true">
+    <div class="import-modal__panel">
+      <div class="import-modal__header">
+        <h3>Import recipe</h3>
+        <button type="button" class="close-btn" id="closeImportModal">&times;</button>
+      </div>
+      <p class="helper-text">Choose a recipe from your library and we’ll add it to this weekly plan.</p>
+      <div class="import-modal__body" id="importRecipeList"></div>
+    </div>
   </div>
 
   <script src="sidebar.js" defer></script>

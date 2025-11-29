@@ -8,7 +8,7 @@
           "breakfast": [
             {
               "id": "vegetables-20",
-              "quantity": 1,
+              "quantity": 0.25,
               "unit": "cup chopped",
               "unitGrams": 160
             },
@@ -313,123 +313,9 @@
             "ingredients": [
               {
                 "id": "grains-0",
-                "quantity": 6,
+                "quantity": 100,
                 "unit": "cup raw",
                 "unitGrams": 185
-              }
-            ]
-          },
-          {
-            "id": "fb84964c-bc37-4179-8ef4-7fe31b852183",
-            "title": "Vegetable Sambar",
-            "description": "",
-            "collapsed": true,
-            "ingredients": [
-              {
-                "id": "lentils-4",
-                "quantity": 1,
-                "unit": "cup dry",
-                "unitGrams": 200
-              },
-              {
-                "id": "vegetables-20",
-                "quantity": 2,
-                "unit": "cup chopped",
-                "unitGrams": 160
-              },
-              {
-                "id": "vegetables-19",
-                "quantity": 1,
-                "unit": "cup chopped",
-                "unitGrams": 180
-              },
-              {
-                "id": "oils-0",
-                "quantity": 3,
-                "unit": "tablespoon",
-                "unitGrams": 14
-              },
-              {
-                "id": "vegetables-18",
-                "quantity": 1,
-                "unit": "pound",
-                "unitGrams": 454
-              },
-              {
-                "id": "vegetables-16",
-                "quantity": 1,
-                "unit": "pound",
-                "unitGrams": 454
-              }
-            ]
-          },
-          {
-            "id": "a06e4adb-b394-4d4c-8114-22015f7a14c4",
-            "title": "Beetroot poriyal",
-            "description": "",
-            "collapsed": true,
-            "ingredients": [
-              {
-                "id": "vegetables-17",
-                "quantity": 1,
-                "unit": "pound",
-                "unitGrams": 454
-              },
-              {
-                "id": "vegetables-20",
-                "quantity": 1,
-                "unit": "cup chopped",
-                "unitGrams": 160
-              },
-              {
-                "id": "vegetables-19",
-                "quantity": 1,
-                "unit": "cup chopped",
-                "unitGrams": 180
-              },
-              {
-                "id": "oils-0",
-                "quantity": 2,
-                "unit": "tablespoon",
-                "unitGrams": 14
-              }
-            ]
-          },
-          {
-            "id": "583769a1-3f4d-45d6-8f96-f04f6da37748",
-            "title": "Cabbage and peas poriyal",
-            "description": "https://www.youtube.com/shorts/yEuhQYcPIQM",
-            "collapsed": true,
-            "ingredients": [
-              {
-                "id": "vegetables-18",
-                "quantity": 2,
-                "unit": "pound",
-                "unitGrams": 454
-              },
-              {
-                "id": "vegetables-35",
-                "quantity": 1,
-                "unit": "cup",
-                "unitGrams": 145
-              },
-              {
-                "id": "vegetables-20",
-                "quantity": 1,
-                "unit": "cup chopped",
-                "unitGrams": 160
-              },
-              {
-                "id": "vegetables-19",
-                "quantity": 1,
-                "unit": "cup chopped",
-                "unitGrams": 180
-              },
-              {
-                "id": "oils-0",
-                "quantity": 2,
-                "unit": "tablespoon",
-                "unitGrams": 14
               }
             ]
           },
@@ -437,7 +323,7 @@
             "id": "baf3844e-cf07-4855-8976-2ee39481099c",
             "title": "Cauliflower gravy",
             "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, ginger garlic paste, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
-            "collapsed": false,
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "oils-0",
@@ -528,16 +414,114 @@
                 "unitGrams": 14
               }
             ]
+          },
+          {
+            "id": "2b107634-ce58-4665-ae3b-1daa02b49cef",
+            "title": "Homemade oatmeal",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "grains-2",
+                "quantity": 0.25,
+                "unit": "cup dry",
+                "unitGrams": 80
+              },
+              {
+                "id": "dried_fruits-0",
+                "quantity": 1,
+                "unit": "1/4 cup",
+                "unitGrams": 40
+              },
+              {
+                "id": "dairy-1",
+                "quantity": 1,
+                "unit": "cup",
+                "unitGrams": 240
+              }
+            ]
+          },
+          {
+            "id": "57dd1e97-0130-4855-92d1-3296eda94d27",
+            "title": "Cauliflower curry Improvised",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "vegetables-34",
+                "quantity": 3,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              }
+            ]
+          },
+          {
+            "id": "b8d9263c-19e9-4278-aae1-22f6c871227b",
+            "title": "Ahi Tuna Grill",
+            "description": "",
+            "collapsed": false,
+            "ingredients": []
           }
         ]
       }
     ],
-    "activePlanId": "aabf58d0-ee57-4b5e-a0cc-f6c938890639"
+    "activePlanId": "2047a9af-5762-459f-bc8f-94f895340865"
   },
   "recipesLibrary": [
     {
+      "id": "09f2b5b2-ca75-4b81-99a9-21753dd86f05",
+      "title": "New recipe",
+      "description": "",
+      "collapsed": true,
+      "ingredients": []
+    },
+    {
+      "id": "78019f13-e9ed-46db-ac34-f505d9b5a0c7",
+      "title": "Homemade oatmeal",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "grains-2",
+          "quantity": 0.25,
+          "unit": "cup dry",
+          "unitGrams": 80
+        },
+        {
+          "id": "dried_fruits-0",
+          "quantity": 1,
+          "unit": "1/4 cup",
+          "unitGrams": 40
+        },
+        {
+          "id": "dairy-1",
+          "quantity": 1,
+          "unit": "cup",
+          "unitGrams": 240
+        }
+      ]
+    },
+    {
       "id": "4c59f980-c500-4980-b802-7e049457358e",
-      "title": "Cauliflower curry",
+      "title": "Cauliflower curry Improvised",
       "description": "",
       "collapsed": true,
       "ingredients": [

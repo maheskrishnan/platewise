@@ -120,7 +120,14 @@ const formatNumber = (value) => {
 };
 
 const sanitizeQuantity = (value) => {
-  const parsed = Number(value);
+  if (value === null || value === undefined || value === '') {
+    return DEFAULT_QUANTITY;
+  }
+  const trimmed = String(value).trim();
+  if (trimmed === '.' || trimmed === '-') {
+    return DEFAULT_QUANTITY;
+  }
+  const parsed = Number(trimmed);
   if (!Number.isFinite(parsed) || parsed <= 0) {
     return DEFAULT_QUANTITY;
   }

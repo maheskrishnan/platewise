@@ -110,12 +110,14 @@ const state = {
   searchTerms: {},
   searchResults: {},
   searchHighlights: {},
+  libraryRecipes: [],
 };
 
 const elements = {
   recipeList: document.getElementById('recipeList'),
   dailyAverages: document.getElementById('dailyAverages'),
   addRecipeButton: document.getElementById('addRecipeButton'),
+  importRecipeButton: document.getElementById('importRecipeButton'),
   compareNavBadge: document.getElementById('compareNavBadge'),
   shoppingList: document.getElementById('weeklyShoppingList'),
   printShoppingButton: document.getElementById('printShoppingList'),
@@ -127,6 +129,9 @@ const elements = {
   clonePlanBtn: document.getElementById('cloneWeeklyPlan'),
   renamePlanBtn: document.getElementById('renameWeeklyPlan'),
   deletePlanBtn: document.getElementById('deleteWeeklyPlan'),
+  importModal: document.getElementById('importRecipeModal'),
+  importList: document.getElementById('importRecipeList'),
+  closeImportModal: document.getElementById('closeImportModal'),
 };
 
 const getActivePlan = () => {
@@ -313,7 +318,14 @@ const formatNumber = (value) => {
 };
 
 const sanitizeQuantity = (value) => {
-  const parsed = Number(value);
+  if (value === null || value === undefined || value === '') {
+    return DEFAULT_QUANTITY;
+  }
+  const trimmed = String(value).trim();
+  if (trimmed === '.' || trimmed === '-') {
+    return DEFAULT_QUANTITY;
+  }
+  const parsed = Number(trimmed);
   if (!Number.isFinite(parsed) || parsed <= 0) {
     return DEFAULT_QUANTITY;
   }
@@ -425,6 +437,19 @@ const persistPlans = async () => {
 
 const getRecipeById = (recipeId) =>
   getActiveRecipes().find((recipe) => recipe.id === recipeId);
+
+const loadLibraryRecipes = async () => {
+  try {
+    const response = await fetch('/api/recipes');
+    if (!response.ok) throw new Error('Failed to load recipes');
+    const data = await response.json();
+    if (!Array.isArray(data)) return [];
+    return data.map(normalizeRecipe);
+  } catch (error) {
+    console.error(error);
+    return [];
+  }
+};
 
 const getRecipeTotals = (recipe) => {
   const totals = {
@@ -909,6 +934,15 @@ const focusRecipeSearch = (recipeId) => {
   }
 };
 
+const scrollToRecipe = (recipeId) => {
+  requestAnimationFrame(() => {
+    const card = document.querySelector(`[data-recipe-id="${recipeId}"]`);
+    if (card) {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+};
+
 const renderRecipeSearchResults = (recipeId) => {
   const container = document.querySelector(
     `[data-recipe-results="${recipeId}"]`
@@ -966,6 +1000,7 @@ const addRecipe = () => {
   persistPlans();
   renderRecipes();
   renderSummaries();
+  scrollToRecipe(recipe.id);
 };
 
 const removeRecipe = (recipeId) => {
@@ -1176,6 +1211,59 @@ const renderSearchResults = (recipeId) => {
   renderRecipeSearchResults(recipeId);
 };
 
+const renderImportList = () => {
+  if (!elements.importList) return;
+  if (!state.libraryRecipes.length) {
+    elements.importList.innerHTML =
+      '<p class="helper-text">No recipes in your library yet.</p>';
+    return;
+  }
+  elements.importList.innerHTML = state.libraryRecipes
+    .map(
+      (recipe) => `
+        <button type="button" class="import-item" data-import-id="${recipe.id}">
+          <span>${escapeHtml(recipe.title)}</span>
+          <span class="helper-text">${recipe.ingredients.length} ingredient${
+        recipe.ingredients.length === 1 ? '' : 's'
+      }</span>
+        </button>
+      `
+    )
+    .join('');
+};
+
+const openImportModal = () => {
+  if (!elements.importModal) return;
+  renderImportList();
+  elements.importModal.classList.remove('hidden');
+  elements.importModal.setAttribute('aria-hidden', 'false');
+};
+
+const closeImportModal = () => {
+  if (!elements.importModal) return;
+  elements.importModal.classList.add('hidden');
+  elements.importModal.setAttribute('aria-hidden', 'true');
+};
+
+const importRecipeFromLibrary = (recipeId) => {
+  const source = state.libraryRecipes.find((recipe) => recipe.id === recipeId);
+  if (!source) return;
+  const cloned = normalizeRecipe({
+    ...source,
+    id: undefined,
+    collapsed: false,
+  });
+  getActiveRecipes().push(cloned);
+  state.searchTerms[cloned.id] = '';
+  state.searchResults[cloned.id] = [];
+  state.searchHighlights[cloned.id] = -1;
+  persistPlans();
+  renderRecipes();
+  renderSummaries();
+  closeImportModal();
+  scrollToRecipe(cloned.id);
+};
+
 const attachEvents = () => {
   elements.planSelect?.addEventListener('change', (event) => {
     selectPlan(event.target.value);
@@ -1190,8 +1278,42 @@ const attachEvents = () => {
   );
 
   elements.addRecipeButton?.addEventListener('click', addRecipe);
+  elements.importRecipeButton?.addEventListener('click', openImportModal);
+  elements.closeImportModal?.addEventListener('click', closeImportModal);
+  elements.importModal?.addEventListener('click', (event) => {
+    if (event.target === elements.importModal) {
+      closeImportModal();
+    }
+  });
+  elements.importList?.addEventListener('click', (event) => {
+    const button = event.target.closest('[data-import-id]');
+    if (button) {
+      importRecipeFromLibrary(button.dataset.importId);
+    }
+  });
 
-  const handleInputChange = (target) => {
+  elements.recipeList?.addEventListener('input', (event) => {
+    const target = event.target;
+    if (target.matches('[data-recipe-title-input]')) {
+      const { recipeTitleInput } = target.dataset;
+      updateRecipeTitle(recipeTitleInput, target.value.trim());
+      return;
+    }
+    if (target.matches('[data-recipe-description]')) {
+      updateRecipeDescription(target.dataset.recipeDescription, target.value);
+      return;
+    }
+    if (target.matches('[data-recipe-search]')) {
+      const recipeId = target.dataset.recipeSearch;
+      state.searchTerms[recipeId] = target.value;
+      state.searchHighlights[recipeId] = -1;
+      renderSearchResults(recipeId);
+      return;
+    }
+  });
+
+  elements.recipeList?.addEventListener('change', (event) => {
+    const target = event.target;
     if (target.matches('.meal-qty-input')) {
       const recipeId = target.dataset.quantityInput;
       const foodId = target.dataset.foodId;
@@ -1209,28 +1331,6 @@ const attachEvents = () => {
       handleUnitChange(recipeId, foodId, target.value, grams);
       return;
     }
-    if (target.matches('[data-recipe-title-input]')) {
-      const { recipeTitleInput } = target.dataset;
-      updateRecipeTitle(recipeTitleInput, target.value.trim());
-      return;
-    }
-    if (target.matches('[data-recipe-description]')) {
-      updateRecipeDescription(target.dataset.recipeDescription, target.value);
-      return;
-    }
-    if (target.matches('[data-recipe-search]')) {
-      const recipeId = target.dataset.recipeSearch;
-      state.searchTerms[recipeId] = target.value;
-      state.searchHighlights[recipeId] = -1;
-      renderSearchResults(recipeId);
-      return;
-    }
-  };
-
-  ['input', 'change'].forEach((type) => {
-    elements.recipeList?.addEventListener(type, (event) => {
-      handleInputChange(event.target);
-    });
   });
 
   elements.recipeList?.addEventListener('keydown', (event) => {
@@ -1385,9 +1485,10 @@ const attachEvents = () => {
 
 const bootstrap = async () => {
   try {
-    const [planState, foods] = await Promise.all([
+    const [planState, foods, libraryRecipes] = await Promise.all([
       loadPlans(),
       fetchJson('/api/foods'),
+      loadLibraryRecipes(),
     ]);
     state.plan = planState;
     getActivePlan();
@@ -1398,6 +1499,7 @@ const bootstrap = async () => {
     state.foods = foods;
     state.foodMap.clear();
     foods.forEach((food) => state.foodMap.set(food.id, food));
+    state.libraryRecipes = libraryRecipes;
 
     renderRecipes();
     renderSummaries();
