@@ -2707,6 +2707,59 @@
           "grams": 454
         }
       ]
+    },
+    {
+      "name": "Ahi Tuna (yellowfin, raw)",
+      "weight_grams": 100,
+      "calories": 108,
+      "protein_g": 23.4,
+      "fat_g": 0.95,
+      "saturated_g": 0.25,
+      "monounsaturated_g": 0.13,
+      "polyunsaturated_g": 0.36,
+      "omega_3_g": 0.28,
+      "omega_6_g": 0.02,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 16,
+        "vitamin_d_ug": 4.9,
+        "vitamin_e_mg": 0.24,
+        "vitamin_b12_ug": 9.43,
+        "niacin_mg": 8.5,
+        "vitamin_b6_mg": 0.93
+      },
+      "minerals": {
+        "calcium_mg": 4,
+        "iron_mg": 0.73,
+        "magnesium_mg": 50,
+        "phosphorus_mg": 191,
+        "potassium_mg": 444,
+        "sodium_mg": 39,
+        "zinc_mg": 0.52,
+        "selenium_ug": 90.6
+      },
+      "cholesterol_mg": 45,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "4 oz",
+          "grams": 113
+        },
+        {
+          "unit": "pound",
+          "grams": 454
+        }
+      ]
     }
   ],
   "dairy": [
