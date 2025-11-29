@@ -33,7 +33,7 @@ const NAV_ITEMS = [
 ];
 
 const TAGLINE =
-  'Heal with every meal through mindful eating, deliciously sustainable and deeply nourishing.';
+  'Master Mindful & Sustainable Eating.';
 
 class AppSidebar extends HTMLElement {
   connectedCallback() {
@@ -62,7 +62,7 @@ class AppSidebar extends HTMLElement {
       <aside class="sidebar">
         <div class="sidebar-header">
           <p class="eyebrow">Powered by foods.json</p>
-          <h1>Food Explorer</h1>
+          <h1>Meal Magic</h1>
           <p class="helper-text helper-text--tagline">${TAGLINE}</p>
         </div>
         <nav class="sidebar-menu" aria-label="Primary navigation">
