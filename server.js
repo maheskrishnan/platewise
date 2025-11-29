@@ -242,14 +242,22 @@ app.get('/api/recipes', (_req, res) => {
 
 app.post('/api/recipes', (req, res) => {
   try {
-    const { recipes } = req.body || {};
+    const { recipes, append, recipe } = req.body || {};
+    const store = ensureRecipesLibrary();
+    if (append && recipe) {
+      const next = Array.isArray(store.recipesLibrary)
+        ? [...store.recipesLibrary, recipe]
+        : [recipe];
+      store.recipesLibrary = next;
+      writeStore(store);
+      return res.json(next);
+    }
     if (!Array.isArray(recipes)) {
       return res.status(400).json({ message: 'Recipes must be an array' });
     }
-    const store = readStore();
     store.recipesLibrary = recipes;
     writeStore(store);
-    res.json({ success: true });
+    res.json(store.recipesLibrary);
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Failed to save recipes' });

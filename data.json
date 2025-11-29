@@ -516,6 +516,7 @@
             "id": "948e8cfc-634c-48a8-b857-96a653920437",
             "title": "Skim Milk Coffee (2x day)",
             "description": "",
+            "collapsed": false,
             "ingredients": [
               {
                 "id": "dairy-0",
@@ -523,8 +524,7 @@
                 "unit": "cup",
                 "unitGrams": 240
               }
-            ],
-            "collapsed": true
+            ]
           },
           {
             "id": "476a26b4-d34d-468a-ad0f-56e3cf46726c",
@@ -576,6 +576,7 @@
             "id": "d9d41e1f-64e6-4746-895e-b7610ffed51f",
             "title": "Vegetable Sambar (Tue)",
             "description": "",
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "lentils-4",
@@ -601,8 +602,7 @@
                 "unit": "tablespoon",
                 "unitGrams": 14
               }
-            ],
-            "collapsed": true
+            ]
           },
           {
             "id": "0a92e61a-0090-4d6b-aa4c-16d6c3c410ab",
@@ -672,6 +672,7 @@
             "id": "f17bad44-ea76-44c7-bedc-9df126e77a01",
             "title": "Tilapia Tawa Fry (Fri)",
             "description": "",
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "meats_and_seafood-5",
@@ -697,8 +698,7 @@
                 "unit": "tablespoon",
                 "unitGrams": 14
               }
-            ],
-            "collapsed": true
+            ]
           },
           {
             "id": "05b2a696-3c1f-4897-a63b-6ba923de8e6c",
@@ -746,19 +746,19 @@
             "ingredients": [
               {
                 "id": "grains-2",
-                "quantity": 0.25,
+                "quantity": 2,
                 "unit": "cup dry",
                 "unitGrams": 80
               },
               {
                 "id": "dried_fruits-0",
-                "quantity": 1,
+                "quantity": 7,
                 "unit": "1/4 cup",
                 "unitGrams": 40
               },
               {
                 "id": "dairy-1",
-                "quantity": 1,
+                "quantity": 7,
                 "unit": "cup",
                 "unitGrams": 240
               }
@@ -768,6 +768,7 @@
             "id": "5a4135b9-a975-4d08-9409-1aea887768ec",
             "title": "Skim Milk Coffee (2x day)",
             "description": "",
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "dairy-0",
@@ -775,8 +776,7 @@
                 "unit": "cup",
                 "unitGrams": 240
               }
-            ],
-            "collapsed": true
+            ]
           },
           {
             "id": "216e1ef9-6975-4a01-b868-4fd03c88cd8d",
@@ -828,6 +828,7 @@
             "id": "36c587ba-db2e-4e8d-8905-287f3df41195",
             "title": "2. Vegetable Sambar (Tue)",
             "description": "",
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "lentils-4",
@@ -853,8 +854,7 @@
                 "unit": "tablespoon",
                 "unitGrams": 14
               }
-            ],
-            "collapsed": true
+            ]
           },
           {
             "id": "d78eb8d4-17f3-44c7-a2db-1ee60b1556da",
@@ -864,7 +864,7 @@
             "ingredients": [
               {
                 "id": "meats_and_seafood-1",
-                "quantity": 2,
+                "quantity": 3,
                 "unit": "pound",
                 "unitGrams": 454
               },
@@ -896,7 +896,7 @@
             "ingredients": [
               {
                 "id": "meats_and_seafood-3",
-                "quantity": 2,
+                "quantity": 3,
                 "unit": "pound",
                 "unitGrams": 454
               },
@@ -921,9 +921,189 @@
             ]
           }
         ]
+      },
+      {
+        "id": "a802446a-53c1-4dde-9aa0-69631de21cf3",
+        "name": "Weekly plan - Super Simple",
+        "recipes": [
+          {
+            "id": "82c78313-1912-4f9c-a4a1-5c5b2b8c4285",
+            "title": "Milk 1% Coffee (2x day)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "dairy-1",
+                "quantity": 14,
+                "unit": "cup",
+                "unitGrams": 240
+              }
+            ]
+          },
+          {
+            "id": "2aaa4df7-0ebc-4fce-9d75-8d543b147969",
+            "title": "1. Cooked rice (Sun)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "grains-0",
+                "quantity": 7,
+                "unit": "cup raw",
+                "unitGrams": 185
+              }
+            ]
+          },
+          {
+            "id": "2b27227d-c3d6-4b05-8058-f66085cec54c",
+            "title": "2. Cauliflower gravy or Cabbage Peas Poriyal (Mon)",
+            "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, ginger garlic paste, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "oils-0",
+                "quantity": 4,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "vegetables-34",
+                "quantity": 1.5,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "vegetables-18",
+                "quantity": 1.5,
+                "unit": "pound",
+                "unitGrams": 454
+              }
+            ]
+          },
+          {
+            "id": "b0731bd5-64ba-4a26-975c-79e6c0ffc547",
+            "title": "3. Vegetable Sambar (Tue)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "lentils-4",
+                "quantity": 2,
+                "unit": "cup dry",
+                "unitGrams": 200
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 4,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "7ccd7fa9-4deb-4a14-a71a-0f43e4f7bcd5",
+            "title": "4. Chicken curry (Wed)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-1",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 4,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "meats_and_seafood-0",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              }
+            ]
+          },
+          {
+            "id": "ef741af8-6055-441c-8af5-1c247382b02b",
+            "title": "5. Shrimp or Tilapia Tawa Fry/Curry (Thu)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-3",
+                "quantity": 1.5,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 4,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "meats_and_seafood-5",
+                "quantity": 1.5,
+                "unit": "pound",
+                "unitGrams": 454
+              }
+            ]
+          }
+        ]
       }
     ],
-    "activePlanId": "396e5cc6-9ece-4535-83da-35c98f72d7e1"
+    "activePlanId": "bd890616-f5d7-4205-b8ec-f438c57bb4d4"
   },
   "recipesLibrary": [
     {
@@ -1045,6 +1225,20 @@
           "quantity": 1,
           "unit": "cup chopped",
           "unitGrams": 180
+        }
+      ]
+    },
+    {
+      "id": "948e8cfc-634c-48a8-b857-96a653920437",
+      "title": "Skim Milk Coffee (2x day)",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "dairy-0",
+          "quantity": 25,
+          "unit": "cup",
+          "unitGrams": 240
         }
       ]
     }

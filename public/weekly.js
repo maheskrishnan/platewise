@@ -862,6 +862,7 @@ const renderRecipeCard = (recipe, index) => {
         }
         <div class="recipe-card__actions">
           <button type="button" class="ghost-btn secondary" data-edit-notes="${recipe.id}">Notes</button>
+          <button type="button" class="ghost-btn" data-export-recipe="${recipe.id}">Export</button>
           <button type="button" class="ghost-btn danger" data-remove-recipe="${recipe.id}">Delete</button>
         </div>
       </div>
@@ -1291,6 +1292,11 @@ const attachEvents = () => {
       importRecipeFromLibrary(button.dataset.importId);
     }
   });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !elements.importModal?.classList.contains('hidden')) {
+      closeImportModal();
+    }
+  });
 
   elements.recipeList?.addEventListener('input', (event) => {
     const target = event.target;
@@ -1374,6 +1380,11 @@ const attachEvents = () => {
     const notesBtn = event.target.closest('[data-edit-notes]');
     if (notesBtn) {
       openNotesModal(notesBtn.dataset.editNotes);
+      return;
+    }
+    const exportBtn = event.target.closest('[data-export-recipe]');
+    if (exportBtn) {
+      exportRecipeToLibrary(exportBtn.dataset.exportRecipe);
       return;
     }
     const removeBtn = event.target.closest('[data-remove-ingredient]');
@@ -1560,5 +1571,27 @@ const toggleTitleEditing = (recipeId, force) => {
       displayButton.textContent = nextValue;
     }
     wrapper.classList.remove('editing');
+  }
+};
+
+const exportRecipeToLibrary = async (recipeId) => {
+  const recipe = getRecipeById(recipeId);
+  if (!recipe) return;
+  try {
+    const payload = normalizeRecipe(recipe);
+    const response = await fetch('/api/recipes', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ append: true, recipe: payload }),
+    });
+    if (!response.ok) throw new Error('Failed to export recipe');
+    const data = await response.json();
+    if (Array.isArray(data)) {
+      state.libraryRecipes = data.map(normalizeRecipe);
+    }
+    alert('Recipe added to your library.');
+  } catch (error) {
+    console.error(error);
+    alert('Unable to export recipe.');
   }
 };
