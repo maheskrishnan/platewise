@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings • Food Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <app-sidebar page="settings"></app-sidebar>
+
+    <main class="content">
+      <div class="content-inner">
+        <section class="meal-planner-card">
+          <div class="planner-header">
+            <div>
+              <h2>Settings</h2>
+              <p class="helper-text">Tune the default experience across the library, compare view, and planners.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="results-card" id="settingsPanel">
+          <form id="settingsForm" class="settings-form">
+            <fieldset>
+              <legend>General</legend>
+              <label class="settings-field">
+                <span>Default compare mode</span>
+                <select name="defaultCompareMode">
+                  <option value="per100g">Per 100 g</option>
+                  <option value="per100cal">Per 100 calories</option>
+                  <option value="per454g">Per 454 g (1 lb)</option>
+                </select>
+                <p class="helper-text">Used when you open the Compare page.</p>
+              </label>
+
+              <label class="settings-field">
+                <span>Default recipe order</span>
+                <select name="defaultRecipeOrder">
+                  <option value="default">Recently added</option>
+                  <option value="protein">Protein dense</option>
+                  <option value="carb">Net carb dense</option>
+                  <option value="fiber">Fiber dense</option>
+                  <option value="fat">Fat dense</option>
+                </select>
+                <p class="helper-text">Applies to the Recipe Library when you load the page.</p>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Interface</legend>
+              <label class="settings-toggle">
+                <input type="checkbox" name="collapseNotes" />
+                <span>Start recipes collapsed</span>
+              </label>
+              <label class="settings-toggle">
+                <input type="checkbox" name="showMicros" />
+                <span>Show vitamins & minerals by default</span>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Theme</legend>
+              <label class="settings-toggle">
+                <input type="radio" name="theme" value="default">
+                <span>Default (balanced accent)</span>
+              </label>
+              <label class="settings-toggle">
+                <input type="radio" name="theme" value="nightshade">
+                <span>Nightshade (low-contrast evening mode)</span>
+              </label>
+            </fieldset>
+
+            <div class="settings-actions">
+              <button type="button" class="ghost-btn" id="resetSettings">Reset to defaults</button>
+              <button type="submit" class="primary-link">Save preferences</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="theme.js" defer></script>
+  <script src="sidebar.js" defer></script>
+  <script src="settings.js" defer></script>
+</body>
+
+</html>
