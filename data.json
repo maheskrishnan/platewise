@@ -304,7 +304,7 @@
             "id": "484f13a3-ff56-433f-8a75-19b4066ceb81",
             "title": "Veggie Rich Egg Fried Rice",
             "description": "",
-            "collapsed": false,
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "eggs-0",
@@ -353,12 +353,6 @@
                 "quantity": 2,
                 "unit": "tablespoon",
                 "unitGrams": 14
-              },
-              {
-                "id": "vegetables-21",
-                "quantity": 1,
-                "unit": "cup chopped",
-                "unitGrams": 75
               },
               {
                 "id": "vegetables-35",
@@ -867,7 +861,7 @@
             "ingredients": [
               {
                 "id": "meats_and_seafood-3",
-                "quantity": 2,
+                "quantity": 1,
                 "unit": "pound",
                 "unitGrams": 454
               },
@@ -899,7 +893,7 @@
             "ingredients": [
               {
                 "id": "meats_and_seafood-5",
-                "quantity": 2,
+                "quantity": 1,
                 "unit": "pound",
                 "unitGrams": 454
               },
@@ -931,7 +925,7 @@
             "ingredients": [
               {
                 "id": "meats_and_seafood-6",
-                "quantity": 8,
+                "quantity": 4,
                 "unit": "4 oz",
                 "unitGrams": 113
               },
@@ -965,7 +959,7 @@
             "id": "978379a4-1b74-439b-aaa3-c88513d0bfcd",
             "title": "Homemade oatmeal (Breakfast)",
             "description": "",
-            "collapsed": false,
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "grains-2",
@@ -1151,7 +1145,7 @@
         "recipes": [
           {
             "id": "82c78313-1912-4f9c-a4a1-5c5b2b8c4285",
-            "title": "Milk 1% Coffee (2x day)",
+            "title": "Coffee with 1% Milk (2x day)",
             "description": "",
             "collapsed": true,
             "ingredients": [
@@ -1326,7 +1320,7 @@
         ]
       }
     ],
-    "activePlanId": "2047a9af-5762-459f-bc8f-94f895340865"
+    "activePlanId": "a802446a-53c1-4dde-9aa0-69631de21cf3"
   },
   "recipesLibrary": [
     {
@@ -1365,7 +1359,7 @@
       "id": "78019f13-e9ed-46db-ac34-f505d9b5a0c7",
       "title": "Homemade oatmeal",
       "description": "",
-      "collapsed": false,
+      "collapsed": true,
       "ingredients": [
         {
           "id": "grains-2",

@@ -1,4 +1,7 @@
 const STORAGE_KEY = 'foodSelections';
+const MODE_STORAGE_KEY = 'compareModePreference';
+const USER_SETTINGS_KEY = 'userSettings';
+const VALID_MODES = new Set(['per100g', 'per100cal', 'per454g', 'per1kg']);
 
 const DEFAULT_VISIBLE_KEYS = new Set([
   'serving_grams',
@@ -135,6 +138,37 @@ const getMicroNumericValue = (food, groupKey, nutrientKey) => {
   return source[nutrientKey] * factor;
 };
 
+const loadPreferredMode = () => {
+  try {
+    const stored = localStorage.getItem(MODE_STORAGE_KEY);
+    if (stored && VALID_MODES.has(stored)) {
+      return stored;
+    }
+  } catch {
+    // ignore
+  }
+  try {
+    const settingsRaw = localStorage.getItem(USER_SETTINGS_KEY);
+    if (settingsRaw) {
+      const parsed = JSON.parse(settingsRaw);
+      if (parsed?.defaultCompareMode && VALID_MODES.has(parsed.defaultCompareMode)) {
+        return parsed.defaultCompareMode;
+      }
+    }
+  } catch {
+    // ignore
+  }
+  return 'per100g';
+};
+
+const persistMode = () => {
+  try {
+    localStorage.setItem(MODE_STORAGE_KEY, state.mode);
+  } catch {
+    // ignore
+  }
+};
+
 const getNormalizationFactor = (food) => {
   if (state.mode === 'per100cal') {
     if (!food.calories || food.calories <= 0) return null;
@@ -142,6 +176,9 @@ const getNormalizationFactor = (food) => {
   }
   if (state.mode === 'per454g') {
     return 454 / 100;
+  }
+  if (state.mode === 'per1kg') {
+    return 1000 / 100;
   }
   return 1;
 };
@@ -553,6 +590,7 @@ const initModeEvents = () => {
       const mode = button.dataset.mode;
       if (mode && mode !== state.mode) {
         state.mode = mode;
+        persistMode();
         updateModeButtons();
         renderCompareTable();
       }
@@ -665,6 +703,11 @@ const bootstrap = async () => {
     const foods = await fetchJson('/api/foods');
     state.allFoods = foods;
     state.selectedIds = loadSelections();
+    const preferredMode = loadPreferredMode();
+    if (VALID_MODES.has(preferredMode)) {
+      state.mode = preferredMode;
+    }
+    updateModeButtons();
     state.vitaminKeys = collectMicroKeys(foods, 'vitamins');
     state.mineralKeys = collectMicroKeys(foods, 'minerals');
     ensureColumnDefaults();
