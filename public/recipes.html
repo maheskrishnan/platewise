@@ -20,7 +20,7 @@
               <h2>Recipe library</h2>
               <p class="helper-text">Maintain personal recipes independent of weekly planning.</p>
             </div>
-            <div class="planner-controls">
+            <div class="planner-controls planner-controls--compact">
               <button type="button" class="primary-link secondary" id="addLibraryRecipe">Add recipe</button>
             </div>
           </div>
@@ -28,10 +28,20 @@
 
         <section class="results-card">
           <div class="results-bar">
-            <label class="search-label" for="recipeLibrarySearch">
+            <label class="search-label search-inline" for="recipeLibrarySearch">
               <span>Search recipes</span>
               <input type="search" id="recipeLibrarySearch" placeholder="Filter by recipe name..." autocomplete="off">
             </label>
+            <div class="order-wrapper">
+              <label for="recipeOrderSelect">Order by</label>
+              <select id="recipeOrderSelect">
+                <option value="default">Recently added</option>
+                <option value="protein">Protein dense</option>
+                <option value="carb">Net carb dense</option>
+                <option value="fiber">Fiber dense</option>
+                <option value="fat">Fat dense</option>
+              </select>
+            </div>
           </div>
         </section>
 
@@ -40,6 +50,7 @@
     </main>
   </div>
 
+  <script src="theme.js" defer></script>
   <script src="sidebar.js" defer></script>
   <script src="recipes.js" defer></script>
 </body>

@@ -30,6 +30,12 @@ const NAV_ITEMS = [
     label: 'Weekly planner',
     helper: 'Organize weekly recipes & lists.',
   },
+  {
+    key: 'settings',
+    href: 'settings.html',
+    label: 'Settings',
+    helper: 'Personalize defaults & behavior.',
+  },
 ];
 
 const TAGLINE =

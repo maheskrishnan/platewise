@@ -82,6 +82,7 @@ const state = {
   foodMap: new Map(),
   recipes: [],
   recipeSearch: '',
+  recipeOrder: 'default',
   searchTerms: {},
   searchHighlights: {},
   searchResults: {},
@@ -91,6 +92,7 @@ const elements = {
   recipeList: document.getElementById('recipeLibraryList'),
   addRecipeButton: document.getElementById('addLibraryRecipe'),
   searchInput: document.getElementById('recipeLibrarySearch'),
+  orderSelect: document.getElementById('recipeOrderSelect'),
   compareNavBadge: document.getElementById('compareNavBadge'),
 };
 
@@ -447,10 +449,24 @@ const renderRecipeSearchResults = (recipeId) => {
   updateSearchHighlight(recipeId);
 };
 
+const getRecipeDensityScore = (recipe, key) => {
+  const totals = getRecipeTotals(recipe);
+  const calories = totals.calories || 0;
+  if (!calories) return 0;
+  if (key === 'protein') return totals.protein_g / calories;
+  if (key === 'fiber') return totals.fiber_g / calories;
+  if (key === 'fat') return totals.fat_g / calories;
+  if (key === 'carb') {
+    const netCarb = totals.netCarb || totals.carbs_g - totals.fiber_g;
+    return netCarb / calories;
+  }
+  return 0;
+};
+
 const renderRecipes = () => {
   if (!elements.recipeList) return;
   const term = state.recipeSearch.trim().toLowerCase();
-  const filtered = state.recipes.filter((recipe) =>
+  let filtered = state.recipes.filter((recipe) =>
     recipe.title.toLowerCase().includes(term) ||
     recipe.ingredients.some((ingredient) => {
       const food = state.foodMap.get(ingredient.id);
@@ -463,6 +479,15 @@ const renderRecipes = () => {
     elements.recipeList.innerHTML =
       '<p class="empty-state">No recipes yet. Add your first recipe to get started.</p>';
     return;
+  }
+  const { recipeOrder } = state;
+  if (recipeOrder !== 'default') {
+    const factor = recipeOrder === 'carb' ? -1 : 1;
+    filtered = [...filtered].sort((a, b) => {
+      const aScore = getRecipeDensityScore(a, recipeOrder);
+      const bScore = getRecipeDensityScore(b, recipeOrder);
+      return (bScore - aScore) * factor;
+    });
   }
   elements.recipeList.innerHTML = filtered
     .map((recipe, index) => renderRecipeCard(recipe, index))
@@ -722,6 +747,10 @@ const attachEvents = () => {
   elements.addRecipeButton?.addEventListener('click', addRecipe);
   elements.searchInput?.addEventListener('input', (event) => {
     state.recipeSearch = event.target.value;
+    renderRecipes();
+  });
+  elements.orderSelect?.addEventListener('change', (event) => {
+    state.recipeOrder = event.target.value;
     renderRecipes();
   });
 

@@ -5,8 +5,253 @@
   line-height: 1.4;
   letter-spacing: -0.01em;
 }
+body.theme-nightshade {
+  background: #101623;
+  color: #f1f5f9;
+}
 
-*,
+body.theme-nightshade,
+body.theme-nightshade h1,
+body.theme-nightshade h2,
+body.theme-nightshade h3,
+body.theme-nightshade h4,
+body.theme-nightshade p,
+body.theme-nightshade span,
+body.theme-nightshade label,
+body.theme-nightshade th,
+body.theme-nightshade td,
+body.theme-nightshade a {
+  color: #e2e8f0;
+}
+
+body.theme-nightshade .content {
+  background: #0b0f18;
+}
+
+body.theme-nightshade .content-inner {
+  background: #1a2134;
+  color: #e2e8f0;
+}
+
+body.theme-nightshade .meal-planner-card,
+body.theme-nightshade .results-card,
+body.theme-nightshade .meal-section,
+body.theme-nightshade .planner-summary-card,
+body.theme-nightshade .selection-summary-bar,
+body.theme-nightshade .filters,
+body.theme-nightshade .recipe-card,
+body.theme-nightshade .shopping-card,
+body.theme-nightshade .settings-form fieldset {
+  background: #1f273d;
+  color: #f8fafc;
+}
+
+body.theme-nightshade .recipe-totals-row {
+  background: rgba(15, 23, 42, 0.4);
+}
+
+body.theme-nightshade .sidebar {
+  background: #0d1320;
+}
+
+body.theme-nightshade .menu-link {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+body.theme-nightshade .menu-link.active {
+  background: rgba(186, 230, 253, 0.25);
+  color: #bae6fd;
+}
+
+body.theme-nightshade .primary-link {
+  background: #2563eb;
+}
+
+body.theme-nightshade .primary-link.secondary {
+  background: transparent;
+  color: #93c5fd;
+  border: 1px solid rgba(147, 197, 253, 0.4);
+}
+
+body.theme-nightshade .ghost-btn {
+  color: #e2e8f0;
+  border-color: rgba(226, 232, 240, 0.3);
+}
+
+body.theme-nightshade .results-card,
+body.theme-nightshade .meal-planner-card {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+body.theme-nightshade .daily-total {
+  background: #151c2c;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: #f8fafc;
+}
+
+body.theme-nightshade .daily-total .label,
+body.theme-nightshade .daily-total .dv {
+  color: #bfdbfe;
+}
+
+body.theme-nightshade .meal-table-wrapper,
+body.theme-nightshade .filters,
+body.theme-nightshade .selection-summary-bar,
+body.theme-nightshade .column-modal__section {
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
+body.theme-nightshade .meal-table {
+  background: #161c2b;
+}
+
+body.theme-nightshade .meal-table th {
+  background: #1f2937;
+  color: #f8fafc;
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+body.theme-nightshade .meal-table td {
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.theme-nightshade .meal-table tr:nth-child(odd) {
+  background: rgba(15, 23, 42, 0.35);
+}
+
+body.theme-nightshade .recipe-totals-row td {
+  background: rgba(15, 23, 42, 0.4);
+  border-color: rgba(148, 163, 184, 0.25);
+  color: #f8fafc;
+}
+
+body.theme-nightshade .planner-header h2,
+body.theme-nightshade .meal-section__header h3,
+body.theme-nightshade .settings-field span {
+  color: #dbeafe;
+}
+
+body.theme-nightshade .daily-total {
+  background: #151c2c;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+  color: #f8fafc;
+}
+
+body.theme-nightshade .daily-total .label,
+body.theme-nightshade .daily-total .dv,
+body.theme-nightshade .search-label__title,
+body.theme-nightshade .planner-header h2,
+body.theme-nightshade .meal-section__header h3 {
+  color: #bfdbfe;
+}
+
+body.theme-nightshade .selection-summary-bar {
+  background: #151c29;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+
+body.theme-nightshade .results-card,
+body.theme-nightshade .meal-planner-card,
+body.theme-nightshade .planner-summary-card,
+body.theme-nightshade .meal-section,
+body.theme-nightshade .settings-form fieldset {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+body.theme-nightshade .meal-table {
+  background: #161c2b;
+}
+
+body.theme-nightshade .meal-table th {
+  background: #1f2937;
+  color: #f8fafc;
+  border-color: rgba(148, 163, 184, 0.3);
+}
+
+body.theme-nightshade .meal-table td {
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.theme-nightshade .meal-table tr:nth-child(odd) {
+  background: rgba(15, 23, 42, 0.35);
+}
+
+body.theme-nightshade .meal-table-wrapper,
+body.theme-nightshade .filters {
+  border-color: rgba(148, 163, 184, 0.25);
+}
+
+body.theme-nightshade input[type='search']::placeholder {
+  color: rgba(226, 232, 240, 0.6);
+}
+
+body.theme-nightshade .helper-text {
+  color: rgba(226, 232, 240, 0.75);
+}
+
+body.theme-nightshade .settings-actions .ghost-btn {
+  border-color: rgba(148, 163, 184, 0.4);
+  color: #e2e8f0;
+}
+
+body.theme-nightshade .settings-actions .primary-link {
+  background: #3b82f6;
+}
+
+body.theme-nightshade .helper-text {
+  color: #94a3b8;
+}
+
+body.theme-nightshade input[type='search'],
+body.theme-nightshade select,
+body.theme-nightshade textarea,
+body.theme-nightshade .meal-qty-input {
+  background: #111b2d;
+  color: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}
+
+body.theme-nightshade .meal-table th,
+body.theme-nightshade .meal-table td,
+body.theme-nightshade .compare-table table,
+body.theme-nightshade .food-table {
+  color: #f8fafc;
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.theme-nightshade .meal-table tr:nth-child(even),
+body.theme-nightshade .food-table tbody tr:nth-child(even) {
+  background: rgba(15, 23, 42, 0.25);
+}
+
+body.theme-nightshade .badge,
+body.theme-nightshade .badge-inline {
+  background: rgba(59, 130, 246, 0.25);
+  color: #bfdbfe;
+}
+
+body.theme-nightshade .search-result {
+  border-color: rgba(148, 163, 184, 0.2);
+}
+
+body.theme-nightshade .search-result button {
+  background: rgba(59, 130, 246, 0.2);
+  color: #bfdbfe;
+}
+
+body.theme-nightshade .import-modal__panel,
+body.theme-nightshade .notes-modal__panel {
+  background: #141a2c;
+  color: #f1f5f9;
+}
+
+body.theme-nightshade .settings-toggle input[type='checkbox'],
+body.theme-nightshade .settings-toggle input[type='radio'] {
+  accent-color: #7dd3fc;
+}
+
+*, 
 *::before,
 *::after {
   box-sizing: border-box;
@@ -155,6 +400,21 @@ body {
   box-shadow: 0 1px 2px rgba(15, 23, 42, 0.07);
 }
 
+.search-label.search-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.search-label.search-inline span {
+  font-weight: 600;
+}
+
+.search-label.search-inline input {
+  width: 480px;
+  border-radius: 12px;
+}
+
 .sidebar .filters {
   background: rgba(15, 23, 42, 0.35);
   padding: 1.25rem;
@@ -244,12 +504,29 @@ body {
 
 .results-bar {
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
+.order-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.order-wrapper label {
+  font-weight: 600;
+}
+
+.order-wrapper select {
+  border-radius: 12px;
+  border: 1px solid #cbd5f5;
+  padding: 0.45rem 0.75rem;
+  background: #fff;
+  font-size: 0.95rem;
+}
 .results h2,
 .results-card h2,
 .compare-panel h2 {
@@ -761,6 +1038,22 @@ body {
   flex-direction: column;
   gap: 0.75rem;
   min-width: 260px;
+}
+
+.planner-controls .primary-link {
+  align-self: flex-start;
+}
+
+.planner-controls--compact {
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.planner-controls--compact .primary-link {
+  align-self: auto;
 }
 
 .plan-select-label {
@@ -1405,4 +1698,50 @@ body {
   justify-content: center;
   color: #94a3b8;
   font-style: italic;
+}
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.settings-form fieldset {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.settings-form legend {
+  font-weight: 600;
+  padding: 0 0.25rem;
+  color: #0f172a;
+}
+
+.settings-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.settings-field select {
+  border-radius: 12px;
+  border: 1px solid #cbd5f5;
+  padding: 0.45rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+.settings-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
 }

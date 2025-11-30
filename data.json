@@ -299,7 +299,230 @@
       {
         "id": "2047a9af-5762-459f-bc8f-94f895340865",
         "name": "Winter weekly plan",
-        "recipes": []
+        "recipes": [
+          {
+            "id": "484f13a3-ff56-433f-8a75-19b4066ceb81",
+            "title": "Veggie Rich Egg Fried Rice",
+            "description": "",
+            "collapsed": false,
+            "ingredients": [
+              {
+                "id": "eggs-0",
+                "quantity": 6,
+                "unit": "large egg",
+                "unitGrams": 50
+              },
+              {
+                "id": "eggs-1",
+                "quantity": 18,
+                "unit": "large egg white",
+                "unitGrams": 33
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 4,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "vegetables-18",
+                "quantity": 4,
+                "unit": "cup chopped",
+                "unitGrams": 89
+              },
+              {
+                "id": "vegetables-16",
+                "quantity": 4,
+                "unit": "cup chopped",
+                "unitGrams": 128
+              },
+              {
+                "id": "grains-0",
+                "quantity": 3,
+                "unit": "cup raw",
+                "unitGrams": 185
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "vegetables-21",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 75
+              },
+              {
+                "id": "vegetables-35",
+                "quantity": 2,
+                "unit": "cup",
+                "unitGrams": 145
+              }
+            ]
+          },
+          {
+            "id": "76b9f68c-33e4-4979-bb61-195011ef3c2e",
+            "title": "Chicken curry",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-0",
+                "quantity": 1,
+                "unit": "3 oz",
+                "unitGrams": 85
+              },
+              {
+                "id": "meats_and_seafood-1",
+                "quantity": 1,
+                "unit": "3 oz",
+                "unitGrams": 85
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              }
+            ]
+          },
+          {
+            "id": "9083ad8e-75f7-480b-a7ff-da54f4b6514e",
+            "title": "Beetroot poriyal",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "vegetables-17",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "62f7a92a-50de-441d-8c7c-1ddf714ab37f",
+            "title": "Shrimp Tawa Fry (Thu)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-3",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "d85e1b39-eaf2-4a8b-aa2a-5eae39bad0eb",
+            "title": "Tilapia Tawa Fry (Fri)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-5",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              }
+            ]
+          },
+          {
+            "id": "8ccee424-ed21-42b4-9beb-539fcdabfd19",
+            "title": "Homemade oatmeal (Breakfast)",
+            "description": "",
+            "collapsed": true,
+            "ingredients": [
+              {
+                "id": "grains-2",
+                "quantity": 2,
+                "unit": "cup dry",
+                "unitGrams": 80
+              },
+              {
+                "id": "dried_fruits-0",
+                "quantity": 7,
+                "unit": "1/4 cup",
+                "unitGrams": 40
+              },
+              {
+                "id": "dairy-1",
+                "quantity": 7,
+                "unit": "cup",
+                "unitGrams": 240
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "aabf58d0-ee57-4b5e-a0cc-f6c938890639",
@@ -516,7 +739,7 @@
             "id": "948e8cfc-634c-48a8-b857-96a653920437",
             "title": "Skim Milk Coffee (2x day)",
             "description": "",
-            "collapsed": false,
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "dairy-0",
@@ -543,7 +766,7 @@
           {
             "id": "7709bbd7-fed2-4835-9350-c28b08b08904",
             "title": "Cauliflower gravy (Mon)",
-            "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, ginger garlic paste, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
+            "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, \nadd ginger garlic paste\nadd 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
             "collapsed": true,
             "ingredients": [
               {
@@ -736,13 +959,13 @@
       },
       {
         "id": "396e5cc6-9ece-4535-83da-35c98f72d7e1",
-        "name": "Weekly plan well diversified - Easy Cooking w/ Protein Shake",
+        "name": "Weekly plan - Easy Cooking w/ Protein Shake",
         "recipes": [
           {
             "id": "978379a4-1b74-439b-aaa3-c88513d0bfcd",
             "title": "Homemade oatmeal (Breakfast)",
             "description": "",
-            "collapsed": true,
+            "collapsed": false,
             "ingredients": [
               {
                 "id": "grains-2",
@@ -1103,7 +1326,7 @@
         ]
       }
     ],
-    "activePlanId": "bd890616-f5d7-4205-b8ec-f438c57bb4d4"
+    "activePlanId": "2047a9af-5762-459f-bc8f-94f895340865"
   },
   "recipesLibrary": [
     {
@@ -1142,7 +1365,7 @@
       "id": "78019f13-e9ed-46db-ac34-f505d9b5a0c7",
       "title": "Homemade oatmeal",
       "description": "",
-      "collapsed": true,
+      "collapsed": false,
       "ingredients": [
         {
           "id": "grains-2",
@@ -1237,6 +1460,204 @@
         {
           "id": "dairy-0",
           "quantity": 25,
+          "unit": "cup",
+          "unitGrams": 240
+        }
+      ]
+    },
+    {
+      "id": "b0a109ef-2967-44fa-ac41-fd2b5d4a122c",
+      "title": "Vegetable Sambar",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "lentils-4",
+          "quantity": 2,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 3,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "vegetables-18",
+          "quantity": 2,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-16",
+          "quantity": 2,
+          "unit": "pound",
+          "unitGrams": 454
+        }
+      ]
+    },
+    {
+      "id": "fdc60f94-42ae-4cf8-b885-df3c1d9b167e",
+      "title": "Beetroot poriyal",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "vegetables-17",
+          "quantity": 2,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        }
+      ]
+    },
+    {
+      "id": "bdcaf27e-671e-4a24-a30d-d79be25d6511",
+      "title": "Cauliflower gravy",
+      "description": "https://www.youtube.com/shorts/dDa4Lda_zRo\n\nadd 2 tbsp oil,  sombu 1 tbsp, ginger garlic paste, curry leaf\n\nadd 1 chopped onion,  2 chopped green chili, 1 chopped tomato, \n\nadd 1 tsp: turmeric, red chili powder, garam masala,  1/2 tbsp jeera powder,\nadd 2tbsp coriander powder\n\nadd water and cook\nadd cauliflower \n\n\n\n",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "vegetables-34",
+          "quantity": 3,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        }
+      ]
+    },
+    {
+      "id": "aef8601d-44b2-4f88-99f3-44b0d3b0d867",
+      "title": "Shrimp Tawa Fry (Thu)",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "meats_and_seafood-3",
+          "quantity": 2,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        }
+      ]
+    },
+    {
+      "id": "f17bad44-ea76-44c7-bedc-9df126e77a01",
+      "title": "Tilapia Tawa Fry (Fri)",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "meats_and_seafood-5",
+          "quantity": 2,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 2,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 1,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        }
+      ]
+    },
+    {
+      "id": "978379a4-1b74-439b-aaa3-c88513d0bfcd",
+      "title": "Homemade oatmeal (Breakfast)",
+      "description": "",
+      "collapsed": true,
+      "ingredients": [
+        {
+          "id": "grains-2",
+          "quantity": 2,
+          "unit": "cup dry",
+          "unitGrams": 80
+        },
+        {
+          "id": "dried_fruits-0",
+          "quantity": 7,
+          "unit": "1/4 cup",
+          "unitGrams": 40
+        },
+        {
+          "id": "dairy-1",
+          "quantity": 7,
           "unit": "cup",
           "unitGrams": 240
         }
