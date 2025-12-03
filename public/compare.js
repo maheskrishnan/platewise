@@ -1,5 +1,4 @@
 const STORAGE_KEY = 'foodSelections';
-const MODE_STORAGE_KEY = 'compareModePreference';
 const USER_SETTINGS_KEY = 'userSettings';
 const VALID_MODES = new Set(['per100g', 'per100cal', 'per454g', 'per1kg']);
 
@@ -9,6 +8,8 @@ const DEFAULT_VISIBLE_KEYS = new Set([
   'protein_g',
   'fat_g',
   'carbs_g',
+  'netCarb',
+  'sugar_g',
   'fiber_g',
   'cholesterol_mg',
 ]);
@@ -110,6 +111,8 @@ const compareFields = [
   { key: 'omega_3_g', label: 'Omega-3 (g)' },
   { key: 'omega_6_g', label: 'Omega-6 (g)' },
   { key: 'carbs_g', label: 'Carbs (g)' },
+  { key: 'netCarb', label: 'Net carb (g)' },
+  { key: 'sugar_g', label: 'Sugar (g)' },
   { key: 'fiber_g', label: 'Fiber (g)' },
   { key: 'cholesterol_mg', label: 'Cholesterol (mg)' },
 ];
@@ -121,6 +124,11 @@ const getFieldNumericValue = (food, key) => {
   if (factor === null) return null;
   if (key === 'serving_grams') {
     return 100 * factor;
+  }
+  if (key === 'netCarb') {
+    const carbs = typeof food.carbs_g === 'number' ? food.carbs_g : 0;
+    const fiber = typeof food.fiber_g === 'number' ? food.fiber_g : 0;
+    return (carbs - fiber) * factor;
   }
   if (key === 'calories' && state.mode === 'per100cal') {
     return 100;
@@ -138,35 +146,37 @@ const getMicroNumericValue = (food, groupKey, nutrientKey) => {
   return source[nutrientKey] * factor;
 };
 
-const loadPreferredMode = () => {
+const readUserSettings = () => {
   try {
-    const stored = localStorage.getItem(MODE_STORAGE_KEY);
-    if (stored && VALID_MODES.has(stored)) {
-      return stored;
-    }
+    const stored = localStorage.getItem(USER_SETTINGS_KEY);
+    if (!stored) return {};
+    const parsed = JSON.parse(stored);
+    return parsed && typeof parsed === 'object' ? parsed : {};
   } catch {
-    // ignore
+    return {};
   }
+};
+
+const writeUserSettings = (settings) => {
   try {
-    const settingsRaw = localStorage.getItem(USER_SETTINGS_KEY);
-    if (settingsRaw) {
-      const parsed = JSON.parse(settingsRaw);
-      if (parsed?.defaultCompareMode && VALID_MODES.has(parsed.defaultCompareMode)) {
-        return parsed.defaultCompareMode;
-      }
-    }
+    localStorage.setItem(USER_SETTINGS_KEY, JSON.stringify(settings));
   } catch {
-    // ignore
+    // ignore write failures
+  }
+};
+
+const loadPreferredMode = () => {
+  const settings = readUserSettings();
+  if (settings.defaultCompareMode && VALID_MODES.has(settings.defaultCompareMode)) {
+    return settings.defaultCompareMode;
   }
   return 'per100g';
 };
 
 const persistMode = () => {
-  try {
-    localStorage.setItem(MODE_STORAGE_KEY, state.mode);
-  } catch {
-    // ignore
-  }
+  const settings = readUserSettings();
+  settings.defaultCompareMode = state.mode;
+  writeUserSettings(settings);
 };
 
 const getNormalizationFactor = (food) => {
@@ -192,6 +202,13 @@ const getFieldValue = (food, key) => {
 
   if (key === 'calories' && state.mode === 'per100cal') {
     return formatNumber(100);
+  }
+  if (key === 'netCarb') {
+    const carbs = typeof food.carbs_g === 'number' ? food.carbs_g : 0;
+    const fiber = typeof food.fiber_g === 'number' ? food.fiber_g : 0;
+    const factor = getNormalizationFactor(food);
+    if (factor === null) return '—';
+    return `${formatNumber((carbs - fiber) * factor)} g`;
   }
 
   const raw = food[key];

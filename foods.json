@@ -44,7 +44,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Snake Gourd (Pudalangai)",
@@ -88,7 +89,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Bitter Gourd (Pavakkai)",
@@ -133,7 +135,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Lady's Finger / Okra (Vendakkai)",
@@ -179,7 +182,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Brinjal / Eggplant (Kathirikkai)",
@@ -225,7 +229,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Cluster Beans (Kothavarangai)",
@@ -269,7 +274,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Broad Beans (Avarai)",
@@ -313,7 +319,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Yam (Senai Kizhangu)",
@@ -358,7 +365,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Colocasia / Taro Root (Seppankizhangu)",
@@ -404,7 +412,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Raw Banana (Vazhakkai)",
@@ -448,7 +457,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Pumpkin (Poosanikai)",
@@ -494,7 +504,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Ash Gourd (Vellai Poosanikai)",
@@ -537,7 +548,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Ridge Gourd (Peerkangai)",
@@ -580,7 +592,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Bottle Gourd (Suraikkai)",
@@ -623,7 +636,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Ivy Gourd (Kovakkai)",
@@ -666,7 +680,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "French Beans",
@@ -711,7 +726,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Carrot",
@@ -757,7 +773,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Beetroot",
@@ -802,7 +819,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 200
     },
     {
       "name": "Cabbage",
@@ -848,7 +866,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Tomato",
@@ -893,7 +912,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Onion",
@@ -936,7 +956,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Green Chilli",
@@ -982,7 +1003,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Curry Leaves (fresh)",
@@ -1027,7 +1049,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Coriander Leaves",
@@ -1072,7 +1095,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Spinach / Keerai",
@@ -1122,7 +1146,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 100
     },
     {
       "name": "Amaranth Leaves (Arai Keerai)",
@@ -1171,7 +1196,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 100
     },
     {
       "name": "Drumstick Leaves (Murungai Keerai)",
@@ -1220,7 +1246,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Banana Stem (Vazhaithandu)",
@@ -1263,7 +1290,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Banana Flower (Vazhaipoo)",
@@ -1307,7 +1335,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Raw Mango (for cooking)",
@@ -1353,7 +1382,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Tamarind pulp (raw)",
@@ -1399,7 +1429,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 30
     },
     {
       "name": "Fresh Grated Coconut",
@@ -1443,7 +1474,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 50
     },
     {
       "name": "Potato",
@@ -1486,7 +1518,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 200
     },
     {
       "name": "Sweet Potato",
@@ -1531,7 +1564,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 200
     },
     {
       "name": "Cauliflower",
@@ -1577,7 +1611,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Green Peas (fresh)",
@@ -1623,7 +1658,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Capsicum (Bell Pepper)",
@@ -1669,7 +1705,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     }
   ],
   "lentils": [
@@ -1714,7 +1751,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Moong Dal (split)",
@@ -1757,7 +1795,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Urad Dal (split)",
@@ -1800,7 +1839,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Chana Dal",
@@ -1844,7 +1884,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Masoor Dal (red lentil)",
@@ -1887,7 +1928,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Horse Gram (Kollu)",
@@ -1930,7 +1972,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Whole Green Gram (Pachai Payaru)",
@@ -1973,7 +2016,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Whole Black Urad",
@@ -2016,7 +2060,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Fried Gram (Pottukadalai)",
@@ -2059,7 +2104,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Rajma (Kidney Beans)",
@@ -2102,7 +2148,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     }
   ],
   "grains": [
@@ -2147,7 +2194,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Brown Rice",
@@ -2192,7 +2240,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Oatmeal (rolled oats, dry)",
@@ -2243,7 +2292,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Wheat Flour (whole wheat)",
@@ -2292,7 +2342,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     }
   ],
   "oils": [
@@ -2328,7 +2379,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 40
     },
     {
       "name": "Avocado Oil",
@@ -2361,7 +2413,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 40
     },
     {
       "name": "Groundnut Oil (Peanut Oil)",
@@ -2393,7 +2446,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 40
     },
     {
       "name": "Ghee (Clarified Butter)",
@@ -2426,7 +2480,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 40
     }
   ],
   "meats_and_seafood": [
@@ -2473,7 +2528,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Chicken Thigh (raw, skinless, boneless)",
@@ -2518,7 +2574,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Salmon (raw, skinless)",
@@ -2565,7 +2622,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 48
     },
     {
       "name": "Shrimp/Prawn (raw, peeled)",
@@ -2612,7 +2670,8 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 48
     },
     {
       "name": "Lean Lamb (raw, trimmed)",
@@ -2658,11 +2717,13 @@
           "grams": 454
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 150
     },
     {
       "name": "Tilapia (raw)",
       "weight_grams": 100,
+      "max_recommended_daily_g": 48,
       "calories": 96,
       "protein_g": 20.1,
       "fat_g": 1.7,
@@ -2711,6 +2772,7 @@
     {
       "name": "Ahi Tuna (yellowfin, raw)",
       "weight_grams": 100,
+      "max_recommended_daily_g": 24,
       "calories": 108,
       "protein_g": 23.4,
       "fat_g": 0.95,
@@ -2760,6 +2822,61 @@
           "grams": 454
         }
       ]
+    },
+    {
+      "name": "Chicken Liver (raw)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": 100,
+      "calories": 119,
+      "protein_g": 16.9,
+      "fat_g": 4.8,
+      "saturated_g": 1.6,
+      "monounsaturated_g": 1.2,
+      "polyunsaturated_g": 1.0,
+      "omega_3_g": 0.1,
+      "omega_6_g": 0.9,
+      "carbs_g": 0.9,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 3290,
+        "vitamin_d_ug": 0.6,
+        "vitamin_e_mg": 0.7,
+        "vitamin_k_ug": 0.3,
+        "vitamin_b12_ug": 16.6,
+        "niacin_mg": 9.4,
+        "vitamin_b6_mg": 0.75,
+        "folate_ug": 588,
+        "riboflavin_mg": 1.78,
+        "thiamin_mg": 0.16
+      },
+      "minerals": {
+        "calcium_mg": 8,
+        "iron_mg": 9.0,
+        "magnesium_mg": 19,
+        "phosphorus_mg": 297,
+        "potassium_mg": 230,
+        "sodium_mg": 71,
+        "zinc_mg": 2.7,
+        "selenium_ug": 54.6,
+        "copper_mg": 0.38
+      },
+      "cholesterol_mg": 345,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "pound",
+          "grams": 454
+        }
+      ]
     }
   ],
   "dairy": [
@@ -2802,7 +2919,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "1% Milk",
@@ -2843,7 +2961,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "2% Milk",
@@ -2884,7 +3003,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Whole Milk",
@@ -2925,7 +3045,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Greek Yogurt - Skim",
@@ -2964,7 +3085,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Greek Yogurt - 1%",
@@ -3003,7 +3125,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Greek Yogurt - 2%",
@@ -3043,7 +3166,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     },
     {
       "name": "Greek Yogurt - Whole",
@@ -3083,7 +3207,63 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
+    },
+    {
+      "name": "Cottage Cheese - 2%",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 86,
+      "protein_g": 11.1,
+      "fat_g": 2.3,
+      "saturated_g": 1.4,
+      "monounsaturated_g": 0.6,
+      "polyunsaturated_g": 0.1,
+      "carbs_g": 4.3,
+      "fiber_g": 0,
+      "sugar_g": 4.1,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 22,
+        "vitamin_d_ug": 0.1,
+        "vitamin_e_mg": 0.08,
+        "vitamin_k_ug": 0.1,
+        "vitamin_b12_ug": 0.43,
+        "riboflavin_mg": 0.16,
+        "niacin_mg": 0.1,
+        "vitamin_b6_mg": 0.05,
+        "folate_ug": 12
+      },
+      "minerals": {
+        "calcium_mg": 91,
+        "iron_mg": 0.14,
+        "magnesium_mg": 9,
+        "phosphorus_mg": 135,
+        "potassium_mg": 84,
+        "sodium_mg": 330,
+        "zinc_mg": 0.4,
+        "selenium_ug": 9.7
+      },
+      "cholesterol_mg": 9,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 226
+        },
+        {
+          "unit": "1/2 cup",
+          "grams": 113
+        },
+        {
+          "unit": "tbsp",
+          "grams": 15
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
     }
   ],
   "eggs": [
@@ -3133,7 +3313,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 100
     },
     {
       "name": "Egg white",
@@ -3170,7 +3351,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": null
     }
   ],
   "nuts_and_seeds": [
@@ -3221,7 +3403,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 42
     },
     {
       "name": "Cashews",
@@ -3271,7 +3454,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 42
     },
     {
       "name": "Peanuts",
@@ -3320,7 +3504,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 42
     },
     {
       "name": "Chia Seeds",
@@ -3365,7 +3550,650 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 28
+    }
+  ],
+  "fruits": [
+    {
+      "name": "Blackberry (raw, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 43,
+      "protein_g": 1.4,
+      "fat_g": 0.5,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.05,
+      "polyunsaturated_g": 0.28,
+      "carbs_g": 9.6,
+      "fiber_g": 5.3,
+      "sugar_g": 4.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 11,
+        "vitamin_c_mg": 21,
+        "vitamin_e_mg": 1.17,
+        "vitamin_k_ug": 19.8,
+        "folate_ug": 25,
+        "niacin_mg": 0.65,
+        "vitamin_b6_mg": 0.03
+      },
+      "minerals": {
+        "calcium_mg": 29,
+        "iron_mg": 0.62,
+        "magnesium_mg": 20,
+        "phosphorus_mg": 22,
+        "potassium_mg": 162,
+        "sodium_mg": 1,
+        "zinc_mg": 0.53,
+        "selenium_ug": 0.4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 144
+        },
+        {
+          "unit": "1/2 cup",
+          "grams": 72
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Blueberry (raw, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 57,
+      "protein_g": 0.74,
+      "fat_g": 0.33,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.05,
+      "polyunsaturated_g": 0.15,
+      "carbs_g": 14.5,
+      "fiber_g": 2.4,
+      "sugar_g": 10,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 3,
+        "vitamin_c_mg": 9.7,
+        "vitamin_e_mg": 0.57,
+        "vitamin_k_ug": 19.3,
+        "folate_ug": 6,
+        "niacin_mg": 0.42,
+        "vitamin_b6_mg": 0.05
+      },
+      "minerals": {
+        "calcium_mg": 6,
+        "iron_mg": 0.28,
+        "magnesium_mg": 6,
+        "phosphorus_mg": 12,
+        "potassium_mg": 77,
+        "sodium_mg": 1,
+        "zinc_mg": 0.16,
+        "selenium_ug": 0.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 148
+        },
+        {
+          "unit": "1/2 cup",
+          "grams": 74
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Strawberry (raw, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 32,
+      "protein_g": 0.67,
+      "fat_g": 0.3,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.04,
+      "polyunsaturated_g": 0.16,
+      "carbs_g": 7.7,
+      "fiber_g": 2,
+      "sugar_g": 4.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 1,
+        "vitamin_c_mg": 58.8,
+        "vitamin_e_mg": 0.29,
+        "vitamin_k_ug": 2.2,
+        "folate_ug": 24,
+        "niacin_mg": 0.39,
+        "vitamin_b6_mg": 0.05
+      },
+      "minerals": {
+        "calcium_mg": 16,
+        "iron_mg": 0.41,
+        "magnesium_mg": 13,
+        "phosphorus_mg": 24,
+        "potassium_mg": 153,
+        "sodium_mg": 1,
+        "zinc_mg": 0.14,
+        "selenium_ug": 0.4
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup whole",
+          "grams": 144
+        },
+        {
+          "unit": "cup sliced",
+          "grams": 166
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Raspberry (raw, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 52,
+      "protein_g": 1.2,
+      "fat_g": 0.65,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.06,
+      "polyunsaturated_g": 0.38,
+      "carbs_g": 11.9,
+      "fiber_g": 6.5,
+      "sugar_g": 4.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 2,
+        "vitamin_c_mg": 26.2,
+        "vitamin_e_mg": 0.87,
+        "vitamin_k_ug": 7.8,
+        "folate_ug": 21,
+        "niacin_mg": 0.6,
+        "vitamin_b6_mg": 0.06
+      },
+      "minerals": {
+        "calcium_mg": 25,
+        "iron_mg": 0.69,
+        "magnesium_mg": 22,
+        "phosphorus_mg": 29,
+        "potassium_mg": 151,
+        "sodium_mg": 1,
+        "zinc_mg": 0.42,
+        "selenium_ug": 0.2
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 123
+        },
+        {
+          "unit": "1/2 cup",
+          "grams": 62
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Pear (raw, with skin)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 57,
+      "protein_g": 0.36,
+      "fat_g": 0.14,
+      "saturated_g": 0.02,
+      "monounsaturated_g": 0.08,
+      "polyunsaturated_g": 0.09,
+      "carbs_g": 15.2,
+      "fiber_g": 3.1,
+      "sugar_g": 9.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 1,
+        "vitamin_c_mg": 4.3,
+        "vitamin_e_mg": 0.12,
+        "vitamin_k_ug": 4.4,
+        "folate_ug": 7,
+        "niacin_mg": 0.16,
+        "vitamin_b6_mg": 0.03
+      },
+      "minerals": {
+        "calcium_mg": 9,
+        "iron_mg": 0.18,
+        "magnesium_mg": 7,
+        "phosphorus_mg": 12,
+        "potassium_mg": 116,
+        "sodium_mg": 1,
+        "zinc_mg": 0.1,
+        "selenium_ug": 0.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "medium pear",
+          "grams": 178
+        },
+        {
+          "unit": "cup sliced",
+          "grams": 140
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Kiwi (raw, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 61,
+      "protein_g": 1.14,
+      "fat_g": 0.52,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.05,
+      "polyunsaturated_g": 0.29,
+      "carbs_g": 14.7,
+      "fiber_g": 3,
+      "sugar_g": 9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 4,
+        "vitamin_c_mg": 92.7,
+        "vitamin_e_mg": 1.46,
+        "vitamin_k_ug": 40.3,
+        "folate_ug": 25,
+        "niacin_mg": 0.34,
+        "vitamin_b6_mg": 0.06
+      },
+      "minerals": {
+        "calcium_mg": 34,
+        "iron_mg": 0.31,
+        "magnesium_mg": 17,
+        "phosphorus_mg": 34,
+        "potassium_mg": 312,
+        "sodium_mg": 3,
+        "zinc_mg": 0.14,
+        "selenium_ug": 0.2
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "medium kiwi",
+          "grams": 69
+        },
+        {
+          "unit": "cup sliced",
+          "grams": 180
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Apple (raw, with skin)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 52,
+      "protein_g": 0.26,
+      "fat_g": 0.17,
+      "saturated_g": 0.03,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.05,
+      "carbs_g": 13.8,
+      "fiber_g": 2.4,
+      "sugar_g": 10.4,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 3,
+        "vitamin_c_mg": 4.6,
+        "vitamin_e_mg": 0.18,
+        "vitamin_k_ug": 2.2,
+        "folate_ug": 3,
+        "niacin_mg": 0.09,
+        "vitamin_b6_mg": 0.04
+      },
+      "minerals": {
+        "calcium_mg": 6,
+        "iron_mg": 0.12,
+        "magnesium_mg": 5,
+        "phosphorus_mg": 11,
+        "potassium_mg": 107,
+        "sodium_mg": 1,
+        "zinc_mg": 0.04,
+        "selenium_ug": 0
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "medium apple",
+          "grams": 182
+        },
+        {
+          "unit": "cup sliced",
+          "grams": 110
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Pineapple (raw, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 50,
+      "protein_g": 0.54,
+      "fat_g": 0.12,
+      "saturated_g": 0.01,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.04,
+      "carbs_g": 13.1,
+      "fiber_g": 1.4,
+      "sugar_g": 9.85,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 3,
+        "vitamin_c_mg": 47.8,
+        "vitamin_e_mg": 0.02,
+        "vitamin_k_ug": 0.7,
+        "folate_ug": 18,
+        "niacin_mg": 0.5,
+        "vitamin_b6_mg": 0.11
+      },
+      "minerals": {
+        "calcium_mg": 13,
+        "iron_mg": 0.29,
+        "magnesium_mg": 12,
+        "phosphorus_mg": 8,
+        "potassium_mg": 109,
+        "sodium_mg": 1,
+        "zinc_mg": 0.12,
+        "selenium_ug": 0.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup chunks",
+          "grams": 165
+        },
+        {
+          "unit": "slice",
+          "grams": 84
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Papaya (raw, ripe)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 43,
+      "protein_g": 0.47,
+      "fat_g": 0.26,
+      "saturated_g": 0.08,
+      "monounsaturated_g": 0.07,
+      "polyunsaturated_g": 0.06,
+      "carbs_g": 10.8,
+      "fiber_g": 1.7,
+      "sugar_g": 7.8,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 47,
+        "vitamin_c_mg": 60.9,
+        "vitamin_e_mg": 0.3,
+        "vitamin_k_ug": 2.6,
+        "folate_ug": 37,
+        "niacin_mg": 0.36,
+        "vitamin_b6_mg": 0.04
+      },
+      "minerals": {
+        "calcium_mg": 20,
+        "iron_mg": 0.25,
+        "magnesium_mg": 21,
+        "phosphorus_mg": 10,
+        "potassium_mg": 182,
+        "sodium_mg": 8,
+        "zinc_mg": 0.08,
+        "selenium_ug": 0.6
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup cubed",
+          "grams": 140
+        },
+        {
+          "unit": "small papaya",
+          "grams": 152
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Acai Berry (raw, frozen unsweetened)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 70,
+      "protein_g": 2,
+      "fat_g": 5,
+      "saturated_g": 1.5,
+      "monounsaturated_g": 1.3,
+      "polyunsaturated_g": 1,
+      "carbs_g": 4,
+      "fiber_g": 2,
+      "sugar_g": 2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 15,
+        "vitamin_c_mg": 1,
+        "vitamin_e_mg": 0.5,
+        "folate_ug": 14
+      },
+      "minerals": {
+        "calcium_mg": 35,
+        "iron_mg": 0.8,
+        "magnesium_mg": 18,
+        "phosphorus_mg": 20,
+        "potassium_mg": 124,
+        "sodium_mg": 7,
+        "zinc_mg": 0.3
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 240
+        },
+        {
+          "unit": "packet (100g)",
+          "grams": 100
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Banana (ripe, fresh)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 89,
+      "protein_g": 1.09,
+      "fat_g": 0.33,
+      "saturated_g": 0.11,
+      "monounsaturated_g": 0.03,
+      "polyunsaturated_g": 0.07,
+      "carbs_g": 22.8,
+      "fiber_g": 2.6,
+      "sugar_g": 12.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 3,
+        "vitamin_c_mg": 8.7,
+        "vitamin_e_mg": 0.1,
+        "vitamin_k_ug": 0.5,
+        "folate_ug": 20,
+        "niacin_mg": 0.67,
+        "vitamin_b6_mg": 0.37
+      },
+      "minerals": {
+        "calcium_mg": 5,
+        "iron_mg": 0.26,
+        "magnesium_mg": 27,
+        "phosphorus_mg": 22,
+        "potassium_mg": 358,
+        "sodium_mg": 1,
+        "zinc_mg": 0.15,
+        "selenium_ug": 1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "medium banana",
+          "grams": 118
+        },
+        {
+          "unit": "small banana",
+          "grams": 101
+        },
+        {
+          "unit": "cup sliced",
+          "grams": 150
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Grapes (red or green, raw)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 69,
+      "protein_g": 0.72,
+      "fat_g": 0.16,
+      "saturated_g": 0.05,
+      "monounsaturated_g": 0.01,
+      "polyunsaturated_g": 0.05,
+      "carbs_g": 18.1,
+      "fiber_g": 0.9,
+      "sugar_g": 15.5,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 3,
+        "vitamin_c_mg": 3.2,
+        "vitamin_e_mg": 0.19,
+        "vitamin_k_ug": 14.6,
+        "folate_ug": 2,
+        "niacin_mg": 0.19,
+        "vitamin_b6_mg": 0.09
+      },
+      "minerals": {
+        "calcium_mg": 10,
+        "iron_mg": 0.36,
+        "magnesium_mg": 7,
+        "phosphorus_mg": 20,
+        "potassium_mg": 191,
+        "sodium_mg": 2,
+        "zinc_mg": 0.07,
+        "selenium_ug": 0.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "cup",
+          "grams": 151
+        },
+        {
+          "unit": "1/2 cup",
+          "grams": 76
+        },
+        {
+          "unit": "10 grapes",
+          "grams": 49
+        },
+        {
+          "unit": "oz",
+          "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
     }
   ],
   "dried_fruits": [
@@ -3410,7 +4238,8 @@
           "grams": 100
         }
       ],
-      "weight_grams": 100
+      "weight_grams": 100,
+      "max_recommended_daily_g": 40
     }
   ]
 }

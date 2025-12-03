@@ -96,6 +96,9 @@ const elements = {
   compareNavBadge: document.getElementById('compareNavBadge'),
 };
 
+let videoModalElement = null;
+let videoModalKeyHandler = null;
+
 const fetchJson = async (path) => {
   const response = await fetch(path);
   if (!response.ok) {
@@ -273,6 +276,67 @@ const escapeHtml = (text) =>
     return map[char];
   });
 
+const extractYouTubeId = (text = '') => {
+  if (typeof text !== 'string') return null;
+  const patterns = [
+    /(?:https?:\/\/)?(?:www\.)?youtu\.be\/([a-zA-Z0-9_-]{6,})/i,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/watch\?(?:[^\s]*&)?v=([a-zA-Z0-9_-]{6,})/i,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/shorts\/([a-zA-Z0-9_-]{6,})/i,
+    /(?:https?:\/\/)?(?:www\.)?youtube\.com\/embed\/([a-zA-Z0-9_-]{6,})/i,
+  ];
+  for (const pattern of patterns) {
+    const match = pattern.exec(text);
+    if (match && match[1]) {
+      return match[1];
+    }
+  }
+  return null;
+};
+
+const closeVideoModal = () => {
+  if (videoModalElement) {
+    videoModalElement.remove();
+    videoModalElement = null;
+  }
+  if (videoModalKeyHandler) {
+    document.removeEventListener('keydown', videoModalKeyHandler);
+    videoModalKeyHandler = null;
+  }
+};
+
+const openVideoModal = (videoId, title) => {
+  if (!videoId) return;
+  closeVideoModal();
+  const safeTitle = escapeHtml(title || 'Recipe video');
+  const iframeSrc = `https://www.youtube.com/embed/${encodeURIComponent(videoId)}`;
+  const modal = document.createElement('div');
+  modal.className = 'video-modal';
+  modal.innerHTML = `
+    <div class="video-modal__panel" role="dialog" aria-modal="true" aria-label="Recipe video">
+      <div class="video-modal__header">
+        <h3>${safeTitle}</h3>
+        <button type="button" class="close-btn" data-close-video aria-label="Close video">&times;</button>
+      </div>
+      <div class="video-embed">
+        <iframe src="${iframeSrc}" title="${safeTitle}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  videoModalElement = modal;
+  videoModalKeyHandler = (event) => {
+    if (event.key === 'Escape') {
+      closeVideoModal();
+    }
+  };
+  document.addEventListener('keydown', videoModalKeyHandler);
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal || event.target.closest('[data-close-video]')) {
+      closeVideoModal();
+    }
+  });
+};
+
 const renderRecipeCard = (recipe, index) => {
   const totals = getRecipeTotals(recipe);
   const quantityRows = recipe.ingredients
@@ -336,6 +400,7 @@ const renderRecipeCard = (recipe, index) => {
   `;
 
   const searchValue = state.searchTerms[recipe.id] || '';
+  const videoId = extractYouTubeId(recipe.description || '');
 
   return `
     <section class="recipe-card ${recipe.collapsed ? 'collapsed' : ''}" data-recipe-id="${recipe.id}" draggable="false" data-index="${index}">
@@ -361,6 +426,15 @@ const renderRecipeCard = (recipe, index) => {
             : ''
         }
         <div class="recipe-card__actions">
+          ${
+            videoId
+              ? `<button type="button" class="icon-btn youtube-btn" aria-label="Watch video for ${escapeHtml(
+                  recipe.title
+                )}" data-view-video="${recipe.id}" data-video-id="${videoId}" data-video-title="${escapeHtml(
+                  recipe.title
+                )}" title="Play linked video">▶</button>`
+              : ''
+          }
           <button type="button" class="ghost-btn secondary" data-edit-notes="${recipe.id}">Notes</button>
           <button type="button" class="ghost-btn danger" data-remove-recipe="${recipe.id}">Delete</button>
         </div>
@@ -820,6 +894,11 @@ const attachEvents = () => {
   elements.recipeList?.addEventListener('click', (event) => {
     const addBtn = event.target.closest('[data-add-ingredient]');
     if (addBtn) {
+      return;
+    }
+    const videoBtn = event.target.closest('[data-view-video]');
+    if (videoBtn) {
+      openVideoModal(videoBtn.dataset.videoId, videoBtn.dataset.videoTitle);
       return;
     }
     const toggleBtn = event.target.closest('[data-toggle-recipe]');
