@@ -27,6 +27,11 @@
             <input id="searchInput" type="search" placeholder="Rice, dal, oil…" autocomplete="off">
           </label>
           <span id="resultsCount" class="badge badge-inline">0 items</span>
+          <div class="mode-switch" role="group" aria-label="Normalize nutrients">
+            <button type="button" class="mode-btn active" data-library-mode="per100g">Per 100 g</button>
+            <button type="button" class="mode-btn" data-library-mode="per100cal">Per 100 calories</button>
+          </div>
+          <button type="button" class="ghost-btn" id="openLibraryColumnModal">Customize columns</button>
         </div>
         <div class="filters" aria-label="Food categories">
           <div class="filter-header">
@@ -52,6 +57,16 @@
   <script src="theme.js" defer></script>
   <script src="sidebar.js" defer></script>
   <script src="app.js" defer></script>
+
+  <div id="libraryColumnModal" class="column-modal hidden" aria-hidden="true">
+    <div class="column-modal__panel" role="dialog" aria-modal="true" aria-labelledby="libraryColumnModalTitle">
+      <div class="column-modal__header">
+        <h3 id="libraryColumnModalTitle">Choose columns</h3>
+        <button type="button" class="close-btn" id="closeLibraryColumnModal" aria-label="Close">&times;</button>
+      </div>
+      <div id="libraryColumnControls" class="column-modal__sections"></div>
+    </div>
+  </div>
 </body>
 
 </html>
