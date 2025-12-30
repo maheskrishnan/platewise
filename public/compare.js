@@ -1,4 +1,5 @@
 const STORAGE_KEY = 'foodSelections';
+const SAVED_COMBOS_KEY = 'compareSavedCombos';
 const USER_SETTINGS_KEY = 'userSettings';
 const VALID_MODES = new Set(['per100g', 'per100cal', 'per454g', 'per1kg']);
 
@@ -27,6 +28,7 @@ const state = {
   columnsInitialized: false,
   sortKey: 'food',
   sortDirection: 'asc',
+  savedCombos: [],
 };
 
 const elements = {
@@ -40,6 +42,8 @@ const elements = {
   columnModal: document.getElementById('columnModal'),
   openColumnModal: document.getElementById('openColumnModal'),
   closeColumnModal: document.getElementById('closeColumnModal'),
+  saveComboButton: document.getElementById('saveComboButton'),
+  savedComboList: document.getElementById('savedComboList'),
 };
 
 const fetchJson = async (path) => {
@@ -85,6 +89,25 @@ const formatWithUnit = (key, value) => {
   return `${formatNumber(value)}${unit}`;
 };
 
+const escapeHtml = (text = '') =>
+  text.replace(/[&<>"']/g, (char) => {
+    const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+    return map[char] || char;
+  });
+
+const buildComboLabel = (combo) => {
+  const names = combo.ids
+    .map((id) => getFoodById(id)?.name)
+    .filter(Boolean);
+  if (names.length) {
+    return names.join(' + ');
+  }
+  if (combo.name) {
+    return combo.name;
+  }
+  return 'Saved comparison';
+};
+
 const loadSelections = () => {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
@@ -98,6 +121,25 @@ const loadSelections = () => {
 
 const persistSelections = () => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(state.selectedIds));
+};
+
+const loadSavedCombos = () => {
+  try {
+    const stored = localStorage.getItem(SAVED_COMBOS_KEY);
+    if (!stored) return [];
+    const parsed = JSON.parse(stored);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+};
+
+const persistSavedCombos = () => {
+  try {
+    localStorage.setItem(SAVED_COMBOS_KEY, JSON.stringify(state.savedCombos));
+  } catch {
+    // ignore
+  }
 };
 
 const compareFields = [
@@ -715,11 +757,93 @@ const initColumnModal = () => {
   });
 };
 
+const initSavedComboEvents = () => {
+  if (elements.saveComboButton) {
+    elements.saveComboButton.addEventListener('click', () => {
+      handleSaveCombo();
+    });
+  }
+  if (elements.savedComboList) {
+    elements.savedComboList.addEventListener('click', (event) => {
+      const loadBtn = event.target.closest('[data-load-combo]');
+      if (loadBtn) {
+        loadSavedCombo(loadBtn.dataset.loadCombo);
+        return;
+      }
+      const deleteBtn = event.target.closest('[data-delete-combo]');
+      if (deleteBtn) {
+        deleteSavedCombo(deleteBtn.dataset.deleteCombo);
+      }
+    });
+  }
+};
+
+const handleSaveCombo = () => {
+  if (!state.selectedIds.length) {
+    window.alert('Select at least one food before saving.');
+    return;
+  }
+  const combo = {
+    id:
+      (typeof crypto !== 'undefined' && crypto.randomUUID
+        ? crypto.randomUUID()
+        : `combo-${Date.now()}-${Math.floor(Math.random() * 10000)}`),
+    ids: [...state.selectedIds],
+  };
+  state.savedCombos = [combo, ...state.savedCombos];
+  persistSavedCombos();
+  renderSavedCombos();
+};
+
+const loadSavedCombo = (comboId) => {
+  const combo = state.savedCombos.find((c) => c.id === comboId);
+  if (!combo) return;
+  state.selectedIds = combo.ids.filter((id) => getFoodById(id));
+  persistSelections();
+  renderSelectionTags();
+  renderCompareTable();
+  state.searchHighlight = -1;
+  renderSearchResults();
+};
+
+const deleteSavedCombo = (comboId) => {
+  const next = state.savedCombos.filter((combo) => combo.id !== comboId);
+  if (next.length === state.savedCombos.length) return;
+  state.savedCombos = next;
+  persistSavedCombos();
+  renderSavedCombos();
+};
+
+const renderSavedCombos = () => {
+  if (!elements.savedComboList) return;
+  if (!state.savedCombos.length) {
+    elements.savedComboList.innerHTML =
+      '<p class="helper-text">No saved comparisons yet.</p>';
+    return;
+  }
+  elements.savedComboList.innerHTML = state.savedCombos
+    .map(
+      (combo) => `
+        <div class="saved-combo-item">
+          <span class="saved-combo-item__name">${escapeHtml(
+            buildComboLabel(combo)
+          )}</span>
+          <div class="saved-combo-item__actions">
+            <button type="button" data-load-combo="${combo.id}">Load</button>
+            <button type="button" data-delete-combo="${combo.id}">Delete</button>
+          </div>
+        </div>
+      `
+    )
+    .join('');
+};
+
 const bootstrap = async () => {
   try {
     const foods = await fetchJson('/api/foods');
     state.allFoods = foods;
     state.selectedIds = loadSelections();
+    state.savedCombos = loadSavedCombos();
     const preferredMode = loadPreferredMode();
     if (VALID_MODES.has(preferredMode)) {
       state.mode = preferredMode;
@@ -733,6 +857,8 @@ const bootstrap = async () => {
     renderSearchResults();
     renderColumnControls();
     initColumnModal();
+    renderSavedCombos();
+    initSavedComboEvents();
     if (elements.searchInput) {
       let debounce;
       elements.searchInput.addEventListener('input', (event) => {
@@ -747,7 +873,6 @@ const bootstrap = async () => {
       elements.searchInput.addEventListener('keydown', handleSearchKeyDown);
     }
     initModeEvents();
-    initColumnModal();
     window.addEventListener('storage', (event) => {
       if (event.key === STORAGE_KEY) {
         state.selectedIds = loadSelections();

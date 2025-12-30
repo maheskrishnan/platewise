@@ -21,13 +21,13 @@ const NAV_ITEMS = [
     {
       key: 'meal',
       href: 'meal.html',
-      label: 'Meal planner',
+      label: 'Daily meal planner',
       helper: 'Design daily meals by section.',
     },
   {
     key: 'weekly',
     href: 'weekly.html',
-    label: 'Weekly planner',
+    label: 'Weekly meal planner',
     helper: 'Organize weekly recipes & lists.',
   },
   {

@@ -2774,6 +2774,58 @@
       ]
     },
     {
+      "name": "Cod (Atlantic, raw)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": 48,
+      "calories": 82,
+      "protein_g": 17.8,
+      "fat_g": 0.7,
+      "saturated_g": 0.1,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0.2,
+      "omega_3_g": 0.15,
+      "omega_6_g": 0.01,
+      "carbs_g": 0,
+      "fiber_g": 0,
+      "sugar_g": 0,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 12,
+        "vitamin_d_ug": 1.2,
+        "vitamin_e_mg": 0.4,
+        "vitamin_b12_ug": 0.9,
+        "niacin_mg": 2.1,
+        "vitamin_b6_mg": 0.2,
+        "folate_ug": 7
+      },
+      "minerals": {
+        "calcium_mg": 16,
+        "iron_mg": 0.4,
+        "magnesium_mg": 32,
+        "phosphorus_mg": 203,
+        "potassium_mg": 413,
+        "sodium_mg": 54,
+        "zinc_mg": 0.5,
+        "selenium_ug": 33.1,
+        "iodine_ug": 110
+      },
+      "cholesterol_mg": 43,
+      "suggested_units": [
+        {
+          "unit": "100g",
+          "grams": 100
+        },
+        {
+          "unit": "3 oz",
+          "grams": 85
+        },
+        {
+          "unit": "pound",
+          "grams": 454
+        }
+      ]
+    },
+    {
       "name": "Ahi Tuna (yellowfin, raw)",
       "weight_grams": 100,
       "max_recommended_daily_g": 24,
@@ -2915,6 +2967,10 @@
           "grams": 240
         },
         {
+          "unit": "oz",
+          "grams": 30
+        },
+        {
           "unit": "tbsp",
           "grams": 15
         },
@@ -2955,6 +3011,10 @@
         {
           "unit": "cup",
           "grams": 240
+        },
+        {
+          "unit": "oz",
+          "grams": 30
         },
         {
           "unit": "tbsp",
@@ -2999,6 +3059,10 @@
           "grams": 240
         },
         {
+          "unit": "oz",
+          "grams": 30
+        },
+        {
           "unit": "tbsp",
           "grams": 15
         },
@@ -3041,6 +3105,10 @@
           "grams": 240
         },
         {
+          "unit": "oz",
+          "grams": 30
+        },
+        {
           "unit": "tbsp",
           "grams": 15
         },
@@ -3081,6 +3149,10 @@
           "grams": 227
         },
         {
+          "unit": "oz",
+          "grams": 30
+        },
+        {
           "unit": "tbsp",
           "grams": 15
         },
@@ -3119,6 +3191,10 @@
         {
           "unit": "cup",
           "grams": 227
+        },
+        {
+          "unit": "oz",
+          "grams": 30
         },
         {
           "unit": "tbsp",
@@ -3162,6 +3238,10 @@
           "grams": 227
         },
         {
+          "unit": "oz",
+          "grams": 30
+        },
+        {
           "unit": "tbsp",
           "grams": 15
         },
@@ -3201,6 +3281,10 @@
         {
           "unit": "cup",
           "grams": 227
+        },
+        {
+          "unit": "oz",
+          "grams": 30
         },
         {
           "unit": "tbsp",
@@ -3258,6 +3342,10 @@
         {
           "unit": "1/2 cup",
           "grams": 113
+        },
+        {
+          "unit": "oz",
+          "grams": 30
         },
         {
           "unit": "tbsp",
@@ -4244,6 +4332,50 @@
       ],
       "weight_grams": 100,
       "max_recommended_daily_g": 40
+    },
+    {
+      "name": "Honey",
+      "calories": 304,
+      "protein_g": 0.3,
+      "fat_g": 0,
+      "saturated_g": 0,
+      "monounsaturated_g": 0,
+      "polyunsaturated_g": 0,
+      "carbs_g": 82.4,
+      "fiber_g": 0.2,
+      "sugar_g": 82.1,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_c_mg": 0.5,
+        "vitamin_b2_mg": 0.04,
+        "vitamin_b6_mg": 0.02
+      },
+      "minerals": {
+        "calcium_mg": 6,
+        "iron_mg": 0.4,
+        "magnesium_mg": 2,
+        "phosphorus_mg": 4,
+        "potassium_mg": 52,
+        "sodium_mg": 4,
+        "zinc_mg": 0.2
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "tbsp",
+          "grams": 21
+        },
+        {
+          "unit": "tsp",
+          "grams": 7
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ],
+      "weight_grams": 100,
+      "max_recommended_daily_g": 50
     }
   ]
 }
