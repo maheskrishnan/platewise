@@ -455,11 +455,15 @@ const renderMealSection = (mealKey) => {
   const refs = state.sectionRefs[mealKey];
   if (!refs) return;
   const items = getMealItems(mealKey);
+  const table = refs.tableBody?.closest('table');
+  if (table) {
+    table.dataset.mealTable = mealKey;
+  }
   if (!items.length) {
     refs.tableBody.innerHTML = `<tr><td colspan="10" class="meal-empty">No foods added yet.</td></tr>`;
   } else {
-    const rows = items
-      .map((entry) => {
+    refs.tableBody.innerHTML = items
+      .map((entry, index) => {
         const food = state.foodMap.get(entry.id);
         if (!food) return '';
         const quantity = sanitizeQuantity(entry.quantity ?? DEFAULT_QUANTITY);
@@ -468,7 +472,7 @@ const renderMealSection = (mealKey) => {
         const unitOptions = getUnitOptionsForFood(food);
         const breakdown = getNutrientBreakdown(food, grams);
         return `
-          <tr>
+          <tr draggable="true" data-meal-row="${mealKey}" data-food-id="${entry.id}" data-index="${index}">
             <td>
               <div class="food-meta">
                 <span class="food-name">${food.name}</span>
@@ -989,6 +993,120 @@ const initSectionEvents = () => {
     if (input.matches('[data-meal-search]')) {
       handleMealSearchKeyDown(event);
     }
+  });
+
+  let dragState = {
+    meal: null,
+    foodId: null,
+    sourceIndex: -1,
+    indicator: null,
+  };
+
+  const clearMealDragIndicator = () => {
+    if (dragState.indicator && dragState.indicator.parentNode) {
+      dragState.indicator.parentNode.removeChild(dragState.indicator);
+    }
+    dragState.indicator = null;
+  };
+
+  elements.mealSections.addEventListener('dragstart', (event) => {
+    const row = event.target.closest('[data-meal-row]');
+    if (!row) return;
+    dragState.meal = row.dataset.mealRow;
+    dragState.foodId = row.dataset.foodId;
+    dragState.sourceIndex = Number(row.dataset.index);
+    row.classList.add('dragging');
+    event.dataTransfer.effectAllowed = 'move';
+    if (!dragState.indicator) {
+      dragState.indicator = document.createElement('tr');
+      dragState.indicator.className = 'drop-indicator';
+      dragState.indicator.innerHTML = '<td colspan="10"></td>';
+    }
+  });
+
+  elements.mealSections.addEventListener('dragend', (event) => {
+    const row = event.target.closest('[data-meal-row]');
+    if (row) {
+      row.classList.remove('dragging');
+    }
+    dragState.meal = null;
+    dragState.foodId = null;
+    dragState.sourceIndex = -1;
+    clearMealDragIndicator();
+  });
+
+  elements.mealSections.addEventListener('dragover', (event) => {
+    if (!dragState.meal || dragState.foodId === null) return;
+    const table = event.target.closest(`table[data-meal-table="${dragState.meal}"]`);
+    if (!table) return;
+    event.preventDefault();
+    const tbody = table.querySelector('tbody');
+    if (!tbody) return;
+    let targetRow = event.target.closest('[data-meal-row]');
+    if (!targetRow || targetRow.dataset.mealRow !== dragState.meal) {
+      targetRow = tbody.querySelector('[data-meal-row]:last-of-type');
+      if (targetRow) {
+        targetRow.parentNode.insertBefore(
+          dragState.indicator,
+          targetRow.nextSibling
+        );
+      } else if (!dragState.indicator.parentNode) {
+        tbody.appendChild(dragState.indicator);
+      }
+      return;
+    }
+    const rect = targetRow.getBoundingClientRect();
+    const before = event.clientY < rect.top + rect.height / 2;
+    if (before) {
+      targetRow.parentNode.insertBefore(dragState.indicator, targetRow);
+    } else {
+      targetRow.parentNode.insertBefore(dragState.indicator, targetRow.nextSibling);
+    }
+  });
+
+  elements.mealSections.addEventListener('drop', (event) => {
+    if (!dragState.meal || dragState.sourceIndex < 0) return;
+    const table = event.target.closest(`table[data-meal-table="${dragState.meal}"]`);
+    if (!table) return;
+    event.preventDefault();
+    const tbody = table.querySelector('tbody');
+    if (!tbody || !dragState.indicator || !dragState.indicator.parentNode) {
+      clearMealDragIndicator();
+      return;
+    }
+    const children = Array.from(tbody.children);
+    if (!children.includes(dragState.indicator)) {
+      clearMealDragIndicator();
+      return;
+    }
+    let targetIndex = 0;
+    for (const child of children) {
+      if (child === dragState.indicator) break;
+      if (child.matches('[data-meal-row]')) {
+        targetIndex += 1;
+      }
+    }
+    const items = getMealItems(dragState.meal);
+    const fromIndex = dragState.sourceIndex;
+    if (fromIndex < 0 || fromIndex >= items.length) {
+      clearMealDragIndicator();
+      return;
+    }
+    const [moved] = items.splice(fromIndex, 1);
+    const adjustedIndex = targetIndex > fromIndex ? targetIndex - 1 : targetIndex;
+    const boundedIndex = Math.max(0, Math.min(adjustedIndex, items.length));
+    if (boundedIndex === fromIndex) {
+      clearMealDragIndicator();
+      return;
+    }
+    items.splice(boundedIndex, 0, moved);
+    persistPlans();
+    renderMealSection(dragState.meal);
+    renderDailyTotals();
+    clearMealDragIndicator();
+    dragState.meal = null;
+    dragState.foodId = null;
+    dragState.sourceIndex = -1;
   });
 };
 

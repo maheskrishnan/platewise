@@ -68,7 +68,7 @@ class AppSidebar extends HTMLElement {
       <aside class="sidebar">
         <div class="sidebar-header">
           <p class="eyebrow">Powered by foods.json</p>
-          <h1>Shortlist Diet</h1>
+          <h1>Platewise</h1>
           <p class="helper-text helper-text--tagline">${TAGLINE}</p>
         </div>
         <nav class="sidebar-menu" aria-label="Primary navigation">

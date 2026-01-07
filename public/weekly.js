@@ -853,14 +853,14 @@ const openVideoModal = (videoId, title) => {
 const renderRecipeCard = (recipe, index) => {
   const totals = getRecipeTotals(recipe);
   const quantityRows = recipe.ingredients
-    .map((entry) => {
+    .map((entry, index) => {
       const food = state.foodMap.get(entry.id);
       if (!food) return '';
       const quantity = sanitizeQuantity(entry.quantity ?? DEFAULT_QUANTITY);
       const grams = getEntryGrams(entry);
       const unitOptions = getUnitOptionsForFood(food);
       return `
-        <tr>
+        <tr draggable="true" data-ingredient-row="${recipe.id}" data-food-id="${entry.id}" data-index="${index}">
           <td>
             <div class="food-meta">
               <span class="food-name">${food.name}</span>
@@ -958,7 +958,7 @@ const renderRecipeCard = (recipe, index) => {
       </label>
       <div class="search-results" data-recipe-results="${recipe.id}"></div>
       <div class="meal-table-wrapper">
-        <table class="meal-table">
+        <table class="meal-table" data-recipe-table="${recipe.id}">
           <thead>
             <tr>
               <th>Ingredient</th>
@@ -1487,6 +1487,120 @@ const attachEvents = () => {
     if (removeRecipeBtn) {
       removeRecipe(removeRecipeBtn.dataset.removeRecipe);
     }
+  });
+
+  let ingredientDragState = {
+    recipeId: null,
+    sourceIndex: -1,
+    indicator: null,
+  };
+
+  const clearIngredientDragIndicator = () => {
+    if (ingredientDragState.indicator && ingredientDragState.indicator.parentNode) {
+      ingredientDragState.indicator.parentNode.removeChild(ingredientDragState.indicator);
+    }
+    ingredientDragState.indicator = null;
+  };
+
+  elements.recipeList?.addEventListener('dragstart', (event) => {
+    const row = event.target.closest('[data-ingredient-row]');
+    if (!row) return;
+    ingredientDragState.recipeId = row.dataset.ingredientRow;
+    ingredientDragState.sourceIndex = Number(row.dataset.index);
+    row.classList.add('dragging');
+    if (!ingredientDragState.indicator) {
+      ingredientDragState.indicator = document.createElement('tr');
+      ingredientDragState.indicator.className = 'drop-indicator';
+      ingredientDragState.indicator.innerHTML = '<td colspan="10"></td>';
+    }
+    event.dataTransfer.effectAllowed = 'move';
+  });
+
+  elements.recipeList?.addEventListener('dragend', (event) => {
+    const row = event.target.closest('[data-ingredient-row]');
+    if (row) {
+      row.classList.remove('dragging');
+    }
+    ingredientDragState.recipeId = null;
+    ingredientDragState.sourceIndex = -1;
+    clearIngredientDragIndicator();
+  });
+
+  elements.recipeList?.addEventListener('dragover', (event) => {
+    if (!ingredientDragState.recipeId) return;
+    const table = event.target.closest(
+      `table[data-recipe-table="${ingredientDragState.recipeId}"]`
+    );
+    if (!table) return;
+    event.preventDefault();
+    const tbody = table.querySelector('tbody');
+    if (!tbody) return;
+    const targetRow = event.target.closest('[data-ingredient-row]');
+    if (!targetRow || targetRow.dataset.ingredientRow !== ingredientDragState.recipeId) {
+      if (!ingredientDragState.indicator.parentNode) {
+        tbody.appendChild(ingredientDragState.indicator);
+      }
+      return;
+    }
+    const rect = targetRow.getBoundingClientRect();
+    const before = event.clientY < rect.top + rect.height / 2;
+    if (before) {
+      targetRow.parentNode.insertBefore(ingredientDragState.indicator, targetRow);
+    } else {
+      targetRow.parentNode.insertBefore(
+        ingredientDragState.indicator,
+        targetRow.nextSibling
+      );
+    }
+  });
+
+  elements.recipeList?.addEventListener('drop', (event) => {
+    if (!ingredientDragState.recipeId || ingredientDragState.sourceIndex < 0) return;
+    const table = event.target.closest(
+      `table[data-recipe-table="${ingredientDragState.recipeId}"]`
+    );
+    if (!table) return;
+    event.preventDefault();
+    const tbody = table.querySelector('tbody');
+    if (!tbody || !ingredientDragState.indicator || !ingredientDragState.indicator.parentNode) {
+      clearIngredientDragIndicator();
+      return;
+    }
+    const children = Array.from(tbody.children);
+    if (!children.includes(ingredientDragState.indicator)) {
+      clearIngredientDragIndicator();
+      return;
+    }
+    let targetIndex = 0;
+    for (const child of children) {
+      if (child === ingredientDragState.indicator) break;
+      if (child.matches('[data-ingredient-row]')) {
+        targetIndex += 1;
+      }
+    }
+    const recipe = getRecipeById(ingredientDragState.recipeId);
+    if (!recipe) {
+      clearIngredientDragIndicator();
+      return;
+    }
+    const fromIndex = ingredientDragState.sourceIndex;
+    if (fromIndex < 0 || fromIndex >= recipe.ingredients.length) {
+      clearIngredientDragIndicator();
+      return;
+    }
+    const [moved] = recipe.ingredients.splice(fromIndex, 1);
+    const adjustedIndex = targetIndex > fromIndex ? targetIndex - 1 : targetIndex;
+    const boundedIndex = Math.max(0, Math.min(adjustedIndex, recipe.ingredients.length));
+    if (boundedIndex === fromIndex) {
+      clearIngredientDragIndicator();
+      return;
+    }
+    recipe.ingredients.splice(boundedIndex, 0, moved);
+    persistPlans();
+    renderRecipes();
+    clearIngredientDragIndicator();
+    ingredientDragState.recipeId = null;
+    ingredientDragState.sourceIndex = -1;
   });
 
   let dropIndicator = document.createElement('div');

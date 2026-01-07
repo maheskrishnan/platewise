@@ -1117,7 +1117,8 @@ textarea::placeholder {
   gap: 0.2rem;
 }
 
-.recipe-card.dragging {
+.recipe-card.dragging,
+.meal-table tr.dragging {
   opacity: 0.6;
 }
 

@@ -1385,7 +1385,7 @@
             "id": "0871323d-eb17-4f95-92a0-3c2fd045f453",
             "title": "Cooked rice (Sun)",
             "description": "",
-            "collapsed": false,
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "grains-0",
@@ -2139,51 +2139,65 @@
               },
               {
                 "id": "lentils-1",
-                "quantity": 2,
+                "quantity": 1,
                 "unit": "cup dry",
                 "unitGrams": 200
               },
               {
                 "id": "lentils-4",
-                "quantity": 2,
+                "quantity": 1,
                 "unit": "cup dry",
                 "unitGrams": 200
               },
               {
+                "id": "lentils-0",
+                "quantity": 0.5,
+                "unit": "cup dry",
+                "unitGrams": 200
+              },
+              {
+                "id": "oils-0",
+                "quantity": 1,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
                 "id": "vegetables-20",
-                "quantity": 6,
+                "quantity": 7,
                 "unit": "cup chopped",
                 "unitGrams": 160
               },
               {
                 "id": "vegetables-19",
-                "quantity": 6,
+                "quantity": 7,
                 "unit": "cup chopped",
                 "unitGrams": 180
               },
               {
+                "id": "vegetables-16",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 128
+              },
+              {
+                "id": "vegetables-18",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 89
+              }
+            ]
+          },
+          {
+            "id": "37520d01-93cd-4295-8e46-553a23eec67a",
+            "title": "protein source",
+            "description": "",
+            "collapsed": false,
+            "ingredients": [
+              {
                 "id": "meats_and_seafood-3",
-                "quantity": 2,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-2",
-                "quantity": 2,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-5",
-                "quantity": 2,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-6",
-                "quantity": 2,
-                "unit": "3 oz",
-                "unitGrams": 85
+                "quantity": 2.33,
+                "unit": "pound",
+                "unitGrams": 454
               }
             ]
           }
@@ -2444,6 +2458,12 @@
                 "quantity": 7,
                 "unit": "oz",
                 "unitGrams": 28
+              },
+              {
+                "id": "dried_fruits-1",
+                "quantity": 14,
+                "unit": "tsp",
+                "unitGrams": 7
               }
             ]
           },
@@ -2451,6 +2471,7 @@
             "id": "de227c8d-ae40-4d1e-809e-3947c5de0ca2",
             "title": "rice and dal for breakfast and diner",
             "description": "",
+            "collapsed": false,
             "ingredients": [
               {
                 "id": "grains-0",
@@ -2481,9 +2502,26 @@
                 "quantity": 2,
                 "unit": "cup chopped",
                 "unitGrams": 180
+              },
+              {
+                "id": "vegetables-16",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 128
+              },
+              {
+                "id": "vegetables-18",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 89
+              },
+              {
+                "id": "vegetables-34",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 107
               }
-            ],
-            "collapsed": false
+            ]
           }
         ]
       },
@@ -2581,7 +2619,7 @@
             "id": "31f67f78-97f0-443f-ac59-2c592ade4b1a",
             "title": "Vegetable Sambar (Tue)",
             "description": "",
-            "collapsed": false,
+            "collapsed": true,
             "ingredients": [
               {
                 "id": "lentils-4",
@@ -2740,14 +2778,114 @@
         ]
       },
       {
-        "id": "ae6c81b5-859d-4871-be70-6c79b6d41deb",
-        "name": "Jan 2026 Plan",
+        "id": "58fea15c-fa0e-437f-b2d8-a4e3dd60a0a1",
+        "name": "Compare Oatmeal vs Rice-Dal fro breakfast/dinner",
         "recipes": [
           {
-            "id": "a33287d2-ad75-4369-9060-8beb10ae195d",
+            "id": "1800c5d1-17dc-4a92-8550-654794d2f53d",
+            "title": "Homemade oatmeal",
+            "description": "",
+            "collapsed": false,
+            "ingredients": [
+              {
+                "id": "grains-2",
+                "quantity": 3.5,
+                "unit": "cup dry",
+                "unitGrams": 80
+              },
+              {
+                "id": "dried_fruits-0",
+                "quantity": 14,
+                "unit": "1/4 cup",
+                "unitGrams": 40
+              },
+              {
+                "id": "dairy-1",
+                "quantity": 14,
+                "unit": "cup",
+                "unitGrams": 240
+              },
+              {
+                "id": "nuts_and_seeds-0",
+                "quantity": 7,
+                "unit": "oz",
+                "unitGrams": 28
+              },
+              {
+                "id": "dried_fruits-1",
+                "quantity": 14,
+                "unit": "tbsp",
+                "unitGrams": 21
+              }
+            ]
+          },
+          {
+            "id": "3fb659e0-04f2-4940-899f-df44b9966e8d",
+            "title": "rice and dal for breakfast and diner",
+            "description": "",
+            "collapsed": false,
+            "ingredients": [
+              {
+                "id": "grains-0",
+                "quantity": 4.62,
+                "unit": "cup raw",
+                "unitGrams": 185
+              },
+              {
+                "id": "lentils-4",
+                "quantity": 3,
+                "unit": "cup dry",
+                "unitGrams": 200
+              },
+              {
+                "id": "oils-0",
+                "quantity": 2,
+                "unit": "tablespoon",
+                "unitGrams": 14
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 3,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-19",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 180
+              },
+              {
+                "id": "vegetables-16",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 128
+              },
+              {
+                "id": "vegetables-18",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 89
+              },
+              {
+                "id": "vegetables-34",
+                "quantity": 2,
+                "unit": "cup chopped",
+                "unitGrams": 107
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "b8654f5c-0360-4753-af55-ca0f0e8a7d45",
+        "name": "2026 Q1  Plan (sustainable & meaty)",
+        "recipes": [
+          {
+            "id": "0623a549-3ada-480b-870d-d929d5e7ed0b",
             "title": "Rice - Breakfast, Lunch, Dinner",
             "description": "",
-            "collapsed": true,
+            "collapsed": false,
             "ingredients": [
               {
                 "id": "grains-0",
@@ -2758,11 +2896,17 @@
             ]
           },
           {
-            "id": "98e06b1d-0c69-41e8-a889-c12f66bde1e0",
+            "id": "f41e1757-e2bd-46ea-82ed-e5d77ec628dd",
             "title": "Vegetable Sambar - Breakfast, Lunch, Dinner",
             "description": "",
-            "collapsed": true,
+            "collapsed": false,
             "ingredients": [
+              {
+                "id": "lentils-0",
+                "quantity": 0.5,
+                "unit": "cup dry",
+                "unitGrams": 200
+              },
               {
                 "id": "lentils-4",
                 "quantity": 1,
@@ -2777,13 +2921,13 @@
               },
               {
                 "id": "vegetables-20",
-                "quantity": 2,
+                "quantity": 4,
                 "unit": "cup chopped",
                 "unitGrams": 160
               },
               {
                 "id": "vegetables-19",
-                "quantity": 2,
+                "quantity": 4,
                 "unit": "cup chopped",
                 "unitGrams": 180
               },
@@ -2801,12 +2945,18 @@
               },
               {
                 "id": "vegetables-18",
-                "quantity": 1,
+                "quantity": 2,
                 "unit": "pound",
                 "unitGrams": 454
               },
               {
                 "id": "vegetables-34",
+                "quantity": 2,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "vegetables-6",
                 "quantity": 1,
                 "unit": "pound",
                 "unitGrams": 454
@@ -2814,144 +2964,207 @@
             ]
           },
           {
-            "id": "646dac8d-70db-4e14-8fc7-855ed67970eb",
-            "title": "Egg omlette - Breakfast",
+            "id": "3e325c5b-9127-4fdb-9081-6802dde3cff2",
+            "title": "Egg omlette - Breakfast/Dinner",
             "description": "",
             "collapsed": true,
             "ingredients": [
               {
+                "id": "oils-0",
+                "quantity": 7,
+                "unit": "tsp",
+                "unitGrams": 4.5
+              },
+              {
+                "id": "vegetables-20",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 160
+              },
+              {
+                "id": "vegetables-21",
+                "quantity": 1,
+                "unit": "cup chopped",
+                "unitGrams": 75
+              },
+              {
                 "id": "eggs-0",
-                "quantity": 14,
+                "quantity": 7,
                 "unit": "large egg",
                 "unitGrams": 50
               },
               {
                 "id": "eggs-1",
-                "quantity": 34,
+                "quantity": 21,
                 "unit": "large egg white",
                 "unitGrams": 33
+              }
+            ]
+          },
+          {
+            "id": "1f457bc6-d144-49ff-b317-0c06c1627cd1",
+            "title": "Seafood Lunch/Dinner",
+            "description": "",
+            "collapsed": false,
+            "ingredients": [
+              {
+                "id": "meats_and_seafood-2",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
               },
               {
-                "id": "vegetables-20",
-                "quantity": 2,
-                "unit": "cup chopped",
-                "unitGrams": 160
+                "id": "meats_and_seafood-3",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "meats_and_seafood-5",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "meats_and_seafood-1",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
+              },
+              {
+                "id": "meats_and_seafood-4",
+                "quantity": 1,
+                "unit": "pound",
+                "unitGrams": 454
               },
               {
                 "id": "oils-0",
-                "quantity": 2,
+                "quantity": 3,
                 "unit": "tablespoon",
                 "unitGrams": 14
               }
             ]
           },
           {
-            "id": "c40d9ab0-7d1b-4f66-84f3-d1d10c93daa6",
-            "title": "Seafood dinner",
-            "description": "",
-            "collapsed": true,
-            "ingredients": [
-              {
-                "id": "meats_and_seafood-2",
-                "quantity": 4,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-6",
-                "quantity": 4,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-3",
-                "quantity": 4,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-5",
-                "quantity": 4,
-                "unit": "3 oz",
-                "unitGrams": 85
-              },
-              {
-                "id": "meats_and_seafood-1",
-                "quantity": 4,
-                "unit": "3 oz",
-                "unitGrams": 85
-              }
-            ]
-          },
-          {
-            "id": "322681c0-9ff8-42e2-90fb-9136d99ab766",
+            "id": "25510be5-21c0-41bd-b377-5885ad9273b1",
             "title": "Fruits",
             "description": "",
+            "collapsed": false,
             "ingredients": [
               {
                 "id": "fruits-3",
-                "quantity": 12,
+                "quantity": 7,
                 "unit": "oz",
                 "unitGrams": 28
               },
               {
                 "id": "fruits-2",
-                "quantity": 12,
+                "quantity": 7,
                 "unit": "oz",
                 "unitGrams": 28
               },
               {
                 "id": "fruits-1",
-                "quantity": 12,
+                "quantity": 7,
                 "unit": "oz",
                 "unitGrams": 28
               },
               {
                 "id": "fruits-0",
-                "quantity": 12,
+                "quantity": 7,
                 "unit": "oz",
                 "unitGrams": 28
               },
               {
                 "id": "fruits-4",
-                "quantity": 12,
+                "quantity": 7,
                 "unit": "oz",
                 "unitGrams": 28
               }
-            ],
-            "collapsed": true
+            ]
+          },
+          {
+            "id": "67ec34fb-9d0b-4d8e-aa5d-e6be95f6b444",
+            "title": "Diary",
+            "description": "",
+            "collapsed": false,
+            "ingredients": [
+              {
+                "id": "dairy-4",
+                "quantity": 32,
+                "unit": "oz",
+                "unitGrams": 30
+              },
+              {
+                "id": "dairy-1",
+                "quantity": 14,
+                "unit": "cup",
+                "unitGrams": 240
+              }
+            ]
           }
         ]
       }
     ],
-    "activePlanId": "61721224-696b-4b2c-a12e-2b569d6edefd"
+    "activePlanId": "b8654f5c-0360-4753-af55-ca0f0e8a7d45"
   },
   "recipesLibrary": [
+    {
+      "id": "313f160b-3e88-47c8-8277-86e73a0d3dfb",
+      "title": "Dal Palak (Spinach / Lentil)",
+      "description": "",
+      "collapsed": false,
+      "ingredients": [
+        {
+          "id": "lentils-0",
+          "quantity": 0.25,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
+          "id": "lentils-1",
+          "quantity": 0.5,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
+          "id": "lentils-4",
+          "quantity": 0.5,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
+          "id": "vegetables-20",
+          "quantity": 3,
+          "unit": "cup chopped",
+          "unitGrams": 160
+        },
+        {
+          "id": "vegetables-19",
+          "quantity": 3,
+          "unit": "cup chopped",
+          "unitGrams": 180
+        },
+        {
+          "id": "oils-0",
+          "quantity": 2,
+          "unit": "tablespoon",
+          "unitGrams": 14
+        },
+        {
+          "id": "vegetables-24",
+          "quantity": 1,
+          "unit": "pound",
+          "unitGrams": 454
+        }
+      ]
+    },
     {
       "id": "4ea14bea-760c-4450-90f9-df66600c7729",
       "title": "Oatmeal daily breakfast",
       "description": "",
       "collapsed": true,
-      "ingredients": [
-        {
-          "id": "grains-2",
-          "quantity": 0.25,
-          "unit": "cup dry",
-          "unitGrams": 80
-        },
-        {
-          "id": "dried_fruits-0",
-          "quantity": 0.75,
-          "unit": "1/4 cup",
-          "unitGrams": 40
-        },
-        {
-          "id": "nuts_and_seeds-0",
-          "quantity": 0.5,
-          "unit": "oz",
-          "unitGrams": 28
-        }
-      ]
+      "ingredients": []
     },
     {
       "id": "04da5775-f6d2-4c75-9788-39e4242f869d",
@@ -3158,16 +3371,16 @@
           "unitGrams": 85
         },
         {
-          "id": "meats_and_seafood-1",
-          "quantity": 1,
-          "unit": "3 oz",
-          "unitGrams": 85
-        },
-        {
           "id": "vegetables-20",
           "quantity": 1,
           "unit": "cup chopped",
           "unitGrams": 160
+        },
+        {
+          "id": "meats_and_seafood-1",
+          "quantity": 1,
+          "unit": "3 oz",
+          "unitGrams": 85
         },
         {
           "id": "vegetables-19",
@@ -3193,13 +3406,25 @@
     },
     {
       "id": "b0a109ef-2967-44fa-ac41-fd2b5d4a122c",
-      "title": "Vegetable Sambar",
+      "title": "Vegetable Sambar (lentil, cabbage, carrot, cauliflower)",
       "description": "",
-      "collapsed": true,
+      "collapsed": false,
       "ingredients": [
         {
+          "id": "lentils-0",
+          "quantity": 0.25,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
+          "id": "lentils-1",
+          "quantity": 0.5,
+          "unit": "cup dry",
+          "unitGrams": 200
+        },
+        {
           "id": "lentils-4",
-          "quantity": 2,
+          "quantity": 0.5,
           "unit": "cup dry",
           "unitGrams": 200
         },
@@ -3211,7 +3436,7 @@
         },
         {
           "id": "vegetables-19",
-          "quantity": 1,
+          "quantity": 3,
           "unit": "cup chopped",
           "unitGrams": 180
         },
@@ -3222,14 +3447,20 @@
           "unitGrams": 14
         },
         {
-          "id": "vegetables-18",
-          "quantity": 2,
+          "id": "vegetables-16",
+          "quantity": 1,
           "unit": "pound",
           "unitGrams": 454
         },
         {
-          "id": "vegetables-16",
-          "quantity": 2,
+          "id": "vegetables-34",
+          "quantity": 1,
+          "unit": "pound",
+          "unitGrams": 454
+        },
+        {
+          "id": "vegetables-18",
+          "quantity": 1,
           "unit": "pound",
           "unitGrams": 454
         }

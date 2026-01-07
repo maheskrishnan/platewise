@@ -2381,6 +2381,10 @@
         {
           "unit": "100g",
           "grams": 100
+        },
+        {
+          "unit": "tsp",
+          "grams": 4.5
         }
       ],
       "weight_grams": 100,
@@ -2415,6 +2419,10 @@
         {
           "unit": "100g",
           "grams": 100
+        },
+        {
+          "unit": "tsp",
+          "grams": 4.5
         }
       ],
       "weight_grams": 100,
@@ -2448,6 +2456,10 @@
         {
           "unit": "100g",
           "grams": 100
+        },
+        {
+          "unit": "tsp",
+          "grams": 4.5
         }
       ],
       "weight_grams": 100,
@@ -2482,6 +2494,10 @@
         {
           "unit": "100g",
           "grams": 100
+        },
+        {
+          "unit": "tsp",
+          "grams": 4.5
         }
       ],
       "weight_grams": 100,
@@ -2530,6 +2546,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ],
       "weight_grams": 100,
@@ -2576,6 +2596,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ],
       "weight_grams": 100,
@@ -2624,6 +2648,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ],
       "weight_grams": 100,
@@ -2672,6 +2700,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ],
       "weight_grams": 100,
@@ -2719,6 +2751,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ],
       "weight_grams": 100,
@@ -2770,6 +2806,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ]
     },
@@ -2822,6 +2862,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ]
     },
@@ -2876,6 +2920,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ]
     },
@@ -2931,6 +2979,10 @@
         {
           "unit": "pound",
           "grams": 454
+        },
+        {
+          "unit": "oz",
+          "grams": 28
         }
       ]
     }
@@ -4280,6 +4332,104 @@
         {
           "unit": "oz",
           "grams": 28
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Green Guava (raw)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 68,
+      "protein_g": 2.6,
+      "fat_g": 1.0,
+      "saturated_g": 0.3,
+      "monounsaturated_g": 0.1,
+      "polyunsaturated_g": 0.4,
+      "carbs_g": 14.3,
+      "fiber_g": 5.4,
+      "sugar_g": 8.9,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 31,
+        "vitamin_c_mg": 228,
+        "vitamin_e_mg": 0.7,
+        "vitamin_k_ug": 2.6,
+        "vitamin_b6_mg": 0.11,
+        "folate_ug": 49
+      },
+      "minerals": {
+        "calcium_mg": 18,
+        "iron_mg": 0.3,
+        "magnesium_mg": 22,
+        "phosphorus_mg": 40,
+        "potassium_mg": 417,
+        "sodium_mg": 2,
+        "zinc_mg": 0.2
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "fruit",
+          "grams": 120
+        },
+        {
+          "unit": "1/2 fruit",
+          "grams": 60
+        },
+        {
+          "unit": "cup slices",
+          "grams": 165
+        },
+        {
+          "unit": "100g",
+          "grams": 100
+        }
+      ]
+    },
+    {
+      "name": "Passion Fruit (raw)",
+      "weight_grams": 100,
+      "max_recommended_daily_g": null,
+      "calories": 97,
+      "protein_g": 2.2,
+      "fat_g": 0.7,
+      "saturated_g": 0.06,
+      "monounsaturated_g": 0.09,
+      "polyunsaturated_g": 0.38,
+      "carbs_g": 23.4,
+      "fiber_g": 10.4,
+      "sugar_g": 11.2,
+      "added_sugar_g": 0,
+      "vitamins": {
+        "vitamin_a_ug": 64,
+        "vitamin_c_mg": 30,
+        "vitamin_k_ug": 0.7,
+        "vitamin_b2_mg": 0.13,
+        "vitamin_b6_mg": 0.1,
+        "folate_ug": 14
+      },
+      "minerals": {
+        "calcium_mg": 12,
+        "iron_mg": 1.6,
+        "magnesium_mg": 29,
+        "phosphorus_mg": 68,
+        "potassium_mg": 348,
+        "sodium_mg": 28,
+        "zinc_mg": 0.1
+      },
+      "cholesterol_mg": 0,
+      "suggested_units": [
+        {
+          "unit": "fruit",
+          "grams": 18
+        },
+        {
+          "unit": "cup pulp",
+          "grams": 236
         },
         {
           "unit": "100g",
